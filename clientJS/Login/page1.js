@@ -1,0 +1,3 @@
+function resetUser() {
+    localStorage.clear();
+}

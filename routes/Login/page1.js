@@ -13,7 +13,7 @@ router.post('/',(req,res) => {
   }
 
   if(errors.length>0) {
-      res.render("Login/page1",{username,password});
+      res.render("Login/page1",{username,password,errors});
   } else User.findOne( {username: username})
   .then(user => {
       if(user){
@@ -21,6 +21,7 @@ router.post('/',(req,res) => {
             res.render("Login/dashboard",{user});
           } else {
               errors.push({msg: "Incorrect password"});
+              res.render("Login/page1",{username,errors});
           }
       }
   })

@@ -40,7 +40,7 @@ const UserSchema = new mongoose.Schema({
         required: true
     },
     totalAmount: {
-        type: String,
+        type: Number,
         required: true
     },
     imgLink: {
