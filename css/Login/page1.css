@@ -1,0 +1,47 @@
+@import url("./../Global/global.css");
+@import url("./../Signup/page3.css");
+.signupHeading {
+    display: flex;
+    position: absolute;
+    font-family: 'Sansita Swashed', cursive;
+    left: 13vw;
+    top: 8vh;
+    font-size: 5vh;
+}
+.signupForm {
+    width: 65%;
+    position: relative;
+    top: 20vh;
+    height: -1vh;
+    left: 5vw;
+    font-size: 3vh;
+    overflow: hidden;
+}
+.password {
+    width: 65%;
+    position: relative;
+    top: 22vh;
+    height: -1vh;
+    left: 5vw;
+    font-size: 3vh;
+    overflow: hidden;
+    
+}
+.forgetPassword {
+    position: absolute;
+    top:52vh;
+    left: 5vw;
+    color: black;
+    cursor: pointer;
+    font-size: 3vh;
+}
+.alert-box{
+    position: relative;
+    top: -32vh;
+    left: -9vw;
+    width: 150%;
+    background-color: rgb(253, 2, 2);
+    font-size: 22px;
+    padding: 2vh;
+    color: #ffffff;
+}

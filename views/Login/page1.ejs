@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmilePay | Login</title>
+    <link rel="stylesheet" href="/css/Login/page1.css" type="text/css">
+</head>
+
+<body onload="resetUser()">
+    <div class="background">
+        <div class="backgroundImgFirst"></div>
+        <div class="floatBox">
+            <h2 class="signupHeading">Login </h2>
+            <form action="/login/first" method="POST">
+                <div class="signupForm">
+                    <input id='username' type="text" name="username" autocomplete="off" required />
+                    <label for="username" class="label-name">
+                        <span class="content-name">Username</span>
+                    </label>
+                </div>
+                <div class="password">
+                    <input id='password' type="password" name="password" autocomplete="off" required />
+                    <label for="password" class="label-password">
+                        <span class="content-password">Password</span>
+                    </label>
+                </div>
+                <a href="/login/forgetPassword" class="forgetPassword">Forget password?</a>
+                <a href="/" border-color="black" class="back"><span>Back</span></a>
+                <button type="submit" id="login" border-color="black" class="next"><span>Next</span></button>
+                <div id="incorrect-detail" class="alert-box show">
+                    Incorrect Details
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+            </form>
+        </div>
+        <div class="backgroundImgSecond"></div>
+    </div>
+</body>
+</html>

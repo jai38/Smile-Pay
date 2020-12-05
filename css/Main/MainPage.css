@@ -1,0 +1,223 @@
+@import url("./../Global/global.css");
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.background {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+}
+.backgroundImgFirst {
+    opacity: 0.5;
+    width: 25%;
+    height: 100vh;
+    background-image: url(/css/images/Global/firstBack.png);
+    background-size: 100% 100%;
+}
+.backgroundImgSecond {
+    position: absolute;
+    opacity: 0.5;
+    right: 0vw;
+    width: 30%;
+    height: 100vh;
+    background-image: url(/css/images/Global/secondBack.jpeg);
+    background-size: 100% 100%;
+}
+.floatBox {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom right,rgb(21, 36, 248),rgb(11, 145, 255),rgb(0, 195, 255));
+    top: 7vh;
+    right: 11vw;
+    height: 85vh;
+    width: 70%;
+    border-radius: 5vh;
+    box-shadow: 1vh 1vw 2vh  #203a4e;
+}
+.sideImg {
+    position: relative;
+    margin-left: auto;
+    left: -3vh;
+    top: 10vh;
+    width: 55%;
+    height: 67vh;
+    background-image: url(/css/images/Login/sideBlue.png);
+    background-size: 100% 100%;
+}
+.logo {
+    position: absolute;
+    margin-top: -70vh;
+    margin-left: 15vh;
+    width: 30%;
+    height: 35vh;
+    background-image: url(/css/images/Main/logo1.png);
+    background-size: 100% 100%;
+}
+.login{
+  position: absolute;
+  top: 60%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+}
+
+.link_login{
+  position: relative;
+}
+
+.link_login a{
+  display: block;
+  width: 15vw;
+  height: 8vh;
+  line-height: 8vh;
+  font-weight: bold;
+  text-decoration: none;
+  background:  #0f0f0f;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  border: 0.1vh solid  #0f0f0f;
+  transition: all .35s;
+}
+
+.iconl{
+  width: 8vh;
+  height: 8vh;
+  border: 0.3vw solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.iconl svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #0f0f0f;
+  transition: all .35s;
+}
+
+.link_login a:hover{
+  width: 15vw;
+  border: 0.3vw solid  #0f0f0f;
+  background: transparent;
+  color: #0f0f0f;
+}
+
+.link_login a:hover + .iconl{
+  border: 0.3vw solid #0f0f0f;
+  right: -25%;
+}
+  .signup{
+    position: absolute;
+    top: 88%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .link_signup{
+    position: relative;
+  }
+  
+  .link_signup a{
+    display: block;
+    width: 15vw;
+    height: 8vh;
+    line-height: 8vh;
+    font-weight: bold;
+    text-decoration: none;
+    background:  #0f0f0f;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    border: 0.1vh solid  #0f0f0f;
+    transition: all .35s;
+  }
+  
+  .icons{
+    width: 8vh;
+    height: 8vh;
+    border: 0.3vw solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .icons svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill:  #0f0f0f;
+    transition: all .35s;
+  }
+  
+  .link_signup a:hover{
+    width: 15vw;
+    border: 0.3vw solid #0f0f0f;
+    background: transparent;
+    color: #0f0f0f;
+  }
+  
+  .link_signup a:hover + .icons{
+    border: 0.3vw solid #0f0f0f;
+    right: -25%;
+  }
+
+.line {
+    position: relative;
+    width: 30vw;
+    height: -1vh;
+    border: solid;
+    /* border-width: .3vh; */
+    border-radius: 3vh;
+    left: 5vh;
+    top: -4vh;
+    border-color: blue;
+}
+
+.floatBox button {
+    cursor: pointer;
+    font-family: 'Sans serif', cursive;
+    font-size: 3vh;
+    background: transparent;
+    border: transparent;
+    color: white;
+}
+.describe{
+  position: absolute;
+  top: 37vh;
+  left: 12vh;
+  font-size: 130%;
+  /* color: white; */
+}
+.smilepay{
+  position: fixed;
+  top: 33vh;
+  left: 58vh;
+  font-size: 150%;
+  color:white;
+}
+/* .line1 {
+  position: relative;
+  width: 25vw;
+  height: .5vw;
+  border: solid;
+  border-width: .3vh;
+  border-radius: 0vh;
+  left: 10vh;
+  top: -40vh;
+  border-color: rgb(255, 251, 0);
+} */
+

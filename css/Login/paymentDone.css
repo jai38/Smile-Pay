@@ -1,0 +1,115 @@
+@import url("./../Global/global.css");
+.signupHeading {
+    display: flex;
+    position: absolute;
+    font-family: 'Sansita Swashed', cursive;
+    left: 7vw;
+    top: 45vh;
+    font-size: 5vh;
+}
+.paymentSuccessful {
+    z-index: 1;
+    position: absolute;
+    width: 15vw;
+    top: 18vh;
+    left: 40vw;
+}
+.check-button {
+    position: relative; 
+    z-index: 1;
+    border-radius: 4vh;
+    background-color: rgb(77, 221, 99);;
+    border: none;
+    color: #0f0c0c;
+    text-align: center;
+    height: 5vh;
+    font-size: 1vw;
+    top: 65vh;
+    left: -25vw;
+    padding: 1vh;
+    width: 10vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1vh;
+    box-shadow: 1vh 1vw 2vh  #203a4e
+  }
+.check-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .check-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -2vh;
+    right: 4vw;
+    transition: 0.5s;
+  }
+  .check-button:hover span {
+    padding-right: 2vh;
+  }
+  .check-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  #amount-text {
+      display: inline;
+  }
+  #amount {
+      z-index: 1;
+      position: absolute;
+      top: 67vh;
+      left: 53vw;
+      font-size: 3vh;
+    }
+  
+.home{
+    position: absolute;
+    top: 77vh;
+    left: 43vw;
+    display: inline-block;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+    background-color:rgb(17, 160, 204);
+    z-index: 1;
+}
+.home::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background:rgb(17, 160, 204);
+    transition: .5s ease-in-out;
+    transform: scaleY(1);
+}
+.home:hover:before{
+    transform: scaleY(0);
+}
+.home::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 6px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background:rgb(17, 160, 204);
+    transition: .5s ease-in-out;
+    transform: scaleX(1);
+}
+.home:hover:after{
+    transform: scaleX(0);
+}
+.home span{
+    position: relative;
+    z-index: 3;
+}

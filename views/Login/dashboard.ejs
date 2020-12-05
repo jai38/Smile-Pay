@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id = 'title'></title>
+    <link rel="stylesheet" href="/css/Login/dashboard.css" type="text/css">
+</head>
+
+<body onload="setTitle()">
+    <div class="background">
+        <div class="backgroundImgFirst"></div>
+        <div class="floatBox">
+            <h2 class="signupHeading">Welcome to SmilePay</h2>
+            <p id = "data" style="display: none;"><%= JSON.stringify(user) %></p>
+            <div class="number">
+                <li>
+                    <input id='amount-text' type="number" number="number" autocomplete="off" required />
+                    <label for="number" class="label-number">
+                        <span class="content-number">Enter amount</span>
+                    </label>
+                </li>
+            </div>
+            <div class="account">
+                <li>
+                    <input id='account' type="number" account="account" autocomplete="off" required />
+                    <label for="account" class="label-account">
+                        <span class="content-account">Account no of Recipient</span>
+                    </label>
+                </li>
+            </div>
+            <button onclick="displayBalance()" id="balance" class="check-button">
+                <p id='balance-text'>
+                    Check Balance
+                </p>
+                <span id='span-balance'></span>
+            </button>
+            <p id='amount'></p>
+            <a href="/login/first" border-color="black" class="back"><span>Logout</span></a>
+            <a id='pay' href="/login/face" border-color="black" class="next"><span><img width="45vw" height="30vh"
+                        src = "/css/images/Global/camera.png" alt="img"></span></a>
+            <div id="invalid-amount" class="alert-box show">
+                Amount cannot be 0 or Negative
+                <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+            </div>
+            <div id="insufficient-balance" class="alert-box show">
+                Insufficient Balance
+                <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+            </div>
+        </div>
+        <div class="backgroundImgSecond"></div>
+    </div>
+    <script src="./../../clientJS/Login/dashboard.js"></script>
+</body>
+</html>

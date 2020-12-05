@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmilePay | Home</title>
+    <!-- <link rel="stylesheet" href="./../Css/MainPage.css"> -->
+    <link rel="stylesheet" href="/css/Main/MainPage.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+</head>
+<body onload="resetData()">
+    <div class="background">
+        <div class="backgroundImgFirst"></div>
+        <div class="floatBox">
+            <div class="sideImg"></div>
+            <div class="logo"></div>
+            <hr class="line">
+            <button class="login">
+                <div class="link_login">
+                    <a href="/login/first">LOGIN</a>
+                    <div class="iconl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                            <path
+                                d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+            <button class="signup">
+                <div class="link_signup">
+                    <a href="/signup/first">SIGNUP</a>
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                            <path
+                                d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+            <p class="smilepay">SMILE PAY</p>
+            <p class="describe">The New Standard in Online Payments</p>
+        </div>
+        <div class="backgroundImgSecond"></div>
+        <script>
+            function resetData() {
+                localStorage.setItem('imageCount',2);
+            }
+        </script>
+    </div>
+</body>
+
+</html>

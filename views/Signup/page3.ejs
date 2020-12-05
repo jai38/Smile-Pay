@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | User Details</title>
+    <link rel="stylesheet" href="/css/Signup/page3.css" type="text/css">
+</head>
+
+<body onload="checkingThirdValues()">
+    <div class="background">
+        <div class="backgroundImgFirst"></div>
+        <div class="floatBox">
+            <h2 class="signupHeading">User Details: </h2>
+            <form action="/signup/third" method="POST">
+                <div class="signupForm">
+                    <input id='username' type="text" name="username" autocomplete="off" required />
+                    <label for="username" class="label-name">
+                        <span class="content-name">Username</span>
+                    </label>
+                </div>
+                <div class="password">
+                    <input id='password' type="password" name="password" autocomplete="off" required />
+                    <label for="password" class="label-password">
+                        <span class="content-password">Password</span>
+                    </label>
+                </div>
+                <div class="passwordc">
+                    <input id='password2' type="password" name="password2" autocomplete="off" required />
+                    <label for="password" class="label-password">
+                        <span class="content-password">Confirm Password</span>
+                    </label>
+                </div>
+                <div class="passwordp">
+                    <input id='pin' type="password" name="pin" autocomplete="off" required />
+                    <label for="pin" class="label-password">
+                        <span class="content-password">PIN</span>
+                    </label>
+                </div>
+                <a href="/signup/second" border-color="black" class="back"><span>Back</span></a>
+                <button type="submit" id='submit3' border-color="black" class="next">
+                    <span><img width="45vw" height="30vh" src="/css/images/Global/camera.png" alt="img"></span>
+                </button>
+                <div id="exist-username" class="alert-box show">
+                    Username Already Exists
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="alert-confirm" class="alert-box show">
+                    Password Didn't Match
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="alert-password" class="alert-box show">
+                    Password should be more than 8 Characters
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+                <div id="alert-pin" class="alert-box show">
+                    Pin Should contain only Digits-[0,9]
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+            </form>
+        </div>
+        <div class="backgroundImgSecond"></div>
+    </div>
+
+</body>
+
+</html>

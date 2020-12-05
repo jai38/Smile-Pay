@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try With Pin</title>
+    <link rel="stylesheet" href="/css/Login/payWithPin.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="backgroundImgFirst"></div>
+        <div class="floatBox">
+            <h2 class="signupHeading">Try With PIN</h2>
+            <form action="">
+                <div class="passwordp">
+                    <input id='pin' type="password" pass="pass" autocomplete="off" required />
+                    <label for="pin" class="label-password">
+                        <span class="content-password">ENTER PIN</span>
+                    </label>
+                </div>
+                <p><strong>PLEASE NOTE:</strong>you can enter PIN only once</p>
+                <a href = "/login/paymentDone" id='pin-btn' class="submit"><span>SUBMIT</span></a>
+                <a href="/login/paymentUndone" class="back"><span>BACK</span></a>
+                <div id="alert-pin" class="alert-box show">
+                    Pin Should contain only Digits-[0,9]
+                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
+                </div>
+        </div>
+        </form>
+        <div class="backgroundImgSecond"></div>
+    </div>
+</body>
+</html>

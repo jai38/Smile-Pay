@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Done</title>
+    <link rel="stylesheet" href="/css/Login/paymentDone.css">
+</head>
+<body onload="updateAmount()">
+    <div class = "background">
+        <div class = "backgroundImgFirst"></div>
+        <div class="floatBox">
+            <h2 class = "signupHeading">Payment Successful!</h2>
+        </div>
+        <img src="/css/images/Login/Paymentsuccess.gif" class = "paymentSuccessful" alt="gif">
+        <div class="backgroundImgSecond"></div>
+        <button onclick="displayBalance()" class = 'check-button'>
+            <p id = 'amount-text'>Current balance</p>
+            <span></span>
+        </button>
+        <p id="amount"></p>
+        <a href="/login/dashboard"  border-color="black" class="home"><span>Home</span></a>
+    </div>
+</body>
+</html>
