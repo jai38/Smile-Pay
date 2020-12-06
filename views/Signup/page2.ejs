@@ -7,24 +7,24 @@
     <title>Signup | Bank Details</title>
     <link rel="stylesheet" href="/css/Signup/page2.css" type="text/css">
 </head>
-<body>
+<body onload="checkDetails()">
     <div class="background">
         <div class="backgroundImgFirst"></div>
         <div class="floatBox">
             <h2 class="signupHeading">Bank Details: </h2>
+                    <div class="dropdown">
+                    <button class="dropbtn">Goverment ID</button>
+                    <div class="dropdown-content">
+                        <p><button onclick="displayAadhar();return false;">Aadhar No.</button></p>
+                        <p><button onclick="displayPan();return false;">Pan No. &nbsp; &nbsp; &nbsp;</button></p>
+                    </div>
+                </div>
             <form action="/signup/second" method="POST">
                 <div class="number">
                     <input id='account' type="number" name="account" autocomplete="off" required />
                     <label for="number" class="label-number">
                         <span class="content-number">Account No</span>
                     </label>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Goverment ID</button>
-                    <div class="dropdown-content">
-                        <p><button onclick="displayAadhar();return false;">Aadhar No.</button></p>
-                        <p><button onclick="displayPan();return false;">Pan No. &nbsp; &nbsp; &nbsp;</button></p>
-                    </div>
                 </div>
                 <div id='displayAadhar' class="number2">
                     <input id='aadhar' type="number" name="aadhar" autocomplete="off" required/>
@@ -39,8 +39,9 @@
                         <span class="content-number">PAN No</span>
                     </label>
                 </div>
+                <input id="id" type="text" name="id" style="display: none;">
                 <a href="/signup/first" id="back2" border-color="black" class="back"><span>Back</span></a>
-                <button type="submit" id='submit2' border-color="black" class="next"><span>Next</span></button>
+                <button type="submit" id='submit2' border-color="black" class="next" onclick="getDetails()"><span>Next</span></button>
                 <div id="exist-account" class="alert-box show">
                     Account Already Exists
                     <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>

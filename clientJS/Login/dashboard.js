@@ -2,6 +2,7 @@ function getData() {
     localStorage.setItem("amountDebit",document.getElementById('amount-text').value);
     localStorage.setItem("accountOfRecipient",document.getElementById('account').value);
 }
+localStorage.setItem('retryLeft','3');
 if(localStorage.getItem('loggedInUser')==null || localStorage.getItem('loggedInUser')==""){
     var loggedInUser = JSON.parse(document.getElementById('data').innerHTML);
     localStorage.setItem('loggedInUser',JSON.stringify(loggedInUser));

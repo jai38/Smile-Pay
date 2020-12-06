@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment | Undone</title>
     <link rel="stylesheet" href="/css/Login/paymentUndone.css" type="text/css">
+    <script src="./../../clientJS/Login/paymentUndone.js"></script>
 </head>
 
 <body onload="checkRetryLeft()">
@@ -17,7 +18,11 @@
         </div>
         <img src="/css/images/Login/fail.gif" class="paymentSuccessful" alt="gif">
         <div class="backgroundImgSecond"></div>
-        <a href="/login/face" border-color="black" class="retry"><span>Retry</span></button>
+        <form id="form" action="/login/paymentUndone" method="POST">
+            <input id="accountStatus" type="text" name="accountStatus" id="" style="display: none;">
+            <input id="account" type="text" name="account" style="display: none;">
+        </form>
+        <button onclick="retryLeft()" border-color="black" class="retry"><span>Retry</span></button>
         <a href="/login/payWithPin" class="try-pin">
             <span>Try with Pin</span>
         </a>        

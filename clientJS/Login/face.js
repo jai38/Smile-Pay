@@ -53,6 +53,8 @@ async function capture() {
         const results = faceMatcher.findBestMatch(resizedDetections.descriptor);
         console.log(results.label);
         if(results.label == loadAllDetails.name) {
+            loadAllDetails.totalAmount -= localStorage.getItem('amountDebit');
+            localStorage.setItem('loggedInUser',JSON.stringify(loadAllDetails)); 
             document.getElementById('paymentStatus').value = "done";
         } else {
             document.getElementById('paymentStatus').value = "undone";

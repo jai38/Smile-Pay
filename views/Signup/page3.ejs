@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/Signup/page3.css" type="text/css">
 </head>
 
-<body onload="checkingThirdValues()">
+<body onload="checkDetails()">
     <div class="background">
         <div class="backgroundImgFirst"></div>
         <div class="floatBox">
@@ -39,7 +39,7 @@
                     </label>
                 </div>
                 <a href="/signup/second" border-color="black" class="back"><span>Back</span></a>
-                <button type="submit" id='submit3' border-color="black" class="next">
+                <button type="submit" id='submit3' border-color="black" class="next" onclick="getDetails()">
                     <span><img width="45vw" height="30vh" src="/css/images/Global/camera.png" alt="img"></span>
                 </button>
                 <div id="exist-username" class="alert-box show">
@@ -62,7 +62,7 @@
         </div>
         <div class="backgroundImgSecond"></div>
     </div>
-
+    <script src="./../../clientJS/Signup/page3.js"></script>
 </body>
 
 </html>
