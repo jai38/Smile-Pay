@@ -11,8 +11,8 @@ if(localStorage.getItem('loggedInUser')==null || localStorage.getItem('loggedInU
 console.log(loggedInUser.name);
 let flag = false;
 const totalAmount = loggedInUser.totalAmount;
-document.getElementById('currentAmount').value = totalAmount;
-console.log(document.getElementById('currentAmount').value);
+document.getElementById('currentBalance').value = totalAmount;
+console.log(document.getElementById('currentBalance').value);
 function displayBalance() {
 if(!flag) {
 let amountFormatted = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(totalAmount);
