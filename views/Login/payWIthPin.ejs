@@ -13,15 +13,19 @@
         <div class="backgroundImgFirst"></div>
         <div class="floatBox">
             <h2 class="signupHeading">Try With PIN</h2>
-            <form action="">
+            <form id="form" action="/login/payWithPin" method="POST">
                 <div class="passwordp">
-                    <input id='pin' type="password" pass="pass" autocomplete="off" required />
+                    <input id="paymentStatus" type="text" name="paymentStatus" style="display: none;">
+                    <input id = "accountOfDonor" type="text" name="accountOfDonor" style="display: none;">
+                    <input id="amountDebit" type="text" name="amountDebit" style="display: none;">
+                    <input id="accountOfRecipient" type="text" name="accountOfRecipient" style="display: none;">
+                    <input id='pin' type="password" name="pin" autocomplete="off" required />
                     <label for="pin" class="label-password">
                         <span class="content-password">ENTER PIN</span>
                     </label>
                 </div>
                 <p><strong>PLEASE NOTE:</strong>you can enter PIN only once</p>
-                <a href = "/login/paymentDone" id='pin-btn' class="submit"><span>SUBMIT</span></a>
+                <button id='pin-btn' class="submit" onclick="getPin()"><span>SUBMIT</span></button>
                 <a href="/login/paymentUndone" class="back"><span>BACK</span></a>
                 <div id="alert-pin" class="alert-box show">
                     Pin Should contain only Digits-[0,9]
@@ -31,5 +35,6 @@
         </form>
         <div class="backgroundImgSecond"></div>
     </div>
+    <script src="./../../clientJS/Login/payWithPin.js"></script>
 </body>
 </html>
