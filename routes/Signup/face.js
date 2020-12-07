@@ -22,19 +22,36 @@ router.post('/', (req,res) => {
     var first =JSON.parse(localStorage.get('signupFirst'));
     var second = JSON.parse(localStorage.get('signupSecond'));
     var third = JSON.parse(localStorage.get('signupThird'));
-    const newUser = new User({
-        name: first.name,
-        number: first.number,
-        email: first.email,
-        account: second.account,
-        aadhar: second.aadhar,
-        username: third.username,
-        password: third.password,
-        pin: third.pin,
-        totalAmount: 10000,
-        imgLink: imgLink
-    });
-    newUser.save().then
-    res.render('Signup/sucessfull');
+    if(second.aadhar!=null){
+        const newUser = new User({
+            name: first.name,
+            number: first.number,
+            email: first.email,
+            account: second.account,
+            aadhar: second.aadhar,
+            username: third.username,
+            password: third.password,
+            pin: third.pin,
+            totalAmount: 10000,
+            imgLink: imgLink
+        });
+        newUser.save().then
+        res.render('Signup/sucessfull');
+    } else {
+        const newUser = new User({
+            name: first.name,
+            number: first.number,
+            email: first.email,
+            account: second.account,
+            pan: second.pan,
+            username: third.username,
+            password: third.password,
+            pin: third.pin,
+            totalAmount: 10000,
+            imgLink: imgLink
+        });
+        newUser.save().then
+        res.render('Signup/sucessfull');
+    }
 })
 module.exports = router;
