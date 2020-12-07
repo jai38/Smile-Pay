@@ -15,6 +15,9 @@ router.post('/', (req,res) => {
     if(password!=password2) {
         errors.push({msg: "password didnt match"});
     }
+    if(password.length<8) {
+        errors.push({msg: "password should be minimum 8 characters"});
+    }
     if(errors.length>0) {
         res.render('Signup/page3',{errors,username});
         console.log(errors);
