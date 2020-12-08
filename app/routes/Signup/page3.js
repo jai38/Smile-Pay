@@ -2,7 +2,6 @@ const express = require('express');
 const User = require('../../Models/User');
 const localStorage = require('local-storage');
 const router = express.Router();
-const jsdom = require('jsdom')
 router.get('/',(req,res) => {
     res.render('./Signup/page3');
 })
