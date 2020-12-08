@@ -2,7 +2,7 @@
 const express = require('express');
 // const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
-const faceapi = require('face-api.js');
+// const faceapi = require('face-api.js');
 
 const app = express();
 

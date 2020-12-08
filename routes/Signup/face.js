@@ -1,8 +1,8 @@
 const express = require('express');
-const canvas = require('canvas');
+// const canvas = require('canvas');
 const localStorage = require('local-storage');
 const User = require('../../Models/User');
-const faceapi = require('face-api.js');
+// const faceapi = require('face-api.js');
 const router = express.Router();
 router.get('/',(req,res) => {
     res.render('./Signup/face');
