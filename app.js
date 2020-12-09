@@ -8,7 +8,7 @@ const db = require('./config/keys').MongoURI;
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true}).then(()=>{console.log('MongoDB connected')})
 .catch(err => {console.log(err)});
 
-// app.use(expressLayouts);
+// // app.use(expressLayouts);
 app.set('view engine', 'ejs');
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb'}));
@@ -27,6 +27,6 @@ app.use('/login/recoverPassword',require('./routes/Login/recoverPassword'));
 app.use('/login/face',require('./routes/Login/face'));
 app.use('/login/paymentDone',require('./routes/Login/paymentDone'));
 app.use('/login/paymentUndone',require('./routes/Login/paymentUndone'));
-app.use('/login/payWithPin',require('./routes/Login/payWithPin'));
+// app.use('/login/payWithPin',require('./routes/Login/payWithPin'));
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, console.log(`Server is running on port ${PORT}`));
