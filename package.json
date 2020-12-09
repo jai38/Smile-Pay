@@ -16,7 +16,7 @@
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.17.1",
     "local-storage": "^2.0.0",
-    "mongoose": "^5.11.1",
+    "mongoose": "^5.11.5",
     "node-localstorage": "^2.1.6",
     "nodemon": "^2.0.6"
   }
