@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const { dirname } = require('path');
 
 const app = express();
 
@@ -29,5 +30,4 @@ app.use('/login/paymentDone',require('./routes/Login/paymentDone'));
 app.use('/login/paymentUndone',require('./routes/Login/paymentUndone'));
 app.use('/login/payWithPin',require('./routes/Login/payWithPin'));
 const PORT = process.env.PORT || 3000;
-
 app.listen(PORT, console.log(`Server is running on port ${PORT}`));
