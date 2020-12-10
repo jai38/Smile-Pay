@@ -16,5 +16,14 @@
     "mongoose": "^5.11.5",
     "node-localstorage": "^2.1.6",
     "nodemon": "^2.0.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jai38/SmilePay-Face-Identity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jai38/SmilePay-Face-Identity/issues"
+  },
+  "homepage": "https://github.com/jai38/SmilePay-Face-Identity#readme"
 }
