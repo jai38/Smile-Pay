@@ -6,7 +6,7 @@ var imgDetails = [];
 Promise.all([
     faceapi.nets.tinyFaceDetector.loadFromUri('../modelsFace'),
     faceapi.nets.faceLandmark68Net.loadFromUri('../modelsFace'),
-    faceapi.nets.faceRecognitionNet.loadFromUri('../modelsface'),
+    faceapi.nets.faceRecognitionNet.loadFromUri('../modelsFace'),
     faceapi.nets.ssdMobilenetv1.loadFromUri('../modelsFace')
 ])
 .then(startVideo)
