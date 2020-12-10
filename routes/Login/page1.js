@@ -1,4 +1,5 @@
 const express = require('express');
+const localStorage = require('local-storage');
 const User = require('../../Models/User');
 const router = express.Router();
 
@@ -13,16 +14,20 @@ router.post('/',(req,res) => {
   }
 
   if(errors.length>0) {
-      res.render("Login/page1",{username,password,errors});
+      res.render("Login/page1",{errors,username,password});
   } else User.findOne( {username: username})
   .then(user => {
       if(user){
           if(user.password == password) {
-            res.render("Login/dashboard",{user});
+            localStorage.set("currentUser",JSON.stringify(user));
+            res.redirect(`dashboard?id=${user.id}`);
           } else {
               errors.push({msg: "Incorrect password"});
-              res.render("Login/page1",{username,errors});
+              res.render("Login/page1",{errors,username});
           }
+      } else {
+          errors.push({msg: "no username exists"});
+          res.render("Login/page1",{errors,username});
       }
   })
 })

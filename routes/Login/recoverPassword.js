@@ -14,7 +14,7 @@ router.post('/', (req,res) => {
         // res.render('Login/recoverPassword', {username, password, password2});
     }
     if(errors.length>0) {
-        res.render('Login/recoverPassword');
+        res.render('Login/recoverPassword',{errors});
     }
     if(password == password2) {
     console.log("all correct");
@@ -26,7 +26,7 @@ router.post('/', (req,res) => {
         } else {
             console.log("something")
             errors.push({msg: "password didnt match"});
-            res.render('Login/recoverPassword',{username,password,password2});
+            res.render('Login/recoverPassword',{errors,username,password,password2});
         }
 })
 module.exports = router;

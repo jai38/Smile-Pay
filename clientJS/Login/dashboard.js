@@ -1,3 +1,4 @@
+let flag = false;
 function getData() {
     localStorage.setItem("amountDebit",document.getElementById('amount-text').value);
     localStorage.setItem("accountOfRecipient",document.getElementById('account').value);
@@ -10,7 +11,6 @@ if(localStorage.getItem('loggedInUser')==null || localStorage.getItem('loggedInU
     var loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 }
 console.log(loggedInUser.name);
-let flag = false;
 const totalAmount = loggedInUser.totalAmount;
 document.getElementById('currentBalance').value = totalAmount;
 console.log(document.getElementById('currentBalance').value);

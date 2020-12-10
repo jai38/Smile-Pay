@@ -16,11 +16,11 @@ router.post('/', (req,res) => {
                 res.redirect('recoverPassword');
             } else {
                 errors.push({msg: "pin is incorrect"});
-                res.render('Login/forgetPassword',{username,pin});
+                res.render('Login/forgetPassword',{errors,username,pin});
             }
         } else {
             errors.push({msg: "invalid username"});
-            res.render('Login/forgetPassword');
+            res.render('Login/forgetPassword',{errors});
         }
     })
 })

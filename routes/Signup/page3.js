@@ -19,14 +19,12 @@ router.post('/', (req,res) => {
     }
     if(errors.length>0) {
         res.render('Signup/page3',{errors,username});
-        console.log(errors);
     }
     else User.findOne({username: username})
     .then(user => {
         if(user) {
             errors.push({msg: "Username is already taken"});
             res.render('Signup/page3', {errors,username})
-            console.log(errors + "dont know");
         } 
         else {
             const newUserThird = new User({

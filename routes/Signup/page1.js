@@ -24,8 +24,7 @@ router.post('/', (req,res) => {
     .then(user => {
         if(user) {
             errors.push({msg: "Email or Number is already taken"});
-            res.render('Signup/page1', {errors,name,number,email})
-            console.log(errors + "dont know");
+            res.render('Signup/page1', {errors,name,number,email});
         } else {
             const newUserFirst = new User({
                 name,
@@ -33,10 +32,7 @@ router.post('/', (req,res) => {
                 number
             });
             localStorage.set('signupFirst',JSON.stringify(newUserFirst));
-            // newUser.save()
-            // .then(user => {
-                res.redirect('second');
-            // })
+            res.redirect('second');
         }
     })
 })
