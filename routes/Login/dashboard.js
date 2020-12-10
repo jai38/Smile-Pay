@@ -16,7 +16,6 @@ router.post('/',(req,res) => {
     const {currentBalance, amount, account} = req.body;
     console.log(currentBalance);
     console.log(amount);
-    // res.setHeader('Content-type','text/plain');
     if(parseInt(amount)<=0) {
         errors.push({msg: "amount can not be negative or 0"});
     }
