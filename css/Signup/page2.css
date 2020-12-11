@@ -3,8 +3,8 @@
     display: flex;
     position: absolute;
     font-family: 'Sansita Swashed', cursive;
-    left: 8vw;
-    top: 2vh;
+    left: 10vw;
+    top: 4vh;
     font-size: 5vh;
 }
 .number {
