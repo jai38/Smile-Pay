@@ -59,14 +59,18 @@ button{
     color: #333;
 }
 .close{
-    z-index: 2;
+    z-index: 15;
     font-size: 20px;
-    color: white;
+    color: rgb(14, 13, 13);
     padding: 1vh 1vh;
     cursor: pointer;
     background-color: #3498db;
     display: inline-block;
     border-radius: 0.3vh;
+    border: 2px solid red;
+    position: absolute;
+    left: 20vh;
+    top: 13vh;
 
 }
 .backgroundImgFirst {
