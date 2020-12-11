@@ -3,7 +3,7 @@
     display: flex;
     position: absolute;
     font-family: 'Sansita Swashed', cursive;
-    left: 4vw;
+    left: 5vw;
     top: 30vh;
     font-size: 5vh;
 }
@@ -12,7 +12,7 @@
     width: 12vw;
     position: absolute;
     top: 10vh;
-    left: 40vw;
+    left: 41.5vw;
 }
 .retry{
     position: absolute;
@@ -23,10 +23,10 @@
     text-decoration: none;
     padding: 15px 30px;
     text-transform: uppercase;
-    color: #111;
+    color: rgb(12, 12, 12);
     font-weight: 600;
     font-size: 20px;
-    background-color:rgb(248, 65, 65);
+    background-color:rgb(6, 142, 233);
     z-index: 1;
 }
 .retry::before{
@@ -36,7 +36,7 @@
     left: -2px;
     width: calc(100% + 4px);
     height: calc(100% - 12px);
-    background:rgb(248, 65, 65);
+    background:rgb(6, 142, 233);
     transition: .5s ease-in-out;
     transform: scaleY(1);
 }
@@ -50,7 +50,7 @@
     left: 6px;
     height: calc(100% + 4px);
     width: calc(100% - 12px);
-    background:rgb(248, 65, 65);
+    background:rgb(6, 142, 233);
     transition: .5s ease-in-out;
     transform: scaleX(1);
 }
@@ -73,7 +73,7 @@
     color: #111;
     font-weight: 600;
     font-size: 20px;
-    background-color:rgb(2, 252, 23);
+    background-color:rgb(53, 177, 248);
     z-index: 1;
     text-decoration: none;
 }
@@ -84,7 +84,7 @@
     left: -2px;
     width: calc(100% + 4px);
     height: calc(100% - 12px);
-    background:rgb(2, 252, 23);
+    background:rgb(53, 177, 248);
     transition: .5s ease-in-out;
     transform: scaleY(1);
 }
@@ -98,7 +98,7 @@
     left: 6px;
     height: calc(100% + 4px);
     width: calc(100% - 12px);
-    background:rgb(2, 252, 23);
+    background:rgb(53, 177, 248);
     transition: .5s ease-in-out;
     transform: scaleX(1);
 }
@@ -116,7 +116,7 @@
     position: absolute;
     top: 45vh;
     left: 0vh;
-    background-color: red;
+    background-color: rgba(8, 44, 248, 0.89);
     border: 2px solid black;
     padding: 1vh;
 }

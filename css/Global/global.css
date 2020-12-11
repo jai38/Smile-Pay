@@ -37,7 +37,7 @@ input::-webkit-inner-spin-button {
     z-index: 1;
     background: linear-gradient(to bottom right,rgb(21, 36, 248),rgb(11, 145, 255),rgb(0, 195, 255));
     top: 7vh;
-    right: -5vw;
+    left: 5%;
     height: 85vh;
     width: 35%;
     border-radius: 5vh;
@@ -91,11 +91,10 @@ input::-webkit-inner-spin-button {
     z-index: 3;
 }
 
-
 .next{
     position: absolute;
     top: 70vh;
-    left: 22vw;
+    right: 4vw;
     display: inline-block;
     border: 2px solid black;
     text-decoration: none;
@@ -187,4 +186,20 @@ input::-webkit-inner-spin-button {
 	100%{
 	   transform: translateX(-10px);		
 	}
+}
+@media screen and (max-width:1000px){
+    .floatBox{
+        width: 98%;
+        left: 1%;
+        top:1%;
+        right: 1%;
+        bottom: 1%;
+    }
+    .backgroundImgFirst,.backgroundImgSecond{
+        display:none;
+    }
+    .next{
+        position: absolute;
+        right:5%;
+    }
 }
