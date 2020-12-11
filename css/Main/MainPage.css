@@ -203,12 +203,25 @@
   /* color: white; */
 }
 .smilepay{
-  position: fixed;
+  position: absolute;
   top: 33vh;
   left: 58vh;
   font-size: 150%;
   color:white;
 }
+
+/* @media screen and (max-width : 500px){
+  .smilepay{
+    color: rgb(64, 250, 8);
+    position: absolute;
+    left: 10vh;
+    font: 100%;
+  }
+  .describe{
+    font-size: 5px;
+    color: chartreuse;
+  }
+} */
 /* .line1 {
   position: relative;
   width: 25vw;
@@ -220,4 +233,3 @@
   top: -40vh;
   border-color: rgb(255, 251, 0);
 } */
-

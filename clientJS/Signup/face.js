@@ -49,7 +49,7 @@ data = canvas.toDataURL('image/jpg');
 document.getElementById('imgLink').value = data;
 console.log(document.getElementById('imgLink').value);
 document.getElementById("box").style.display="block";
-// document.getElementById('close').style.display = "block";
+document.getElementById('close').style.display = "block";
 localStorage.setItem('image1',data);
 // document.getElementById('imgCount').innerHTML = "Photos left: " + i.toString();
 // alert('something');
