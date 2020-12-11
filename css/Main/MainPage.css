@@ -38,7 +38,7 @@
 .sideImg {
     position: absolute;
     margin-left: auto;
-    left: 68vh;
+    left: 40%;
     top: 10vh;
     width: 55%;
     height: 67vh;
@@ -216,10 +216,11 @@
     top:1%;
     right: 1%;
     bottom: 1%;
+    border-radius: 0vh;
  }
  .logo{
-   left: 30%;
-   /* right: 50%; */
+   left: 25%; 
+   /* right: 70%; */
  }
   .smilepay{
     position: absolute;
@@ -245,15 +246,7 @@
     left: 37%;
   }
 }
-/* .line1 {
-  position: relative;
-  width: 25vw;
-  height: .5vw;
-  border: solid;
-  border-width: .3vh;
-  border-radius: 0vh;
-  left: 10vh;
-  top: -40vh;
-  border-color: rgb(255, 251, 0);
-} */
 
+@media screen and (max-width: 750px){
+
+}
