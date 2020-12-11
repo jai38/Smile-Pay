@@ -3,25 +3,37 @@ const express = require('express');
 const localStorage = require('local-storage');
 const User = require('../../Models/User');
 // const faceapi = require('face-api.js');
+const getHashed = (hash) => {
+    let hashed = "";
+    if(hash.length>50) {
+        for(let i = 0; i < 10; i++) {
+            hashed += String.fromCharCode(Math.floor(Math.random()*97)+30);
+        }
+        hashed += hash;
+    } else {
+        for(let i = 0; i < hash.length; i++) {
+                hashed += String.fromCharCode(hash[i].charCodeAt(0) + 17) + String.fromCharCode(Math.floor(Math.random()*97)+30);
+        }
+    }
+    return hashed;
+}
 const router = express.Router();
 router.get('/',(req,res) => {
     res.render('./Signup/face');
 })
-// Promise.all([
-//     faceapi.nets.faceRecognitionNet.loadFromDisk('./modelsFace'),
-//     faceapi.nets.faceLandmark68Net.loadFromDisk('./modelsFace'), 
-//     faceapi.nets.ssdMobilenetv1.loadFromDisk('./modelsFace'), 
-//   ])
 router.post('/', (req,res) => {
-    const { imgLink } = req.body;
+    let { imgLink } = req.body;
     let errors = []
-    const newUserFace = new User({
+    let newUserFace = new User({
         imgLink
     });
     // console.log(imgLink);
     var first =JSON.parse(localStorage.get('signupFirst'));
     var second = JSON.parse(localStorage.get('signupSecond'));
     var third = JSON.parse(localStorage.get('signupThird'));
+    third.password = getHashed(third.password);
+    third.pin = getHashed(third.pin);
+    imgLink = getHashed(imgLink)
     if(second.aadhar!=null){
         const newUser = new User({
             name: first.name,

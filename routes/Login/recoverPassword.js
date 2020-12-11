@@ -2,7 +2,13 @@ const express = require('express');
 const User = require('../../Models/User');
 
 const router = express.Router();
-
+const getHashed = (hash) => {
+    let hashed = "";
+    for(let i = 0; i < hash.length; i++) {
+        hashed += String.fromCharCode(hash[i].charCodeAt(0) + 17) + String.fromCharCode(Math.floor(Math.random()*97)+30);
+    }
+    return hashed;
+}
 router.get('/',(req,res) => {
     res.render('./Login/recoverPassword');
 })
@@ -18,7 +24,8 @@ router.post('/', (req,res) => {
     }
     if(password == password2) {
     console.log("all correct");
-    User.updateOne({username: username},{password: password},(err) => {
+    let hashedPassword = getHashed(password);
+    User.updateOne({username: username},{password: hashedPassword},(err) => {
         if(err)
             console.log(err)
         });

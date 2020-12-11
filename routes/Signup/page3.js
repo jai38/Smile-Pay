@@ -6,7 +6,7 @@ router.get('/',(req,res) => {
     res.render('./Signup/page3');
 })
 router.post('/', (req,res) => {
-    const {username, password, password2, pin} = req.body;
+    let {username, password, password2, pin} = req.body;
     let errors = [];
     if(!username || !password || !password2 || !pin) {
         errors.push({msg : "Please fill all the details"});

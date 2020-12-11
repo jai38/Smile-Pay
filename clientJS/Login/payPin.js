@@ -1,8 +1,19 @@
 var loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+const getUnhashed = (hash) => {
+    let unhashed = "";
+    //getUnhashed
+    for(let i = 0; i < hash.length; i++) {
+        if(i%2==0) {
+            unhashed += String.fromCharCode(hash[i].charCodeAt(0)-17);
+        }
+    }
+    return unhashed;
+}
 function getPin() {
     var pin = document.getElementById('pin').value;
     console.log(pin);
-    if(loggedInUser.pin == pin) {
+    let unhashedPin = getUnhashed(loggedInUser.pin);
+    if(unhashedPin == pin) {
         loggedInUser.totalAmount -= localStorage.getItem('amountDebit');
         document.getElementById('paymentStatus').value = "done";
     } else {
