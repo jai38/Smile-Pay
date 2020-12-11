@@ -3,7 +3,7 @@
     display: flex;
     position: absolute;
     font-family: 'Sansita Swashed', cursive;
-    left: 4vw;
+    left: 5vw;
     top: 30vh;
     font-size: 5vh;
 }
@@ -12,7 +12,7 @@
     width: 12vw;
     position: absolute;
     top: 10vh;
-    left: 40vw;
+    left: 41.5vw;
 }
 .retry{
     position: absolute;

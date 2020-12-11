@@ -3,7 +3,7 @@
     display: flex;
     position: absolute;
     font-family: 'Sansita Swashed', cursive;
-    left: 7vw;
+    left: 6.5vw;
     top: 45vh;
     font-size: 5vh;
 }
@@ -12,7 +12,7 @@
     position: absolute;
     width: 15vw;
     top: 18vh;
-    left: 40vw;
+    left: 39.5vw;
 }
 .check-button {
     position: relative; 
@@ -45,7 +45,7 @@
     position: absolute;
     opacity: 0;
     top: -2vh;
-    right: 4vw;
+    right: 3.5vw;
     transition: 0.5s;
   }
   .check-button:hover span {
