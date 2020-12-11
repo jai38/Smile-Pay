@@ -14,6 +14,7 @@
         <div class="floatBox">
             <h2 class="signupHeading">User Details: </h2>
             <form action="/signup/third" method="POST">
+                <%- include('../partials/messages') %> 
                 <div class="signupForm">
                     <input id='username' type="text" name="username" autocomplete="off" required />
                     <label for="username" class="label-name">

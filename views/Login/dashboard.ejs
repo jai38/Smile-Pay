@@ -19,6 +19,7 @@
                 <% } %>
             </p>
             <form action="/login/dashboard" method="POST">
+                <%- include('../partials/messages') %> 
             <input id="currentBalance" type="text" name="currentBalance" style="display:none;">
             <div class="number">
                 <li>

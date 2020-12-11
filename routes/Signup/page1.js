@@ -14,25 +14,33 @@ router.post('/', (req,res) => {
         errors.push({msg : "Please fill all the details"});
     }
     if(number.length!=10) {
-        errors.push({msg: "Mobile number should be of 10 digits"});
+        errors.push({msg: "Please enter valid mobile number(without country code or 0)"});
     }
     if(errors.length>0) {
         res.render('Signup/page1',{errors,name,number,email});
         console.log(errors);
     }
-    else User.findOne({email: email} || {number: number})
+    else User.findOne({email: email})
     .then(user => {
         if(user) {
-            errors.push({msg: "Email or Number is already taken"});
+            errors.push({msg: "Email is already taken"});
             res.render('Signup/page1', {errors,name,number,email});
         } else {
-            const newUserFirst = new User({
-                name,
-                email,
-                number
-            });
-            localStorage.set('signupFirst',JSON.stringify(newUserFirst));
-            res.redirect('second');
+            User.findOne({number: number})
+            .then(user => {
+                if(user) {
+                    errors.push({msg: "Number is already taken"});
+                    res.render('Signup/page1', {errors,name,number,email});
+                } else {
+                    const newUserFirst = new User({
+                        name,
+                        email,
+                        number
+                    });
+                    localStorage.set('signupFirst',JSON.stringify(newUserFirst));
+                    res.redirect('second');
+                }
+            })
         }
     })
 })

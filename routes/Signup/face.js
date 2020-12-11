@@ -43,7 +43,7 @@ router.post('/', (req,res) => {
             number: first.number,
             email: first.email,
             account: second.account,
-            pan: second.pan,
+            pan: second.pan.toUpperCase(),
             username: third.username,
             password: third.password,
             pin: third.pin,

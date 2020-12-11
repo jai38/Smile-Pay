@@ -14,6 +14,7 @@
         <div class="floatBox">
             <h2 class="signupHeading">Try With PIN</h2>
             <form id="form" action="/login/payPin" method="POST">
+                <%- include('../partials/messages') %> 
                 <div class="passwordp">
                     <input id="paymentStatus" type="text" name="paymentStatus" style="display: none;">
                     <input id = "accountOfDonor" type="text" name="accountOfDonor" style="display: none;">

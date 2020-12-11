@@ -13,6 +13,7 @@
     <div class="backgroundImgSecond"></div>
     <h2 class="writing">Please adjust your <br> face in the BlueBox</h2>
     <form id="form" action="/login/face" method="POST">
+        <%- include('../partials/messages') %> 
         <input id="paymentStatus" type="text" name="paymentStatus" style="display: none;">
         <input id = "accountOfDonor" type="text" name="accountOfDonor" style="display: none;">
         <input id="amountDebit" type="text" name="amountDebit" style="display: none;">

@@ -15,6 +15,7 @@
     <div class="backgroundImgSecond"></div>
     <h2 class="writing">Please adjust your <br>face in the BlueBox</h2>
     <form action="/signup/face" method = "POST">
+        <%- include('../partials/messages') %> 
         <input id = 'imgLink' type="text" name="imgLink" style="display: none;">
         <div  id="box" >
             <h1 id = 'imgCount'>Captured Succesfully!</h1>
