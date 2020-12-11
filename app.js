@@ -27,6 +27,6 @@ app.use('/login/recoverPassword',require('./routes/Login/recoverPassword'));
 app.use('/login/face',require('./routes/Login/face'));
 app.use('/login/paymentDone',require('./routes/Login/paymentDone'));
 app.use('/login/paymentUndone',require('./routes/Login/paymentUndone'));
-app.use('/login/payWithPin',require('./routes/Login/paywithPin'));
+app.use('/login/payWithPin',require('./routes/Login/recoverPassword'));
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, console.log(`Server is running on port ${PORT}`));
