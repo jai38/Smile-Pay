@@ -166,7 +166,7 @@
       right: 5vw;
       font-size: 3vh;
   }
-.next{
+/* .next{
     position: absolute;
     top: 68vh;
     left: 22vw;
@@ -211,7 +211,7 @@
 .next span{
     position: relative;
     z-index: 3;
-}
+} */
 .alert-box{
     position: relative;
     top: -12vh;
@@ -221,4 +221,9 @@
     font-size: 22px;
     padding: 2vh;
     color: #ffffff;
+}
+@media screen and (max-width: 1000px){
+    .check-button{
+        font-size: 100%;
+    }
 }

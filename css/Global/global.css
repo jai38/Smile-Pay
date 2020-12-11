@@ -194,6 +194,7 @@ input::-webkit-inner-spin-button {
         top:1%;
         right: 1%;
         bottom: 1%;
+        border-radius: 0vh;
     }
     .backgroundImgFirst,.backgroundImgSecond{
         display:none;
