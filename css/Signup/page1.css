@@ -184,7 +184,7 @@
 .email input:valid + .label-email::after{
     transform: translateX(0%);
 }
-
-/* @media screen and (max-width: 700px){
+ 
+@media screen and (max-width: 700px){
     
-} */
+} 
