@@ -3,7 +3,7 @@ const User = require('../../Models/User');
 const router = express.Router();
 
 router.get('/',(req,res) => {
-    res.render('./Login/payWithPin');
+    res.render('./Login/paywithPin');
 })
 router.post('/', (req,res) => {
     const {paymentStatus,accountOfRecipient,amountDebit,accountOfDonor} = req.body;
