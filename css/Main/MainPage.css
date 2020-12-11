@@ -210,11 +210,6 @@
 }
 
 @media screen and (max-width : 1000px){
-  .smilepay{
-    position: absolute;
-    left: 15%;
-    font: 100%;
-  }
   .floatBox{
     width: 98%;
     left: 1%;
@@ -222,15 +217,32 @@
     right: 1%;
     bottom: 1%;
  }
+ .logo{
+   left: 30%;
+   /* right: 50%; */
+ }
+  .smilepay{
+    position: absolute;
+    left: 43.5%;
+    /* right: 30%; */
+    font: 100%;
+  }
   .describe{
     font-size: 120%;
-    left:8%;
+    left:35%;
+    right: 30%;
   }
   .login{
-    left: 24%;;
+    left: 50%;
+  }
+  .signup{
+    left: 50%;
   }
   .sideImg{
     display: none;
+  }
+  .line{
+    left: 37%;
   }
 }
 /* .line1 {
