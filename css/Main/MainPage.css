@@ -247,6 +247,12 @@
   }
 }
 
-@media screen and (max-width: 750px){
-
-}
+/* @media screen and (max-width: 750px){
+  .background{
+    background-color: white;
+  }
+  .floatBox{
+    background: white;
+    
+  }
+} */

@@ -204,3 +204,12 @@ input::-webkit-inner-spin-button {
         right:5%;
     }
 }
+@media screen and (max-width: 750px){
+    .background{
+      background-color: white;
+    }
+    .floatBox{
+      background: white;  
+    }
+  }
+
