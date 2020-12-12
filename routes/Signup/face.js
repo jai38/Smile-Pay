@@ -5,16 +5,9 @@ const User = require('../../Models/User');
 // const faceapi = require('face-api.js');
 const getHashed = (hash) => {
     let hashed = "";
-    if(hash.length>50) {
-        for(let i = 0; i < 10; i++) {
-            hashed += String.fromCharCode(Math.floor(Math.random()*97)+30);
-        }
-        hashed += hash;
-    } else {
         for(let i = 0; i < hash.length; i++) {
-                hashed += String.fromCharCode(hash[i].charCodeAt(0) + 17) + String.fromCharCode(Math.floor(Math.random()*97)+30);
+                hashed += String.fromCharCode(hash[i].charCodeAt(0) + 17) + String.fromCharCode(Math.floor(Math.random()*85)+40);
         }
-    }
     return hashed;
 }
 const router = express.Router();
@@ -33,7 +26,6 @@ router.post('/', (req,res) => {
     var third = JSON.parse(localStorage.get('signupThird'));
     third.password = getHashed(third.password);
     third.pin = getHashed(third.pin);
-    imgLink = getHashed(imgLink)
     if(second.aadhar!=null){
         const newUser = new User({
             name: first.name,

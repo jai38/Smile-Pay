@@ -7,10 +7,10 @@ var name;
 var displaySize;
 var faceMatcher;
 var detections;
-const getUnhashed = (hash) => {
-    let unhashed = hash.substring(10);
-    return unhashed;
-}
+// const getUnhashed = (hash) => {
+//     let unhashed = hash.substring(10);
+//     return unhashed;
+// }
 Promise.all([
     faceapi.nets.tinyFaceDetector.loadFromUri('../modelsFace'),
     faceapi.nets.faceLandmark68Net.loadFromUri('../modelsFace'),
@@ -79,8 +79,8 @@ function loadLabelImages() {
     return Promise.all(
       labels.map(async label => {
         const descriptions = []
-        const unhashedimg1 = getUnhashed(loadAllDetails.imgLink);
-        const img1 = await faceapi.fetchImage(unhashedimg1);
+        // const unhashedimg1 = getUnhashed(loadAllDetails.imgLink);
+        const img1 = await faceapi.fetchImage(loadAllDetails.imgLink);
         detections = await faceapi.detectSingleFace(img1).withFaceLandmarks().withFaceDescriptor()
         descriptions.push(detections.descriptor);
         console.log(descriptions);
