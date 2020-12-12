@@ -8,7 +8,7 @@
     top: 6vh;
     font-size: 5vh;
 }
-.signupForm {
+.signupForm { 
     width: 65%;
     position: relative;
     top: 20vh;
@@ -29,7 +29,14 @@
 }
 .forgetPassword {
     position: absolute;
-    top:52vh;
+    top:53vh;
+    left: 5vw;
+    cursor: pointer;
+    font-size: 3vh;
+}
+.newAccount{
+    position: absolute;
+    top:58vh;
     left: 5vw;
     color: black;
     cursor: pointer;
