@@ -187,6 +187,9 @@ input::-webkit-inner-spin-button {
 	   transform: translateX(-10px);		
 	}
 }
+input::placeholder{
+    color: transparent;
+}
 @media screen and (max-width:1000px){
     .floatBox{
         width: 98%;
@@ -211,15 +214,96 @@ input::-webkit-inner-spin-button {
     .floatBox{
       background: white;  
     }
+    .text{
+        display: none;
+    }
+    .text label{
+        display: block;
+    }
+    input::placeholder{
+        color:black;
+    }
+    .signupForm label{
+        display: none;
+    }
     input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 10% 0 4% 0;
+        display: inline-block;
+        border: 2.5px solid rgb(7, 7, 7);
+        border-radius: 4px;
+        box-sizing: border-box;
+        /* margin-rit: 10%; */
+      }
+    input[type=text]:focus{
+        border-color: rgb(34, 30, 255);
+        box-shadow:0 0 10px dodgerblue;
+    }
+    .number2 label{
+        display: none;
+    }
+    .number3 label{
+        display: none;
+    }
+    .number label{
+        display: none;
+    }
+    input[type=number], select {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
-        border: 1px solid rgb(7, 7, 7);
+        border: 2.5px solid rgb(7, 7, 7);
         border-radius: 4px;
         box-sizing: border-box;
       }
+    input[type=number]:focus{
+        border-color: rgb(34, 30, 255);
+        box-shadow:0 0 10px dodgerblue;
+    }
+    .email label{
+        display: none;
+    }
+    input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2.5px solid rgb(7, 7, 7);
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition:0.3s;
+      }
+      input[type=email]:focus{
+          border-color: rgb(34, 30, 255);
+          box-shadow:0 0 10px dodgerblue;
+      }
+      .password label{
+          display: none;
+      }
+      .passwordp label{
+          display:none;
+      }
+      .passwordc label{
+          display: none;
+      }
+      input[type=password], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2.5px solid rgb(7, 7, 7);
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+    input[type=password]:focus{
+        border-color: rgb(34, 30, 255);
+        box-shadow:0 0 10px dodgerblue;
+    }
+    .passwordc input::placeholder{
+        font-size: 89%;
+    }
       
   }
 
