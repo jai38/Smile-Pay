@@ -1,5 +1,22 @@
-<% if(typeof errors != 'undefined') { %> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/Global/global.css" type="text/css">
+</head>
+
+<body>
+    <% if(typeof errors != 'undefined') { %>
     <% errors.forEach(function (error) { %>
-            <%= error.msg %> 
-    <% }); %> 
-<% } %> 
+    <div class="alert-box show">
+        <%= error.msg %>
+        <span class="close-alert" onclick="this.parentElement.style.display='none';">&times</span>
+    </div>
+    <% }); %>
+    <% } %>
+</body>
+
+</html>
