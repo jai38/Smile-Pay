@@ -151,15 +151,5 @@
 .number3 input:valid + .label-number::after{
     transform: translateX(0%);
 }
-.alert-box{
-    position: absolute;
-    top: -5vh;
-    left: -9vw;
-    width: 150%;
-    background-color:  rgb(253, 2, 2);
-    font-size: 22px;
-    padding: 2vh;
-    color: #ffffff;
-    display: none;
-}
+
 
