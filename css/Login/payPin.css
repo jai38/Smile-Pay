@@ -31,11 +31,11 @@
 .submit{
     position: absolute;
     top: 62vh;
-    left: 20vw;
+    right: 8%;
     display: inline-block;
     border: 2px solid black;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px 29px;
     text-transform: uppercase;
     color: #111;
     font-weight: 600;
