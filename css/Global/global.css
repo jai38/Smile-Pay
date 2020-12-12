@@ -344,7 +344,7 @@ input::placeholder{
     .text label, .signupForm label, .email label, .number label, .number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
         display: none;
     }    
-    .signupForm , .number, .email, .password, .passwordp, .passwordc, .number2, .number3{
+    .signupForm , .number, .email, .password, .passwordp, .passwordc, .number2, .number3 {
         border: 2.5px solid black;
         /* padding-bottom: 8%; */
         margin:12%;

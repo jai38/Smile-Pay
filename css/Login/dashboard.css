@@ -1,4 +1,5 @@
 @import url("./../Global/global.css");
+@import url("./../Signup/page2.css");
 .signupHeading {
     display: flex;
     position: absolute;
@@ -8,17 +9,15 @@
     font-size: 5vh;
 }
 .number {
-    display: flex;
+    width: 65%;
     position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 30vh;
+    top: 25vh;
     height: -1vh;
     left: 5vw;
-    font-size: 3vh;   
+    font-size: 3vh; 
+    overflow: hidden; 
 }
-.number input{
+/* .number input{
     width: 100%;
     height: 50%;
     color: black;
@@ -51,7 +50,7 @@
     bottom: 1vh;
     left: 0vw;
     transition: all 0.3s ease;
-}
+} */
 .number input:focus + .label-number .content-number,
 .number input:valid + .label-number .content-number
 {
@@ -59,20 +58,21 @@
     font-size: 4vh;
     color: black;
 }
+.number input:focus + .label-number::after,
+.number input:valid + .label-number::after{
+    transform: translateX(0%);
+}
 
-.account {
-    display: flex;
+.number2{
+    width: 65%;
     position: absolute;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 45vh;
+    top: 25vh;
     height: -1vh;
     left: 5vw;
-    font-size: 3vh;
-    
+    font-size: 3vh; 
+    overflow: hidden; 
 }
-.account input{
+/* .account input{
     width: 100%;
     height: 50%;
     color: black;
@@ -106,17 +106,19 @@
     bottom: 1vh;
     left: 0vw;
     transition: all 0.3s ease;
-}
-.account input:focus + .label-account .content-account,
-.account input:valid + .label-account .content-account
+} */
+.number2 input:focus + .label-number .content-number,
+.numbwe2 input:valid + .label-number .content-number
 {
     transform: translateY(-100%);
     font-size: 4vh;
     color: black;
 }
-.forgetPassword {
-    color: black;
+.number2 input:focus + .label-number::after,
+.number2 input:valid + .label-number::after{
+    transform: translateX(0%);
 }
+
 .check-button {
     position: relative;
     border-radius: 4vh;
