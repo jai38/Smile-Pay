@@ -1,5 +1,6 @@
 @import url("./../Global/global.css");
 @import url("./../Signup/page3.css");
+@import url("./../partials/messages.css");
 .signupHeading {
     display: flex;
     position: absolute;
@@ -35,7 +36,7 @@
     cursor: pointer;
     font-size: 3vh;
 }
-.alert-box{
+/* .alert-box{
     position: relative;
     top: -32vh;
     left: -9vw;
@@ -44,4 +45,4 @@
     font-size: 22px;
     padding: 2vh;
     color: #ffffff;
-}
+} */
