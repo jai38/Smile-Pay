@@ -7,7 +7,7 @@ const getUnhashed = (hash) => {
             unhashed += String.fromCharCode(hash[i].charCodeAt(0)-17);
         }
     }
-    return unhashed;
+    return unhashed; 
 }
 function getPin() {
     var pin = document.getElementById('pin').value;
