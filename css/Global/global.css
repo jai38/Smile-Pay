@@ -307,7 +307,8 @@ input::placeholder{
         background-color: white;
       }
       .floatBox{
-        background: rgb(14, 160, 228);  
+        /* background: rgb(14, 160, 228);   */
+        background: linear-gradient(to bottom right,rgb(21, 36, 248),rgb(11, 145, 255),rgb(0, 195, 255));
       }
       .text{
           display: none;
@@ -347,11 +348,17 @@ input::placeholder{
     
     .account, .signupForm , .number, .email, .password, .passwordp, .passwordc,.number2,.number3{
         border: 2.5px solid black;
-        /* padding-bottom: 8%; */
-        margin:12%;
+        margin-top: 2%;
+        /* margin:12%; */
         margin-left:5%;
         width: 100%;  
-        height: 8vh;
+        height: 6vh;
+    }
+    .signupForm{
+        margin-top: 25%;
+    }
+    .passwordc input::placeholder{
+        font-size: 90%;
     }
     .number2, .number3{
         margin-top:20%;
