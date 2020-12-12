@@ -185,60 +185,10 @@ input::-webkit-inner-spin-button {
         transform: translateX(-10px);		
         }
     }
-/* .alert-box{
-    position: relative;
-    top: -46vh;
-    left: -9vw;
-    width: 150%;
-    background-color: rgb(253, 2, 2);
-    font-size: 22px;
-    padding: 2vh;
-    color: #ffffff;
-    display: none;
-}
-.close-alert{
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    right: 2vh;
-    top: 1.2vh;
-}
-.close-alert:hover{
-    color: black;
-}
-.alert-box.show::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom:0;
-	height: 4px;
-	background-color:#f59d29;
-	width: 100%;
-	box-sizing: border-box;
-	z-index: 11;
-}
-
-.alert-box.show{
-	animation: showAlert 1s ease forwards;
-}
-@keyframes showAlert{
-	0%{
-		transform: translateX(100%);
-	}
-	40%{
-		transform: translateX(-15%);
-	}
-	80%{
-	   transform: translateX(0%);	
-	}
-	100%{
-	   transform: translateX(-10px);		
-	}
-} */
 input::placeholder{
     color: transparent;
 }
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
     .floatBox{
         width: 98%;
         left: 1%;
@@ -260,7 +210,7 @@ input::placeholder{
       background-color: white;
     }
     .floatBox{
-      background: white;  
+      background: rgb(14, 160, 228);  
     }
     .text{
         display: none;
@@ -273,7 +223,7 @@ input::placeholder{
     }
     .signupForm label{
         display: none;
-    }
+    }    
     input[type=text], select {
         width: 100%;
         padding: 12px 20px;
@@ -282,8 +232,7 @@ input::placeholder{
         border: 2.5px solid rgb(7, 7, 7);
         border-radius: 4px;
         box-sizing: border-box;
-        /* margin-rit: 10%; */
-      }
+    }
     input[type=text]:focus{
         border-color: rgb(34, 30, 255);
         box-shadow:0 0 10px dodgerblue;
@@ -305,7 +254,7 @@ input::placeholder{
         border: 2.5px solid rgb(7, 7, 7);
         border-radius: 4px;
         box-sizing: border-box;
-      }
+    }
     input[type=number]:focus{
         border-color: rgb(34, 30, 255);
         box-shadow:0 0 10px dodgerblue;
@@ -322,21 +271,21 @@ input::placeholder{
         border-radius: 4px;
         box-sizing: border-box;
         transition:0.3s;
-      }
-      input[type=email]:focus{
+    }
+    input[type=email]:focus{
           border-color: rgb(34, 30, 255);
           box-shadow:0 0 10px dodgerblue;
-      }
-      .password label{
+    }
+    .password label{
           display: none;
-      }
-      .passwordp label{
+    }
+    .passwordp label{
           display:none;
-      }
-      .passwordc label{
+    }
+    .passwordc label{
           display: none;
-      }
-      input[type=password], select {
+    }
+    input[type=password], select {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -344,7 +293,7 @@ input::placeholder{
         border: 2.5px solid rgb(7, 7, 7);
         border-radius: 4px;
         box-sizing: border-box;
-      }
+    }
     input[type=password]:focus{
         border-color: rgb(34, 30, 255);
         box-shadow:0 0 10px dodgerblue;
@@ -352,6 +301,56 @@ input::placeholder{
     .passwordc input::placeholder{
         font-size: 89%;
     }
-      
-  }
+} */
+@media screen and (max-width:750px){
+    .background{
+        background-color: white;
+      }
+      .floatBox{
+        background: rgb(14, 160, 228);  
+      }
+      .text{
+          display: none;
+    }
+    .backgroundImgFirst,.backgroundImgSecond{
+        display:none;
+    }
+    .back{
+        position: absolute;
+        top:82%;
+    }
+    .next{
+        position: absolute;
+        right:5%;
+        top:82%;
+    }
+    .floatBox{
+        width: 98%;
+        height: 98vh;
+        left: 1%;
+        top:1%;
+        right: 1%;
+        bottom: 1%;
+        border-radius: 0vh;
+    }
+    .text label{
+        display: none;
+    }
+    input::placeholder{
+        color:black;
+        padding-top: -50%;
+    }
+    .signupForm label, .email label, .number label, .number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
+        display: none;
+    }    
+    .signupForm , .number, .email, .password, .passwordp, .passwordc, .number2, .number3{
+        border: 2.5px solid black;
+        padding-bottom: 5%;
+        margin:5%;
+        margin-left:5%;
 
+    }
+    input{
+        padding-left: 5%;
+    }
+}
