@@ -63,62 +63,32 @@
     transform: translateX(0%);
 }
 
-.number2{
+.account{
     width: 65%;
     position: absolute;
-    top: 25vh;
+    top: 40vh;
     height: -1vh;
     left: 5vw;
     font-size: 3vh; 
     overflow: hidden; 
-}
-/* .account input{
-    width: 100%;
-    height: 50%;
-    color: black;
-    padding-top: 1.8vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    border-bottom: 3px solid blue;
-}
-
-.account label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0vw;
-    width: 100%;
-    height: 280%;
-    pointer-events: none;
-}
-.account label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.1vh;
-    height: 100%;
-    width: 100%;
 }
 .content-account{
     position: absolute;
     bottom: 1vh;
     left: 0vw;
     transition: all 0.3s ease;
-} */
-.number2 input:focus + .label-number .content-number,
-.numbwe2 input:valid + .label-number .content-number
+}
+.account input:focus + .label-account .content-account,
+.account input:valid + .label-account .content-account
 {
     transform: translateY(-100%);
     font-size: 4vh;
     color: black;
 }
-.number2 input:focus + .label-number::after,
-.number2 input:valid + .label-number::after{
+.account input:focus +.label-account::after,
+.account input:valid + .label-account::after{
     transform: translateX(0%);
 }
-
 .check-button {
     position: relative;
     border-radius: 4vh;
