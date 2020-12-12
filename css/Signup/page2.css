@@ -7,7 +7,7 @@
     top: 4vh;
     font-size: 5vh;
 }
-.number {
+.number1 {
     width: 65%;
     position: relative;
     top: 15vh;
@@ -16,7 +16,7 @@
     font-size: 3vh;
     overflow: hidden;  
 }
-.number input,.number2 input,.number3 input ,.account input{
+.number1 input,.number2 input,.number3 input ,.account input{
     width: 100%;
     height: 50%;
     padding-top: 6vh;
@@ -26,7 +26,7 @@
     font-size: 4vh;
     overflow: auto;
 }
-.number label,.number2 label,.number3 label ,.account label{
+.number1 label,.number2 label,.number3 label ,.account label{
     position: absolute;
     bottom: 0vh;
     left: 0%;
@@ -35,7 +35,7 @@
     pointer-events: none;
     border-bottom: 1px solid black;
 }
-.number label::after,.number2 label::after,.number3 label::after,.account label::after
+.number1 label::after,.number2 label::after,.number3 label::after,.account label::after
 {
     content: "";
     position: absolute;
@@ -53,15 +53,15 @@
     left: 0vw;
     transition: all 0.3s ease;
 }
-.number input:focus + .label-number .content-number,
-.number input:valid + .label-number .content-number
+.number1 input:focus + .label-number .content-number,
+.number1 input:valid + .label-number .content-number
 {
     transform: translateY(-100%);
     font-size: 4vh;
     color: black;
 }
-.number input:focus +.label-number::after,
-.number input:valid + .label-number::after{
+.number1 input:focus +.label-number::after,
+.number1 input:valid + .label-number::after{
     transform: translateX(0%);
 }
 .dropbtn {
