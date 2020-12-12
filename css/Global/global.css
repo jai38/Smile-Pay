@@ -318,12 +318,12 @@ input::placeholder{
     }
     .back{
         position: absolute;
-        top:82%;
+        top:77%;
     }
     .next{
         position: absolute;
         right:5%;
-        top:82%;
+        top:77%;
     }
     .floatBox{
         width: 98%;
@@ -345,13 +345,12 @@ input::placeholder{
     .account label, .text label, .signupForm label, .email label, .number label, .number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
         display: none;
     }    
-    
     .account, .signupForm , .number, .email, .password, .passwordp, .passwordc,.number2,.number3{
         border: 2.5px solid black;
-        margin-top: 2%;
+        margin-top: 4%;
         /* margin:12%; */
         margin-left:5%;
-        width: 100%;  
+        width: 150%;  
         height: 6vh;
     }
     .signupForm{
