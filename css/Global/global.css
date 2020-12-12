@@ -353,4 +353,14 @@ input::placeholder{
     input{
         padding-left: 5%;
     }
+    .alert{
+        position: absolute;
+        top: 1%;
+        left: 8.5%;
+        width: 80%;
+        background-color: rgb(253, 2, 2);
+        font-size: 20px;
+        padding: 2vh;
+        color: #ffffff;
+    }
 }
