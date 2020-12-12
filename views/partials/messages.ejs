@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="/css/Global/global.css" type="text/css">
     <% if(typeof errors != 'undefined') { %>
     <% errors.forEach(function (error) { %>
-    <!-- <div class="alert-box show"> -->
+    <div class="alert show">
         <%= error.msg %>
-        <!-- <span class="close-alert" onclick="this.parentElement.style.display='none';">&times</span> -->
-    <!-- </div> -->
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times</span>
+    </div>
     <% }); %>
     <% } %>
