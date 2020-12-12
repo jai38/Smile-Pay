@@ -30,25 +30,29 @@
 .forgetPassword {
     position: absolute;
     top:53vh;
-    left: 5vw;
+    left: 35%;
     cursor: pointer;
     font-size: 3vh;
+    text-decoration: none;
 }
 .newAccount{
     position: absolute;
-    top:58vh;
-    left: 5vw;
-    color: black;
+    top:62.5vh;
+    left:27%;
     cursor: pointer;
     font-size: 3vh;
 }
-/* .alert-box{
-    position: relative;
-    top: -32vh;
-    left: -9vw;
-    width: 150%;
-    background-color: rgb(253, 2, 2);
-    font-size: 22px;
-    padding: 2vh;
-    color: #ffffff;
-} */
+
+.thinLine{
+    position: absolute;
+    top: 59.5vh;
+    left: 6%;
+    height: 0%;
+    width: 89%;
+    /* border: solid; */
+    border-color: black;
+    border-bottom: 1px ;
+}
+
+ 
+  
