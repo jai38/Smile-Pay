@@ -1,5 +1,5 @@
 @import url("./../Global/global.css");
-@import url("./../Signup/signupPage3.css");
+@import url("./../Signup/page3.css");
 .signupHeading {
     display: flex;
     position: relative;
@@ -10,11 +10,11 @@
 }
 .passwordp {
     width: 65%;
-    position: relative;
+    position: absolute;
     top: 13vh;
     height: -1vh;
     left: 5vw;
-    font-size: 3vh;
+    font-size: 3vh; 
     overflow: hidden;
 }
 .passwordp input:focus + .label-password .content-password,
@@ -24,7 +24,7 @@
     font-size: 4vh;
     color: black;
 }
-.passwordp input:focus +.label-password::after,
+.passwordp input:focus + .label-password::after,
 .passwordp input:valid + .label-password::after{
     transform: translateX(0%);
 }
@@ -90,7 +90,7 @@
 }
 p{
     position: relative;
-    top: 15vh;
-    left: 2vw;
+    top: 22vh;
+    left: 5vw;
     z-index: 3;
 }

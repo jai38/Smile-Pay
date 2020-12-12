@@ -14,12 +14,12 @@
         <div class="floatBox">
             <h2 class="signupHeading">Try With PIN</h2>
             <form id="form" action="/login/payPin" method="POST">
-                <%- include('../partials/messages') %> 
-                    <input id="paymentStatus" type="text" name="paymentStatus" style="display: none;">
-                    <input id = "accountOfDonor" type="text" name="accountOfDonor" style="display: none;">
-                    <input id="amountDebit" type="text" name="amountDebit" style="display: none;">
-                    <input id="accountOfRecipient" type="text" name="accountOfRecipient" style="display: none;">
-                    <div class="passwordp">
+                <%- include('../partials/messages') %>
+                <input id="paymentStatus" type="text" name="paymentStatus" style="display: none;">
+                <input id="accountOfDonor" type="text" name="accountOfDonor" style="display: none;">
+                <input id="amountDebit" type="text" name="amountDebit" style="display: none;">
+                <input id="accountOfRecipient" type="text" name="accountOfRecipient" style="display: none;">
+                <div class="passwordp">
                     <input id='pin' type="password" name="pin" autocomplete="off" required />
                     <label for="pin" class="label-password">
                         <span class="content-password">ENTER PIN</span>
@@ -28,14 +28,11 @@
                 <p><strong>PLEASE NOTE:</strong>you can enter PIN only once</p>
                 <button id='pin-btn' class="submit" onclick="getPin()"><span>SUBMIT</span></button>
                 <a href="/login/paymentUndone" class="back"><span>BACK</span></a>
-                <div id="alert-pin" class="alert-box show">
-                    Pin Should contain only Digits-[0,9]
-                    <span class="close-alert " onclick="this.parentElement.style.display='none';">&times</span>
-                </div>
         </div>
         </form>
         <div class="backgroundImgSecond"></div>
     </div>
     <script src="./../../clientJS/Login/payPin.js"></script>
 </body>
+
 </html>
