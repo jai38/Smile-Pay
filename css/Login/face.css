@@ -10,7 +10,7 @@ body {
 }
 canvas {
     position: absolute;
-    left: 49vh;
+    left: 54vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -31,7 +31,7 @@ canvas {
 }
 button{
     position: absolute;
-    top: 90vh;
+    top: 88vh;
     left: 45vw;
     padding: 4px 20px;
     color:white;
@@ -60,7 +60,7 @@ button{
 .writing{
     color: white;
     position: absolute;
-    top: -2.5vh;
+    top: 0.5vh;
     left: 40vw;
     border:2px solid rgb(255, 0, 0);
     padding: 4px 20px;
