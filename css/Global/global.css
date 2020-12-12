@@ -235,6 +235,9 @@ input::-webkit-inner-spin-button {
 	   transform: translateX(-10px);		
 	}
 } */
+input::placeholder{
+    color: transparent;
+}
 @media screen and (max-width:1000px){
     .floatBox{
         width: 98%;

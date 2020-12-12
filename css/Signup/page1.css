@@ -180,7 +180,7 @@
     font-size: 4vh;
     color: black;
 }
- .email input:focus +.label-email::after,
+.email input:focus +.label-email::after,
 .email input:valid + .label-email::after{
     transform: translateX(0%);
 }
