@@ -347,11 +347,13 @@ input::placeholder{
     
     .account, .signupForm , .number, .email, .password, .passwordp, .passwordc,.number2,.number3{
         border: 2.5px solid black;
-        /* padding-bottom: 8%; */
         margin:12%;
         margin-left:5%;
         width: 100%;  
         height: 8vh;
+    }
+    .passwordc input::placeholder{
+        font-size: 90%;
     }
     .number2, .number3{
         margin-top:20%;
