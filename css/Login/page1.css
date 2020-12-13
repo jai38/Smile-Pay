@@ -1,5 +1,5 @@
-@import url("./../Global/global.css");
 @import url("./../Signup/page3.css");
+@import url("./../Global/global.css");
 .signupHeading {
     display: flex;
     position: absolute;
@@ -47,6 +47,37 @@
     left: 6%;
     height: 0%;
     width: 89%;
-    border-color: black;
-    border-bottom: 1px ;
+    border-color: rgba(0, 0, 0, 0.493);
+    border-bottom: 1px;
+}
+@media screen and (max-width:750px){
+    .signupHeading {
+        position: absolute;
+        top: 14%;
+        left: 37%;
+    }
+    .forgetPassword {
+        position: absolute;
+        left: 26.5vh;
+        top: 54vh;
+    }
+    .thinLine {
+        position: absolute;
+        top: 60.5vh;
+    }
+    .newAccount { 
+        position: absolute;
+        top: 64vh;
+        left: 18vh;
+    }
+    .usernameImg {
+        position: absolute;
+        background-image: url('./../images/Login/user-2-icon.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 28vh;
+        left: 3vh;
+        width: 9%;
+        height: 7%;
+    }
 }
