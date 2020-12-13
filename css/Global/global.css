@@ -264,12 +264,8 @@ input::placeholder{
     .email input{
         top: -6vh;
     }
-    .signupForm:focus{
-        border-color: rgb(255, 56, 30);
-        box-shadow:0 0 10px rgb(255, 30, 169);
-        background-color: black;
-        visibility: visible;
-        z-index: 18;
+    #username2 input, .password input{
+        padding-left: 16%;
     }
     .alert{
         position: absolute;

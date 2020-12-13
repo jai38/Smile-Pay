@@ -73,12 +73,23 @@
     }
     .usernameImg {
         position: absolute;
-        background-image: url('./../images/Login/user-2-icon.png');
+        background-image: url('./../images/Login/username.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        top: 28vh;
-        left: 3vh;
-        width: 9%;
-        height: 7%;
+        top: 10.5%;
+        left: 1.5%;
+        width: 10%;
+        height: 80%;
     }
+    .passwordImg {
+        position: absolute;
+        background-image: url('./../images/Login/password.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 10.5%;
+        left: 1.5%;
+        width: 12%;
+        height: 80%;
+    }
+
 }
