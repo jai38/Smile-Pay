@@ -3,6 +3,9 @@
     margin: 0%;
     padding: 0%;
 }
+.loginMedia{
+  display: none;
+}
 .background {
     display: flex;
     flex-wrap: nowrap;
@@ -218,23 +221,26 @@
     right: 1%;
     bottom: 1%;
     border-radius: 0vh;
+      background: linear-gradient(to top, #527bf5, #a600ff);
+      /* background: linear-gradient(to bottom,rgb(73, 1, 167),rgb(132, 0, 255),rgb(184, 70, 236)); */
+
  }
  .logo{
-   left: -20%; 
+   left: 25%; 
    /* right: 70%; */
  }
   .smilepay{
     position: absolute;
-    left: 7%;
+    left: 30%;
     /* right: 30%; */
     font: 100%;
   }
   .describe{
     position: absolute;
-    top: 20%;
-    left:50%;
+    top: 35%;
+    left:20%;
     /* right: 30%; */
-    font-size: medium;
+    font-size: 120%;
   }
   
   .signup{
@@ -271,5 +277,35 @@
   
   .link_login a:hover + .iconl{
     display: none;
+  }
+  .loginMedia{
+    display: flex;
+    /* background-size: 100% 100%; */
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    width: 73%;
+    height: 9%;
+    border-radius: 4vh;
+    border: solid white;
+    align-items: center;
+    padding: 1%;
+  }
+  .loginMedia a{
+    position: relative;
+    left: 15%;
+    text-decoration: none;
+    color: white;
+  }
+  .loginIcon{
+    position: absolute;
+    left: 75%;
+    width: 20%;
+    height: 75%;
+    border-radius: 80%;
+    border: solid white;
+    /* padding: 1%; */
+    background-image: url(/css/images/Main/login.jpeg);
+    background-size: 100% 100%;
   }
 }
