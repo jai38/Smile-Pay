@@ -24,13 +24,12 @@
     height: -1vh;
     left: 5vw;
     font-size: 3vh;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 .forgetPassword {
     position: absolute;
     top:53vh;
-    left: 35%;
+    left: 32%;
     cursor: pointer;
     font-size: 3vh;
     text-decoration: none;
@@ -42,17 +41,12 @@
     cursor: pointer;
     font-size: 3vh;
 }
-
 .thinLine{
     position: absolute;
     top: 59.5vh;
     left: 6%;
     height: 0%;
     width: 89%;
-    /* border: solid; */
     border-color: black;
     border-bottom: 1px ;
 }
-
- 
-  

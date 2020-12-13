@@ -398,8 +398,11 @@ input::placeholder{
         top: -1%;
         left: 20%;
     }
-    .dropdown-content button :focus{
-        padding: 0vh 0vw;
+    .forgetPassword{
+        position: absolute;
+        margin-left: -5%;
     }
-
+    .newAccount{
+        margin-left: -8%;
+    }
 }
