@@ -21,8 +21,6 @@ canvas {
 #video {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); 
-    /* position: absolute;
-    left: 23vw; */
     padding-right: 16vw;
 }
 #totalImg {
@@ -69,4 +67,9 @@ button{
 #snap:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
+}
+@media screeen and (max-width:1000px){
+    .backgroundImgFirst, .backgroundImgSecond{
+        display: none;
+    }
 }
