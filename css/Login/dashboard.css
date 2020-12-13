@@ -17,6 +17,16 @@
     font-size: 3vh; 
     overflow: hidden; 
 }
+.numberAmount input{
+    width: 100%;
+    height: 50%;
+    padding-top: 6vh;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 4vh;
+    overflow: auto;
+}
 .numberAmount label {
     position: absolute;
     bottom: 0vh;

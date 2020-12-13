@@ -194,8 +194,7 @@ input::placeholder{
         background-color: white;
       }
       .floatBox{
-        background: linear-gradient(to top, #527bf5, #a600ff);
-        /* background: linear-gradient(to bottom,rgb(73, 1, 167),rgb(132, 0, 255),rgb(184, 70, 236)); */
+        background: linear-gradient(to bottom ,rgb(147, 7, 240),rgb(214, 11, 255),rgb(240, 63, 247));
       }
       .text{
         display: none;
@@ -214,11 +213,11 @@ input::placeholder{
     }
     .floatBox{
         width: 98%;
-        height: 98vh;
-        left: 1%;
-        top:1%;
-        right: 1%;
-        bottom: 1%;
+        height: 100vh;
+        left: 0%;
+        top:0%;
+        right: 0%;
+        bottom: 0%;
         border-radius: 0vh;
     }
     input::placeholder{
@@ -259,13 +258,13 @@ input::placeholder{
     .email input{
         top: -6vh;
     }
-    .signupForm:focus{
+    /* .signupForm:focus{
         border-color: rgb(255, 56, 30);
         box-shadow:0 0 10px rgb(255, 30, 169);
         background-color: black;
         visibility: visible;
         z-index: 18;
-    }
+    } */
     .alert{
         position: absolute;
         top: 1%;

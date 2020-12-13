@@ -115,4 +115,19 @@ button{
         position: absolute;
         left:-43%;
     }
+    video{
+        width: 700;
+        height: 500;
+        /* position: absolute;
+        left: 10%; */
+        /* padding-left: 0%; */
+    }
+    #video {
+        padding-right: 50%;
+        padding-top: 30%;
+    }
+    button{
+        /* position: absolute;
+        top: 120%; */
+    }
 }
