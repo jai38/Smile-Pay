@@ -333,29 +333,25 @@ input::placeholder{
         bottom: 1%;
         border-radius: 0vh;
     }
-    .forgetPassword {
-        position: absolute;
-        left: 10vw;
-    }
     input::placeholder{
         color:black;
         padding-top: -50%;
     }
-    .account label, .text label, .signupForm label, .email label, .number label ,.number1 label ,.number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
+    .account label,.numberAmount label, .signupForm label, .email label, .number label ,.number1 label ,.number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
         display: none;
     }    
-    .account, .signupForm , .number, .email, .password, .passwordp, .passwordc, .number1, .number2, .number3{
+    .account,.numberAmount, .signupForm , .number, #acclogin, .email, .password, .passwordp, .passwordc, .number1, .number2, .number3{
         border: 2.5px solid black;
         margin-top: 4%;
         margin-left:5%;
         width: 150%;
         height: 6vh;
     }
-    .signupForm{
+    .signupForm, #username1{
         margin-top: 18%;
     }
-    #username1{
-        margin-top: 18%;
+    #username2{
+        margin-top: 15%;
     }
     .number1{
         margin-top: 10%;
@@ -382,7 +378,6 @@ input::placeholder{
         visibility: visible;
         z-index: 18;
     }
-    
     .alert{
         position: absolute;
         top: 1%;
@@ -399,11 +394,17 @@ input::placeholder{
         left: 20%;
     }
     .forgetPassword {
-        position: absolute;
         margin-left: -19%;
+        color: rgb(35, 20, 61);
+        text-decoration: underline;
     }
     .newAccount { 
         margin-left: -15%;
+        /* color:  rgb(35, 20, 61); */
     }
+    .create{
+        color:  rgb(35, 20, 61);
+    }
+    
 
 }

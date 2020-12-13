@@ -15,7 +15,7 @@
             <h2 class="signupHeading">Login </h2>
             <form action="/login/first" method="POST">
                 <%- include('../partials/messages') %> 
-                <div class="signupForm">
+                <div class="signupForm" id="username2">
                     <input id='username' type="text" name="username" placeholder="Username" autocomplete="off" required />
                     <label for="username" class="label-name">
                         <span class="content-name">Username</span>
@@ -29,7 +29,7 @@
                 </div>
                 <a href="/login/forgetPassword" class="forgetPassword">Forget password?</a>
                 <hr class="thinLine">
-                <span class="newAccount">Don't have account?<a href="/Signup/first">Create one</a></span>
+                <span class="newAccount">Don't have account?<a href="/Signup/first" class="create">Create one</a></span>
                 <a href="/" border-color="black" class="back"><span>Back</span></a>
                 <button type="submit" id="login" border-color="black" class="next"><span>Next</span></button>
             </form>

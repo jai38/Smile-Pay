@@ -8,7 +8,7 @@
     top: 8vh;
     font-size: 5vh;
 }
-.number {
+.numberAmount {
     width: 65%;
     position: absolute;
     top: 25vh;
@@ -17,15 +17,15 @@
     font-size: 3vh; 
     overflow: hidden; 
 }
-.number input:focus + .label-number .content-number,
-.number input:valid + .label-number .content-number
+.numberAmount input:focus + .label-number .content-number,
+.numberAmount input:valid + .label-number .content-number
 {
     transform: translateY(-100%);
     font-size: 4vh;
     color: black;
 }
-.number input:focus + .label-number::after,
-.number input:valid + .label-number::after{
+.numberAmount input:focus + .label-number::after,
+.numberAmount input:valid + .label-number::after{
     transform: translateX(0%);
 }
 
