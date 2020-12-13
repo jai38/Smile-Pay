@@ -398,11 +398,12 @@ input::placeholder{
         top: -1%;
         left: 20%;
     }
-    .forgetPassword{
+    .forgetPassword {
         position: absolute;
-        margin-left: -5%;
+        margin-left: -7%;
     }
-    .newAccount{
-        margin-left: -8%;
+    .newAccount { 
+        margin-left: -15%;
     }
+
 }
