@@ -42,6 +42,7 @@
     font-size: 3vh;
 }
 .thinLine{
+    opacity: 1;
     position: absolute;
     top: 59.5vh;
     left: 6%;

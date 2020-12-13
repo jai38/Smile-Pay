@@ -212,6 +212,7 @@
 @media screen and (max-width : 1000px){
   .floatBox{
     width: 98%;
+    height: 100%;
     left: 1%;
     top:1%;
     right: 1%;
@@ -219,23 +220,23 @@
     border-radius: 0vh;
  }
  .logo{
-   left: 25%; 
+   left: -20%; 
    /* right: 70%; */
  }
   .smilepay{
     position: absolute;
-    left: 43.5%;
+    left: 7%;
     /* right: 30%; */
     font: 100%;
   }
   .describe{
-    font-size: 120%;
-    left:35%;
-    right: 30%;
+    position: absolute;
+    top: 20%;
+    left:50%;
+    /* right: 30%; */
+    font-size: medium;
   }
-  .login{
-    left: 50%;
-  }
+  
   .signup{
     left: 50%;
   }
@@ -245,14 +246,30 @@
   .line{
     left: 37%;
   }
+  .login{
+    display: none;
+  }
+  
+  .link_login{
+    display: none;
+  }
+  
+  .link_login a{
+  display: none;}
+  
+  .iconl{
+    display: none;
+  }
+  
+  .iconl svg{
+    display: none;
+  }
+  
+  .link_login a:hover{
+    display: none;
+  }
+  
+  .link_login a:hover + .iconl{
+    display: none;
+  }
 }
-
-/* @media screen and (max-width: 750px){
-  .background{
-    background-color: white;
-  }
-  .floatBox{
-    background: white;
-    
-  }
-} */
