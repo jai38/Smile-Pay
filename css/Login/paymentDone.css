@@ -3,7 +3,7 @@
     display: flex;
     position: absolute;
     font-family: 'Sansita Swashed', cursive;
-    left: 6.5vw;
+    left: 9vw;
     top: 45vh;
     font-size: 5vh;
 }
@@ -11,8 +11,8 @@
     z-index: 1;
     position: absolute;
     width: 15vw;
-    top: 13vh;
-    left: 40vw;
+    top: 6vh;
+    left: 10vw;
 }
 .check-button {
     position: relative; 
@@ -24,8 +24,8 @@
     text-align: center;
     height: 5vh;
     font-size: 1vw;
-    top: 65vh;
-    left: -25vw;
+    top: 55vh;
+    left: 5vw;
     padding: 1vh;
     width: 10vw;
     transition: all 0.5s;
@@ -68,8 +68,8 @@
   
 .home{
     position: absolute;
-    top: 77vh;
-    left: 43vw;
+    top: 70vh;
+    left: 13vw;
     display: inline-block;
     border: 2px solid black;
     text-decoration: none;
@@ -113,84 +113,83 @@
     position: relative;
     z-index: 3;
 }
-@media screen and (max-width:750px){
-    .signupHeading {
-        position: absolute;
-        left: 13vh;
-        font-size: 4vh;
-    }
-    .paymentSuccessful {
-        z-index: 1;
-        position: absolute;
-        width: 40vw;
-        top: 12vh;
-        left: 17vw;
-    }
-    .check-button {
-        position: relative; 
-        z-index: 1;
-        border-radius: 5vh;
-        background-color: rgb(77, 221, 99);;
-        border: none;
-        color: #0f0c0c;
-        text-align: center;
-        height: 10vh;
-        font-size: 3vw;
-        top: 60vh;
-        left: -65vw;
-        padding: 0vh;
-        width: 35vw;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 1vh;
-        box-shadow: 1vh 1vw 2vh  #203a4e
-    }    
-    .home{
-        position: absolute;
-        top: 77vh;
-        left: 21vw;
-        display: inline-block;
-        border: 2px solid black;
-        text-decoration: none;
-        padding: 15px 30px;
-        text-transform: uppercase;
-        color: #111;
-        font-weight: 600;
-        font-size: 20px;
-        background-color: rgba(101, 75, 247, 0.829);
-        z-index: 1;
-    }
-    .home::before{
-        content: '';
-        position: absolute;
-        top: 6px;
-        left: -2px; 
-        width: calc(100% + 4px);
-        height: calc(100% - 12px);
-        background: rgba(101, 75, 247, 0.829);
-        transition: .5s ease-in-out;
-        transform: scaleY(1);
-    }
-    .home:hover:before{
-        transform: scaleY(0);
-    }
-    .home::after{
-        content: '';
-        position: absolute;
-        top: -2px;
-        left: 6px;
-        height: calc(100% + 4px);
-        width: calc(100% - 12px);
-        background: rgba(101, 75, 247, 0.829);
-        transition: .5s ease-in-out;
-        transform: scaleX(1);
-    }
-    .home:hover:after{
-        transform: scaleX(0);
-    }
-    .home span{
-        position: relative;
-        z-index: 3;
-    }
+@media screen and (max-width:1000px){
+.signupHeading {
+      
+        
+        left: 13%;
+        top: 35%;
+        font-size: 5vh;
+}
+.paymentSuccessful {
+   
+    width: 50%;
+    top: 6%;
+    left: 25%;
+   
+
+}
+.check-button {
+   
+    border-radius: 4vh;
+    background-color: rgb(77, 221, 99);;
+  
+    color: #0f0c0c;
+    text-align: center;
+    height: 7%;
+    font-size: 80%;
+    top: 50%;
+    left: 6%;
+    width: 35%;
+    transition: all 0.5s;
+    
+    
+}   
+.home{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+  
+    border: 2px solid black;
+  
+    text-transform: uppercase;
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+    background-color:rgba(101, 75, 247, 0.829);
+    
+}
+.home::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background:rgba(101, 75, 247, 0.829);
+    transition: .5s ease-in-out;
+    transform: scaleY(1);
+}
+.home:hover:before{
+    transform: scaleY(0);
+}
+.home::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 6px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: rgba(101, 75, 247, 0.829);
+    transition: .5s ease-in-out;
+    transform: scaleX(1);
+}
+.home:hover:after{
+    transform: scaleX(0);
+}
+.home span{
+    position: relative;
+    z-index: 3;
+}
 
 }
