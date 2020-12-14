@@ -11,15 +11,15 @@
         <div class = "backgroundImgFirst"></div>
         <div class="floatBox">
             <h2 class = "signupHeading">Payment Successful!</h2>
-        </div>
+            <button onclick="displayBalance()" class = 'check-button'>
+                <p id = 'amount-text'>Current balance</p>
+                <span></span>
+            </button>
+            <p id="amount"></p>
+            <a href="/"  border-color="black" class="home"><span>Home</span></a>
         <img src="/css/images/Login/Paymentsuccess.gif" class = "paymentSuccessful" alt="gif">
+        </div>
         <div class="backgroundImgSecond"></div>
-        <button onclick="displayBalance()" class = 'check-button'>
-            <p id = 'amount-text'>Current balance</p>
-            <span></span>
-        </button>
-        <p id="amount"></p>
-        <a href="/"  border-color="black" class="home"><span>Home</span></a>
     </div>
     <script src="./../../clientJS/Login/paymentDone.js"></script>
 </body>
