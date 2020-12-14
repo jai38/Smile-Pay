@@ -117,19 +117,21 @@ button{
     .background{
         color: black;
     }
+    video{
+        /* width: 200%;
+        height: 150%; */
+        position: absolute;
+        left: -23.5%;
+        top: 10%;
+        padding-right: 50%;
+        /* padding-top: 30%; */
+    }
     canvas{
         position: absolute;
-        left:-10%;
-        top: 28%;
-    }
-    video{
-        width: 50;
-        height: 50;
-        position: absolute;
-        left: -25%;
-        top: 12%;
-        padding-right: 50%;
-        padding-top: 30%;
+        /* left:-8%;
+        top: 27%; */
+        left: 0vh;
+        top: 5vh;
     }
     
     button{
