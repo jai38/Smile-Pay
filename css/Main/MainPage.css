@@ -251,7 +251,7 @@
   .loginMedia{
     display: flex;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 15%;
     width: 73%;
     height: 9%;
@@ -279,7 +279,7 @@
   .signMedia{
     display: flex;
     position: absolute;
-    top: 80%;
+    top: 79%;
     left: 15%;
     width: 73%;
     height: 9%;
@@ -306,7 +306,7 @@
   }
   .logo{
     position: absolute;
-    top: 5%;
+    top: 0%;
     left: 20%;
     width: 50%;
     height: 70%;
@@ -335,7 +335,7 @@
   .line{
     opacity: 1;
       position: absolute;
-      top: 75.5%;
+      top: 72.5%;
       left: 6%;
       height: 0%;
       width: 89%;
