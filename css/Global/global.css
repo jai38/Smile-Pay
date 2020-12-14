@@ -238,7 +238,7 @@ input::placeholder{
         margin-top: 4%;
         margin-left:11%;
         width: 150%;
-        height: 6vh;
+        height: 8vh;
     }
     .signupForm, #username1{
         margin-top: 18%;
@@ -283,13 +283,12 @@ input::placeholder{
         left: 20%;
     }
     .forgetPassword {
-        margin-left: -19%;
+        margin-left: -20%;
         color: rgb(195, 187, 211);
         text-decoration: underline;
     }
     .newAccount { 
         margin-left: -15%;
-        /* color:  rgb(35, 20, 61); */
     }
     .create{
         color:  rgb(195, 187, 211);

@@ -91,5 +91,15 @@
         width: 12%;
         height: 80%;
     }
+    .loginIcon{
+        position: absolute;
+        background-image: url('./../images/Login/login.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: -100%;
+        left: 15%;
+        width: 70%;
+        height: 120%;
+    }
 
 }
