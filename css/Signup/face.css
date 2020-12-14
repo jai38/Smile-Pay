@@ -113,21 +113,27 @@ button{
     }
     canvas{
         position: absolute;
-        left:-43%;
+        left:-10%;
+        top: 28%;
     }
     video{
-        width: 700;
-        height: 500;
-        /* position: absolute;
-        left: 10%; */
-        /* padding-left: 0%; */
-    }
-    #video {
+        width: 200;
+        height: 250;
+        position: absolute;
+        left: -25%;
+        top: 12%;
         padding-right: 50%;
         padding-top: 30%;
     }
+    
     button{
-        /* position: absolute;
-        top: 120%; */
+        position: absolute;
+        top: 140%;
+        left: 60%;
+    }
+    .writing{
+        position: absolute;
+        left: 40%;
+        right: -20%;
     }
 }
