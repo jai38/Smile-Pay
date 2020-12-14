@@ -117,25 +117,22 @@ button{
     .background{
         color: black;
     }
-    canvas{
-        position: absolute;
-        left:-10%;
-        top: 28%;
-    }
     video{
-        width: 50;
-        height: 50;
         position: absolute;
         left: -25%;
-        top: 12%;
+        top: 27%;
         padding-right: 50%;
-        padding-top: 30%;
+    }
+    canvas{
+        position: absolute;
+        left: 0vh;
+        top: 28vh;
     }
     
     button{
         position: absolute;
-        top: 140%;
-        left: 60%;
+        top: 130%;
+        left: 65%;
     }
     .writing{
         position: absolute;
