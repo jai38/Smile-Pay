@@ -118,26 +118,21 @@ button{
         color: black;
     }
     video{
-        /* width: 200%;
-        height: 150%; */
         position: absolute;
-        left: -23.5%;
-        top: 10%;
+        left: -25%;
+        top: 27%;
         padding-right: 50%;
-        /* padding-top: 30%; */
     }
     canvas{
         position: absolute;
-        /* left:-8%;
-        top: 27%; */
         left: 0vh;
-        top: 5vh;
+        top: 28vh;
     }
     
     button{
         position: absolute;
-        top: 140%;
-        left: 60%;
+        top: 130%;
+        left: 65%;
     }
     .writing{
         position: absolute;
