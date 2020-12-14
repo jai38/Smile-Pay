@@ -6,6 +6,12 @@
 .loginMedia{
   display: none;
 }
+.signMedia{
+  display: none;
+}
+.thinLine{
+  display: none;
+}
 .background {
     display: flex;
     flex-wrap: nowrap;
@@ -48,15 +54,47 @@
     background-image: url(/css/images/Login/sideBlue.png);
     background-size: 100% 100%;
 }
-.logo {
+/* .logo {
     position: absolute;
-    /* margin-top: -70vh; */
-    /* margin-left: 15vh; */
+    margin-top: -70vh;
+    margin-left: 15vh;
     left: 9%;
     width: 30%;
     height: 35vh;
     background-image: url(/css/images/Main/logo1.png);
     background-size: 100% 100%;
+} */
+.logo{
+  position: absolute;
+  top: 2%;
+  left: 8%;
+  width: 50%;
+  height: 70%;
+}
+.icon{
+  position: absolute;
+  left: 10%;
+  width: 40%;
+  height: 70%;
+  top: 0%;
+  background-image: url(/css/images/Main/logo1.png);
+  background-size: 100% 100% ;
+}
+.smilepay{
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  /* width: 50%; */
+  font-size: 140%;
+  color: white;
+}
+.describe{
+  position: absolute;
+  top: 60%;
+  left: 2%;
+  font-size: 130%;
+  color: black;
+
 }
 .login{
   position: absolute;
@@ -128,7 +166,6 @@
   .link_signup{
     position: relative;
   }
-  
   .link_signup a{
     display: block;
     width: 15vw;
@@ -144,7 +181,6 @@
     border: 0.1vh solid  #0f0f0f;
     transition: all .35s;
   }
-  
   .icons{
     width: 8vh;
     height: 8vh;
@@ -156,7 +192,6 @@
     z-index: -1;
     transition: all .35s;
   }
-  
   .icons svg{
     width: 30px;
     position: absolute;
@@ -166,25 +201,21 @@
     fill:  #0f0f0f;
     transition: all .35s;
   }
-  
   .link_signup a:hover{
     width: 15vw;
     border: 0.3vw solid #0f0f0f;
     background: transparent;
     color: #0f0f0f;
   }
-  
   .link_signup a:hover + .icons{
     border: 0.3vw solid #0f0f0f;
     right: -25%;
   }
-
 .line {
     position: absolute;
     width: 25vw;
     height: -1vh;
     border: solid;
-    /* border-width: .3vh; */
     border-radius: 3vh;
     left: 6%;
     top: 63vh;
@@ -199,21 +230,7 @@
     border: transparent;
     color: white;
 }
-.describe{
-  position: absolute;
-  top: 36vh;
-  left: 12vh;
-  font-size: 130%;
-}
-.smilepay{
-  position: absolute;
-  top: 28vh;
-  left: 25vh;
-  font-size: 150%;
-  color:white;
-}
-
-@media screen and (max-width : 1200px){
+@media screen and (max-width : 1000px){
   .floatBox{
     width: 100%;
     height: 100%;
@@ -223,67 +240,18 @@
     bottom: 0%;
     border-radius: 0vh;
       background: linear-gradient(to top, #527bf5, #a600ff);
-      /* background: linear-gradient(to bottom,rgb(73, 1, 167),rgb(132, 0, 255),rgb(184, 70, 236)); */
-
  }
- .logo{
-   left: 35%; 
-   /* right: 70%; */
- }
-  .smilepay{
-    position: absolute;
-    left: 35%;
-    /* right: 30%; */
-    font: 100%;
-  }
-  .describe{
-    position: absolute;
-    top: 35%;
-    left:20%;
-    /* right: 30%; */
-    font-size: 120%;
-  }
-  
   .signup{
     left: 50%;
   }
-  .sideImg{
-    display: none;
-  }
-  .line{
-    left: 37%;
-  }
-  .login{
-    display: none;
-  }
-  
-  .link_login{
-    display: none;
-  }
-  
-  .link_login a{
-  display: none;}
-  
-  .iconl{
-    display: none;
-  }
-  
-  .iconl svg{
-    display: none;
-  }
-  
-  .link_login a:hover{
-    display: none;
-  }
-  
-  .link_login a:hover + .iconl{
+  .sideImg, .login, .link_login, .link_login a, .icon1, .icon1 svg, .link_login a:hover, .link_login a:hover +.signup,
+  .link_signup, .link_signup a, .icons, .icons svg, .link_signup a:hover{
     display: none;
   }
   .loginMedia{
     display: flex;
-    /* background-size: 100% 100%; */
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 15%;
     width: 73%;
     height: 9%;
@@ -305,14 +273,73 @@
     height: 75%;
     border-radius: 80%;
     border: solid white;
-    /* padding: 1%; */
     background-image: url(/css/images/Main/login.jpeg);
     background-size: 100% 100%;
   }
-}
-/* @media screen and (max-width:800px)
-{
-  .logo{
-    left: 20%;
+  .signMedia{
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    width: 73%;
+    height: 9%;
+    border-radius: 4vh;
+    border: solid white;
+    align-items: center;
+    padding: 1%;
   }
-} */
+  .signMedia a{
+    position: relative;
+    left: 15%;
+    text-decoration: none;
+    color: white;
+  }
+  .signIcon{
+    position: absolute;
+    left: 75%;
+    width: 20%;
+    height: 75%;
+    border-radius: 80%;
+    border: solid white;
+    background-image: url(/css/images/Main/login.jpeg);
+    background-size: 100% 100%;
+  }
+  .logo{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 50%;
+    height: 70%;
+  }
+  .icon{
+    position: absolute;
+    left: 10%;
+    top: 0%;
+    width: 100%;
+  }
+  .smilepay{
+    font-size: 120%;
+    position: absolute;
+    width: 80%;
+    left: 35%;
+    
+  }
+  .describe{
+    position: absolute;
+    left: 16%;
+    width: 100%;
+    top: 60%;
+    font-size: 120%;
+    /* right: 0%; */
+  }
+  .line{
+    opacity: 1;
+      position: absolute;
+      top: 75.5%;
+      left: 6%;
+      height: 0%;
+      width: 89%;
+      border-color: rgba(0, 0, 0, 0.493);
+      border-bottom: 1px;
+  }
+}
