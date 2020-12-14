@@ -157,19 +157,19 @@
         /* padding: 80% 50%; */
         left: -4vw;
         width: 67vw;
-        top: 32vh;
+        top: 33vh;
         font-size: 80%;
     }
     .dropdown-content{
         position: absolute;
         width: 67vw;
-        left: -4vw;
+        left: -3vw;
     }
     .dropdown-content button{
         padding: 2vh 23vw;
     }
     .dropdown-content button:hover {
-        transform: scale(1.05);
+        transform: scale(1.08);
         background-color: #f1f1f1;
         border-style: dashed;
       }
