@@ -252,8 +252,6 @@ input::placeholder{
             position: relative;
             z-index: 3;
     }
-
-
     .next{
     position: absolute;
     right:5%;

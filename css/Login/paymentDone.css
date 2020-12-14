@@ -164,7 +164,7 @@
         content: '';
         position: absolute;
         top: 6px;
-        left: -2px;
+        left: -2px; 
         width: calc(100% + 4px);
         height: calc(100% - 12px);
         background: rgba(101, 75, 247, 0.829);
