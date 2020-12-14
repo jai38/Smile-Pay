@@ -54,6 +54,7 @@ button{
     transform: translate(-20%,-50%);
     z-index: 9999;
     padding: 4vh;
+    width: 20%;
     text-align: center;
     display: none;
 }
@@ -75,8 +76,9 @@ button{
     border-radius: 0.3vh;
     border: 2px solid red;
     position: absolute;
-    left: 35%;
+    left: 30%;
     top: 50%;
+    /* width: 50%; */
 
 }
 .backgroundImgFirst {
@@ -137,5 +139,17 @@ button{
         position: absolute;
         left: 30%;
         right: -20%;
+    }
+    .close{
+        position: absolute;
+        top: 55%;
+        width: 50%;
+        left: 20vw;
+    }
+    #box{
+        position: absolute;
+        left: 60vw;
+        width: 80vw;
+
     }
 }
