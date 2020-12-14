@@ -72,4 +72,28 @@ button{
     .backgroundImgFirst, .backgroundImgSecond{
         display: none;
     }
+    .background{
+        color: black;
+    }
+    video{
+        position: absolute;
+        left: -25%;
+        top: 18%;
+        padding-right: 50%;
+    }
+    canvas{
+        position: absolute;
+        left: 0vh;
+        top:19vh;
+    }
+    button{
+        position: absolute;
+        top: 115%;
+        left: 60%;
+    }
+    .writing{
+        position: absolute;
+        left: 30%;
+        right: -20%;
+    }
 }
