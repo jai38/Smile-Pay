@@ -51,7 +51,8 @@
 .logo {
     position: absolute;
     /* margin-top: -70vh; */
-    margin-left: 15vh;
+    /* margin-left: 15vh; */
+    left: 9%;
     width: 30%;
     height: 35vh;
     background-image: url(/css/images/Main/logo1.png);
@@ -212,26 +213,26 @@
   color:white;
 }
 
-@media screen and (max-width : 1000px){
+@media screen and (max-width : 1200px){
   .floatBox{
-    width: 98%;
+    width: 100%;
     height: 100%;
-    left: 1%;
-    top:1%;
-    right: 1%;
-    bottom: 1%;
+    left: 0%;
+    top:0%;
+    right: 0%;
+    bottom: 0%;
     border-radius: 0vh;
       background: linear-gradient(to top, #527bf5, #a600ff);
       /* background: linear-gradient(to bottom,rgb(73, 1, 167),rgb(132, 0, 255),rgb(184, 70, 236)); */
 
  }
  .logo{
-   left: 25%; 
+   left: 35%; 
    /* right: 70%; */
  }
   .smilepay{
     position: absolute;
-    left: 30%;
+    left: 35%;
     /* right: 30%; */
     font: 100%;
   }
@@ -309,3 +310,9 @@
     background-size: 100% 100%;
   }
 }
+/* @media screen and (max-width:800px)
+{
+  .logo{
+    left: 20%;
+  }
+} */
