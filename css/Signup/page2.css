@@ -163,13 +163,15 @@
     .dropdown-content{
         position: absolute;
         width: 67vw;
-        left: -3vw;
+        left: -4vw;
     }
     .dropdown-content button{
         padding: 2vh 23vw;
     }
     .dropdown-content button:hover {
-        transform: scale(1.08);
+        position: absolute;
+        left: 1vw;
+        transform: scale(1.09);
         background-color: #f1f1f1;
         border-style: dashed;
       }
