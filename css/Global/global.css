@@ -189,7 +189,7 @@ input::placeholder{
     color: transparent;
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:1000px){
     .signupHeading {
         position: absolute;
         left: 10vh;
