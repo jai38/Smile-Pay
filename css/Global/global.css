@@ -230,6 +230,16 @@ input::placeholder{
         color:rgba(255, 255, 255, 0.651);
         padding-top: -50%;
     }
+    .alert{
+        position: absolute;
+        top: 1%;
+        left: 8.5%;
+        width: 80%;
+        background-color: rgb(253, 2, 2);
+        font-size: 20px;
+        padding: 2vh;
+        color: #ffffff;
+    }
     .account label,.numberAmount label, .signupForm label, .email label, .number label ,.number1 label ,.number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
         display: none;
     }    
@@ -255,6 +265,9 @@ input::placeholder{
     .number2, .number3{
         margin-top:18%;
     }
+    .numberAmount, #accLogin{
+        margin-top: 15%;
+    }
     input{
         padding: 0vh;
         padding-left: 5%;
@@ -264,18 +277,8 @@ input::placeholder{
     .email input{
         top: -6vh;
     }
-    #username2 input, .password input{
+    #username2 input, #passLogin input{
         padding-left: 16%;
-    }
-    .alert{
-        position: absolute;
-        top: 1%;
-        left: 8.5%;
-        width: 80%;
-        background-color: rgb(253, 2, 2);
-        font-size: 20px;
-        padding: 2vh;
-        color: #ffffff;
     }
     .dropdown {
         position: absolute;
@@ -283,12 +286,12 @@ input::placeholder{
         left: 20%;
     }
     .forgetPassword {
-        margin-left: -20%;
+        margin-left: -25%;
         color: rgb(195, 187, 211);
         text-decoration: underline;
     }
     .newAccount { 
-        margin-left: -15%;
+        margin-left: -18%;
     }
     .create{
         color:  rgb(195, 187, 211);
