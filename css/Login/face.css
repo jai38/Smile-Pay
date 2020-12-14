@@ -68,7 +68,7 @@ button{
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
 }
-@media screeen and (max-width:1000px){
+@media screen and (max-width: 1000px){
     .backgroundImgFirst, .backgroundImgSecond{
         display: none;
     }

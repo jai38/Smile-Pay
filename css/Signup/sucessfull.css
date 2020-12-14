@@ -64,20 +64,20 @@
 @media screen and (max-width: 1000px) {
     .signupHeading{
         position: absolute;
-        left: 10%;
+        left: 15%;
         top: 10%;
-        font-size: 140%;
+        font-size: 170%;
     }
     .thanku {
         position: absolute;
         width: 45%;
         left: 25%;
-        top: 25%;
+        top: 35%;
     }
     .home {
         position: absolute;
         left :30%;
-        top: 60%;
+        top: 70%;
         background-color:rgba(101, 75, 247, 0.829); 
     }
     .home::before{
