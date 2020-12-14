@@ -151,5 +151,8 @@
     .check-button{
         font-size: 100%;
         width: 30%;
+        position: absolute;
+        left: 15%;
     }
+    
 }
