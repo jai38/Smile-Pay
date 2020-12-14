@@ -234,7 +234,7 @@ input::placeholder{
         }
    .back:hover:before{
             transform: scaleY(0);
-        }
+    }
     .back::after{
             content: '';
             position: absolute;
@@ -245,16 +245,16 @@ input::placeholder{
             background: rgba(101, 75, 247, 0.829);
             transition: .5s ease-in-out;
             transform: scaleX(1);
-        }
-        .back:hover:after{
+    }
+    .back:hover:after{
             transform: scaleX(0);
-        }
-        .back span{
+    }
+    .back span{
             position: relative;
             z-index: 3;
-        }
+    }
 
-}
+
     .next{
     position: absolute;
     right:5%;
@@ -269,7 +269,7 @@ input::placeholder{
     font-size: 20px;
     background-color:rgba(101, 75, 247, 0.829);
     }
-    .next::before{
+.next::before{
         content: '';
         position: absolute;
         top: 6px;
@@ -279,11 +279,11 @@ input::placeholder{
         background:rgba(101, 75, 247, 0.829);
         transition: .5s ease-in-out;
         transform: scaleY(1);
-    }
+}
     .next:hover:before{
         transform: scaleY(0);
-    }
-    .next::after{
+}
+.next::after{
         content: '';
         position: absolute;
         top: -2px;
@@ -293,16 +293,16 @@ input::placeholder{
         background:rgba(101, 75, 247, 0.829);
         transition: .5s ease-in-out;
         transform: scaleX(1);
-    }
-    .next:hover:after{
+}
+.next:hover:after{
         transform: scaleX(0);
-    }
-    .next span{
+}
+.next span{
         position: relative;
         z-index: 3;
-    }
+}
 
-    .floatBox{
+.floatBox{
         width: 100%;
         height: 100vh;
         left: 0%;
@@ -310,12 +310,12 @@ input::placeholder{
         right: 0%;
         bottom: 0%;
         border-radius: 0vh;
-    }
-    input::placeholder{
+}
+input::placeholder{
         color:rgba(255, 255, 255, 0.651);
         padding-top: -50%;
-    }
-    .alert{
+}
+.alert{
         position: absolute;
         top: 1%;
         left: 8.5%;
@@ -324,23 +324,23 @@ input::placeholder{
         font-size: 20px;
         padding: 2vh;
         color: #ffffff;
-    }
-    .account label,.numberAmount label, .signupForm label, .email label, .number label ,.number1 label ,.number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
+}
+.account label,.numberAmount label, .signupForm label, .email label, .number label ,.number1 label ,.number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
         display: none;
-    }    
-    .account,.numberAmount, .signupForm , .number, #acclogin, .email, .password, .passwordp, .passwordc, .number1, .number2, .number3{
+}    
+.account,.numberAmount, .signupForm , .number, #acclogin, .email, .password, .passwordp, .passwordc, .number1, .number2, .number3{
         border: 2.5px solid rgb(255, 255, 255);
         margin-top: 4%;
         margin-left:11%;
         width: 150%;
         height: 8vh;
-    }
-    .signupForm, #username1{
+}
+.signupForm, #username1{
         margin-top: 18%;
-    }
-    #username2{
+}
+#username2{
         margin-top: 15%;
-    }
+}
     .number1{
         margin-top: 10%;
     }
@@ -381,4 +381,5 @@ input::placeholder{
     .create{
         color:  rgb(195, 187, 211);
     }
+
 }

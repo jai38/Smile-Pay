@@ -11,8 +11,8 @@
     z-index: 1;
     position: absolute;
     width: 15vw;
-    top: 18vh;
-    left: 39.5vw;
+    top: 13vh;
+    left: 40vw;
 }
 .check-button {
     position: relative; 
@@ -112,4 +112,85 @@
 .home span{
     position: relative;
     z-index: 3;
+}
+@media screen and (max-width:750px){
+    .signupHeading {
+        position: absolute;
+        left: 13vh;
+        font-size: 4vh;
+    }
+    .paymentSuccessful {
+        z-index: 1;
+        position: absolute;
+        width: 40vw;
+        top: 12vh;
+        left: 17vw;
+    }
+    .check-button {
+        position: relative; 
+        z-index: 1;
+        border-radius: 5vh;
+        background-color: rgb(77, 221, 99);;
+        border: none;
+        color: #0f0c0c;
+        text-align: center;
+        height: 10vh;
+        font-size: 3vw;
+        top: 60vh;
+        left: -65vw;
+        padding: 0vh;
+        width: 35vw;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 1vh;
+        box-shadow: 1vh 1vw 2vh  #203a4e
+    }    
+    .home{
+        position: absolute;
+        top: 77vh;
+        left: 21vw;
+        display: inline-block;
+        border: 2px solid black;
+        text-decoration: none;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        color: #111;
+        font-weight: 600;
+        font-size: 20px;
+        background-color: rgba(101, 75, 247, 0.829);
+        z-index: 1;
+    }
+    .home::before{
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% - 12px);
+        background: rgba(101, 75, 247, 0.829);
+        transition: .5s ease-in-out;
+        transform: scaleY(1);
+    }
+    .home:hover:before{
+        transform: scaleY(0);
+    }
+    .home::after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 6px;
+        height: calc(100% + 4px);
+        width: calc(100% - 12px);
+        background: rgba(101, 75, 247, 0.829);
+        transition: .5s ease-in-out;
+        transform: scaleX(1);
+    }
+    .home:hover:after{
+        transform: scaleX(0);
+    }
+    .home span{
+        position: relative;
+        z-index: 3;
+    }
+
 }
