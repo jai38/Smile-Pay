@@ -122,23 +122,22 @@ button{
     video{
         position: absolute;
         left: -25%;
-        top: 27%;
+        top: 18%;
         padding-right: 50%;
     }
     canvas{
         position: absolute;
         left: 0vh;
-        top: 28vh;
+        top:19vh;
     }
-    
     button{
         position: absolute;
-        top: 130%;
-        left: 65%;
+        top: 115%;
+        left: 60%;
     }
     .writing{
         position: absolute;
-        left: 40%;
+        left: 30%;
         right: -20%;
     }
     .close{
