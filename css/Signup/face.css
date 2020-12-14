@@ -47,6 +47,8 @@ button{
     box-shadow: 0 0 20px black;
     border-radius: 2vh;
     position: absolute;
+    box-sizing: border-box;
+    height: 15%;
     top: 50%;
     left: 42%;
     transform: translate(-20%,-50%);
@@ -55,8 +57,12 @@ button{
     text-align: center;
     display: none;
 }
-#box h1{
-    color: #333;
+#box span{
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    font-size: 3vh;
+    color: black;
 }
 .close{
     z-index: 15;
@@ -69,8 +75,8 @@ button{
     border-radius: 0.3vh;
     border: 2px solid red;
     position: absolute;
-    left: 20vh;
-    top: 13vh;
+    left: 35%;
+    top: 50%;
 
 }
 .backgroundImgFirst {
