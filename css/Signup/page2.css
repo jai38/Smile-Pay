@@ -166,11 +166,14 @@
         left: -4vw;
     }
     .dropdown-content button{
+        /* position: relative;
+        left: -3vw; */
         padding: 2vh 23vw;
     }
     .dropdown-content button:hover {
-        /* position: absolute; */
-        /* left: 1vw; */
+        position: relative;
+        left: 0vw;
+        width: 100%;
         transform: scale(1.09);
         background-color: #f1f1f1;
         border-style: dashed;
