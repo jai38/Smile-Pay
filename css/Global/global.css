@@ -197,7 +197,7 @@ input::placeholder{
     }
     .background{
         background-color: white;
-      }
+    }
       .floatBox{
         background: linear-gradient(to top, #527bf5, #a600ff);
         /* background: linear-gradient(to bottom,rgb(73, 1, 167),rgb(132, 0, 255),rgb(184, 70, 236)); */
@@ -211,13 +211,98 @@ input::placeholder{
     .back{
         position: absolute;
         top:77%;
+        display: inline-block;
+        border: 2px solid black;
+        text-decoration: none;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        color: #111;
+        font-weight: 600;
+        font-size: 20px;
+        background-color: rgba(101, 75, 247, 0.829);
     }
-    .next{
+    .back::before{
+        content: '';
         position: absolute;
-        right:5%;
-        top:77%;
+        top: 6px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% - 12px);
+        background:rgba(101, 75, 247, 0.829);
+        transition: .5s ease-in-out;
+        transform: scaleY(1);
+        }
+   .back:hover:before{
+            transform: scaleY(0);
     }
-    .floatBox{
+    .back::after{
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 6px;
+            height: calc(100% + 4px);
+            width: calc(100% - 12px);
+            background: rgba(101, 75, 247, 0.829);
+            transition: .5s ease-in-out;
+            transform: scaleX(1);
+    }
+    .back:hover:after{
+            transform: scaleX(0);
+    }
+    .back span{
+            position: relative;
+            z-index: 3;
+    }
+
+
+    .next{
+    position: absolute;
+    right:5%;
+    top:77%;
+    display: inline-block;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+    background-color:rgba(101, 75, 247, 0.829);
+    }
+.next::before{
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% - 12px);
+        background:rgba(101, 75, 247, 0.829);
+        transition: .5s ease-in-out;
+        transform: scaleY(1);
+}
+    .next:hover:before{
+        transform: scaleY(0);
+}
+.next::after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 6px;
+        height: calc(100% + 4px);
+        width: calc(100% - 12px);
+        background:rgba(101, 75, 247, 0.829);
+        transition: .5s ease-in-out;
+        transform: scaleX(1);
+}
+.next:hover:after{
+        transform: scaleX(0);
+}
+.next span{
+        position: relative;
+        z-index: 3;
+}
+
+.floatBox{
         width: 100%;
         height: 100vh;
         left: 0%;
@@ -225,12 +310,12 @@ input::placeholder{
         right: 0%;
         bottom: 0%;
         border-radius: 0vh;
-    }
-    input::placeholder{
+}
+input::placeholder{
         color:rgba(255, 255, 255, 0.651);
         padding-top: -50%;
-    }
-    .alert{
+}
+.alert{
         position: absolute;
         top: 1%;
         left: 8.5%;
@@ -239,23 +324,23 @@ input::placeholder{
         font-size: 20px;
         padding: 2vh;
         color: #ffffff;
-    }
-    .account label,.numberAmount label, .signupForm label, .email label, .number label ,.number1 label ,.number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
+}
+.account label,.numberAmount label, .signupForm label, .email label, .number label ,.number1 label ,.number2 label, .number3 label, .password label, .passwordc label, .passwordp label{
         display: none;
-    }    
-    .account,.numberAmount, .signupForm , .number, #acclogin, .email, .password, .passwordp, .passwordc, .number1, .number2, .number3{
+}    
+.account,.numberAmount, .signupForm , .number, #acclogin, .email, .password, .passwordp, .passwordc, .number1, .number2, .number3{
         border: 2.5px solid rgb(255, 255, 255);
         margin-top: 4%;
         margin-left:11%;
         width: 150%;
         height: 8vh;
-    }
-    .signupForm, #username1{
+}
+.signupForm, #username1{
         margin-top: 18%;
-    }
-    #username2{
+}
+#username2{
         margin-top: 15%;
-    }
+}
     .number1{
         margin-top: 10%;
     }
@@ -296,4 +381,5 @@ input::placeholder{
     .create{
         color:  rgb(195, 187, 211);
     }
+
 }
