@@ -115,25 +115,18 @@
 }
 @media screen and (max-width:1000px){
 .signupHeading {
-      
-        
-        left: 13%;
-        top: 35%;
-        font-size: 5vh;
+    left: 13%;
+    top: 35%;
+    font-size: 5vh;
 }
 .paymentSuccessful {
-   
     width: 50%;
     top: 6%;
     left: 25%;
-   
-
 }
-.check-button {
-   
+.check-button { 
     border-radius: 4vh;
     background-color: rgb(77, 221, 99);;
-  
     color: #0f0c0c;
     text-align: center;
     height: 7%;
@@ -141,23 +134,18 @@
     top: 50%;
     left: 6%;
     width: 35%;
-    transition: all 0.5s;
-    
-    
+    transition: all 0.5s;   
 }   
 .home{
     position: absolute;
     top: 70%;
-    left: 30%;
-  
-    border: 2px solid black;
-  
+    left: 30%; 
+    border: 2px solid black; 
     text-transform: uppercase;
     color: #111;
     font-weight: 600;
     font-size: 20px;
-    background-color:rgba(101, 75, 247, 0.829);
-    
+    background-color:rgba(101, 75, 247, 0.829);   
 }
 .home::before{
     content: '';
