@@ -124,9 +124,9 @@
     .signupHeading {
         
         position: absolute;
-        left: 30%;
+        left: 27%;
         top: 39%;
-        font-size: 145%;
+        font-size: 155%;
     }
     .paymentSuccessful {
       
@@ -145,7 +145,7 @@
         text-transform: uppercase;
         color: rgb(12, 12, 12);
        
-        font-size: 80%;;
+        font-size: 90%;;
         background-color:rgba(101, 75, 247, 0.829);
        
     }
@@ -170,8 +170,9 @@
         
         text-transform: uppercase;
         color: #111;
+        text-align: center;
      
-        font-size: 70%;
+        font-size: 80%;
         background-color:rgba(101, 75, 247, 0.829);
        
     }
