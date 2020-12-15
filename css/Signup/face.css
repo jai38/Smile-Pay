@@ -127,8 +127,8 @@ button{
     }
     canvas{
         position: absolute;
-        left: 2vh;
-        top:15vh;
+        left: 10vh;
+        top:12vh;
     }
     button{
         position: absolute;
