@@ -55,12 +55,12 @@ router.post('/',async (req,res) => {
         }
     });
     if(id == 1 && aadhar == "000000000000"){
-        errors.push({msg: "please select pan card"});
+        errors.push({msg: "Please select pan card"});
         res.render('Signup/page2',{errors,account,aadhar,pan,id});
         res.end()
     }
     else if(id == 2 && pan == "0000000000"){
-        errors.push({msg: "please select aadhar card"});
+        errors.push({msg: "Please select aadhar card"});
         res.render('Signup/page2',{errors,account,aadhar,pan,id});
         res.end()
     }

@@ -22,10 +22,10 @@ router.post('/',(req,res) => {
 
     // res.setHeader('Content-type','text/plain');
     if(parseInt(amount)<=0) {
-        errors.push({msg: "amount can not be negative or 0"});
+        errors.push({msg: "Amount can not be negative or 0"});
     }
     if(parseInt(currentBalance)<parseInt(amount)) {
-        errors.push({msg: "insufficant balance"});
+        errors.push({msg: "Insufficant balance"});
     }
     if(errors.length>0) {
         // for(let i = 0; i < errors.length; i++)
@@ -38,7 +38,7 @@ router.post('/',(req,res) => {
         if(user) {
             res.render("Login/face");
         } else {
-            errors.push({msg: "account number doesnt exists"});
+            errors.push({msg: "Account number doesn't exists"});
             // for(let i = 0; i < errors.length; i++)
             // res.send(errors[0])
             // res.redirect('dashboard');

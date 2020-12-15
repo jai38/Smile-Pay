@@ -36,7 +36,7 @@ router.post('/',(req,res) => {
               res.render("Login/page1",{errors,username});
           }
       } else {
-          errors.push({msg: "no username exists"});
+          errors.push({msg: "No username exists"});
           res.render("Login/page1",{errors,username});
       }
   })

@@ -25,11 +25,11 @@ router.post('/', (req,res) => {
             if(unhashedPin == pin) {
                 res.redirect('recoverPassword');
             } else {
-                errors.push({msg: "pin is incorrect"});
+                errors.push({msg: "Pin is incorrect"});
                 res.render('Login/forgetPassword',{errors,username,pin});
             }
         } else {
-            errors.push({msg: "invalid username"});
+            errors.push({msg: "Invalid username"});
             res.render('Login/forgetPassword',{errors});
         }
     })
