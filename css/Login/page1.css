@@ -51,7 +51,7 @@
     border-color: rgba(0, 0, 0, 0.493);
     border-bottom: 1px;
 }
-@media screen and (max-width:750px){
+@media screen and (max-width:1000px){
     .signupHeading {
         position: absolute;
         top: 14%;

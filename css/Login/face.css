@@ -83,17 +83,28 @@ button{
     }
     canvas{
         position: absolute;
-        left: 0vh;
-        top:19vh;
+        left: 10vh;
+        top:12vh;
     }
     button{
         position: absolute;
-        top: 115%;
+        top: 100%;
         left: 60%;
     }
     .writing{
         position: absolute;
         left: 30%;
         right: -20%;
+    }
+    .close{
+        position: absolute;
+        top: 55%;
+        width: 50%;
+        left: 20vw;
+    }
+    #box{
+        position: absolute;
+        left: 60vw;
+        width: 80vw;
     }
 }
