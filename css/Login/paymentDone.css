@@ -44,7 +44,7 @@
     content: '\00bb';
     position: absolute;
     opacity: 0;
-    top: -2vh;
+    top: -1.5vh;
     right: 3.5vw;
     transition: 0.5s;
   }
@@ -129,7 +129,7 @@
     background-color: rgb(77, 221, 99);;
     color: #0f0c0c;
     text-align: center;
-    height: 7%;
+    height: 5%;
     font-size: 80%;
     top: 50%;
     left: 6%;
@@ -138,7 +138,7 @@
 }   
 .home{
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 35%; 
     font-size: 20px;
     background-color:rgba(101, 75, 247, 0.829);   
@@ -162,8 +162,8 @@
 #amount {
   
     position: absolute;
-    top: 55%;
-    left: 50%;
+    top: 53%;
+    left: 60%;
     font-size: 3vh;
   }
 
