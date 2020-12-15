@@ -131,7 +131,7 @@
     text-align: center;
     height: 5%;
     font-size: 80%;
-    top: 60%;
+    top: 55%;
     left: 6%;
     width: 35%;
     
@@ -162,7 +162,7 @@
 #amount {
   
     position: absolute;
-    top: 60%;
+    top: 57%;
     left: 60%;
     font-size: 3vh;
   }
