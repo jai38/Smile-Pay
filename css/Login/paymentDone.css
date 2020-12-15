@@ -139,7 +139,7 @@
 .home{
     position: absolute;
     top: 70%;
-    left: 30%; 
+    left: 35%; 
     font-size: 20px;
     background-color:rgba(101, 75, 247, 0.829);   
 }
@@ -159,6 +159,14 @@
     background: rgba(101, 75, 247, 0.829);
     
 }
+#amount {
+  
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size: 3vh;
+  }
+
 
 
 }
