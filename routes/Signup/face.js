@@ -57,5 +57,6 @@ router.post('/', (req,res) => {
         newUser.save().then
         res.render('Signup/sucessfull');
     }
+    res.render('Signup/sucessfull');
 })
 module.exports = router;
