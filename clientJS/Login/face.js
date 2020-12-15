@@ -32,7 +32,7 @@ video.addEventListener('play',async () => {
     }
     canvas = faceapi.createCanvasFromMedia(video)
     document.body.append(canvas)
-    displaySize = { width: video.width, height: video.height}
+    displaySize = { width: canvas.width, height: canvas.height}
     faceapi.matchDimensions(canvas, displaySize)
     const labeledFaceDescriptors = await loadLabelImages();
     faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, 0.6);
