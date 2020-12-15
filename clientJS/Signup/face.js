@@ -31,7 +31,7 @@ video.addEventListener('play', () => {
     }
     canvas = faceapi.createCanvasFromMedia(video)
     document.body.append(canvas)
-    const displaySize = { width: video.width, height: video.height}
+    const displaySize = { width: canvas.width, height: canvas.height}
     faceapi.matchDimensions(canvas, displaySize)
     setInterval(async () => {
         const detections = await faceapi.detectAllFaces(video,
