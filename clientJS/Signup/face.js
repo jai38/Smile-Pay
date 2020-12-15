@@ -53,7 +53,7 @@ async function capture() {
     document.getElementById('email').value = firstDetails.email;
     document.getElementById('account').value = secondDetails.account;
     document.getElementById('aadhar').value = secondDetails.aadhar;
-    document.getElementById('pan').value = secondDetails.pad;
+    document.getElementById('pan').value = secondDetails.pan;
     document.getElementById('username').value = thirdDetails.username;
     document.getElementById('password').value = thirdDetails.password;
     document.getElementById('pin').value = thirdDetails.pin;
