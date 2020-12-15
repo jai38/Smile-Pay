@@ -64,7 +64,7 @@
 @media screen and (max-width: 1000px) {
     .signupHeading{
         position: absolute;
-        left: 20%;
+        left: 17%;
         top: 10%;
         font-size: 200%;
     }
@@ -72,7 +72,7 @@
         position: absolute;
         width: 45%;
         left: 25%;
-        top: 32%;
+        top: 30%;
     }
     .home {
         position: absolute;
