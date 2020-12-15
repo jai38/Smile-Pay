@@ -59,7 +59,7 @@
     }
     .forgetPassword {
         position: absolute;
-        left: 29.5%;
+        left: 26%;
         top: 58%;
     }
     .thinLine {
@@ -69,7 +69,7 @@
     .newAccount { 
         position: absolute;
         top: 66%;
-        left: 35%;
+        left: 38%;
         font-size: 115%;
     }
     .usernameImg {
