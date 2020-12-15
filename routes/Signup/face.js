@@ -15,27 +15,24 @@ router.get('/',(req,res) => {
     res.render('./Signup/face');
 })
 router.post('/', (req,res) => {
-    let { imgLink } = req.body;
+    let {name, email, number, account, aadhar, pan, username, password, pin, imgLink } = req.body;
     let errors = []
     let newUserFace = new User({
         imgLink
     });
     // console.log(imgLink);
-    var first =JSON.parse(localStorage.get('signupFirst'));
-    var second = JSON.parse(localStorage.get('signupSecond'));
-    var third = JSON.parse(localStorage.get('signupThird'));
-    third.password = getHashed(third.password);
-    third.pin = getHashed(third.pin);
-    if(second.aadhar!=null){
+    password = getHashed(password);
+    pin = getHashed(pin);
+    if(aadhar!='000000000000'){
         const newUser = new User({
-            name: first.name,
-            number: first.number,
-            email: first.email,
-            account: second.account,
-            aadhar: second.aadhar,
-            username: third.username,
-            password: third.password,
-            pin: third.pin,
+            name: name,
+            number: number,
+            email: email,
+            account: account,
+            aadhar: aadhar,
+            username: username,
+            password: password,
+            pin: pin,
             totalAmount: 10000,
             imgLink: imgLink
         });
@@ -43,14 +40,14 @@ router.post('/', (req,res) => {
         res.render('Signup/sucessfull');
     } else {
         const newUser = new User({
-            name: first.name,
-            number: first.number,
-            email: first.email,
-            account: second.account,
-            pan: second.pan.toUpperCase(),
-            username: third.username,
-            password: third.password,
-            pin: third.pin,
+            name: name,
+            number: number,
+            email: email,
+            account: account,
+            pan: pan.toUpperCase(),
+            username: username,
+            password: password,
+            pin: pin,
             totalAmount: 10000,
             imgLink: imgLink
         });

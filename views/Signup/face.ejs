@@ -16,6 +16,15 @@
     <h2 class="writing">Please adjust your <br>face in the BlueBox</h2>
     <form action="/signup/face" method = "POST">
         <%- include('../partials/messages') %> 
+        <input id = "name" type="text" name="name" style="display: none;">
+        <input id = "number" type="number" name="number" style="display: none;">
+        <input id = "email" type="email" name="email" style="display: none;">
+        <input id = "account" type="number" name="account" style="display: none;">
+        <input id = "aadhar" type="number" name="aadhar" style="display: none;">
+        <input id = "pan" type="text" name="pan" style="display: none;">
+        <input id = "username" type="text" name="username" style="display: none;">
+        <input id = "password" type="password" name="password" style="display: none;">
+        <input id = "pin" type="password" name="pin" style="display: none;">
         <input id = 'imgLink' type="text" name="imgLink" style="display: none;">
         <div  id="box" >
             <span id = 'imgCount'> Captured Succesfully!</span>

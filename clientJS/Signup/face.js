@@ -42,6 +42,21 @@ video.addEventListener('play', () => {
     }, 100)
 })
 async function capture() {
+    var firstDetails = JSON.parse(localStorage.getItem('firstDetails'));
+    var secondDetails = JSON.parse(localStorage.getItem('secondDetails'));
+    var thirdDetails = JSON.parse(localStorage.getItem('thirdDetails'));
+    console.log(firstDetails)
+    console.log(secondDetails)
+    console.log(thirdDetails)
+    document.getElementById('name').value = firstDetails.name;
+    document.getElementById('number').value = firstDetails.number;
+    document.getElementById('email').value = firstDetails.email;
+    document.getElementById('account').value = secondDetails.account;
+    document.getElementById('aadhar').value = secondDetails.aadhar;
+    document.getElementById('pan').value = secondDetails.pad;
+    document.getElementById('username').value = thirdDetails.username;
+    document.getElementById('password').value = thirdDetails.password;
+    document.getElementById('pin').value = thirdDetails.pin;
 canvas = faceapi.createCanvasFromMedia(video)
 var context = canvas.getContext('2d');
 data = canvas.toDataURL('image/jpg');

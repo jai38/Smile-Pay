@@ -70,14 +70,14 @@ router.post('/',async (req,res) => {
                 account,
                 aadhar
             });
-            localStorage.set('signupSecond',JSON.stringify(newUserSecond));
+            // localStorage.set('signupSecond',JSON.stringify(newUserSecond));
         }
         else {
             const newUserSecond = new User({
                 account,
                 pan
             });
-            localStorage.set('signupSecond',JSON.stringify(newUserSecond));
+            // localStorage.set('signupSecond',JSON.stringify(newUserSecond));
         }
         if(errors.length==0)
         res.redirect('third');

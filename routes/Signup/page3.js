@@ -32,7 +32,7 @@ router.post('/', (req,res) => {
                 password,
                 pin
             });
-            localStorage.set('signupThird',JSON.stringify(newUserThird));
+            // localStorage.set('signupThird',JSON.stringify(newUserThird));
             // newUser.save()
             res.redirect('face');
         }

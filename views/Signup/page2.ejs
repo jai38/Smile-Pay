@@ -21,6 +21,9 @@
                 </div>
             <form action="/signup/second" method="POST">
                 <%- include('../partials/messages') %> 
+                <input type="text" name="name" style="display: none;">
+                <input type="number" name="number" style="display: none;">
+                <input type="email" name="email" style="display: none;">
                 <div class="number1">
                     <input id='account' type="number" name="account" placeholder="Account No." autocomplete="off" required />
                     <label for="number" class="label-number">

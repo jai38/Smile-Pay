@@ -15,6 +15,12 @@
             <h2 class="signupHeading">User Details: </h2>
             <form action="/signup/third" method="POST">
                 <%- include('../partials/messages') %> 
+                <input type="text" name="name" style="display: none;">
+                <input type="number" name="number" style="display: none;">
+                <input type="email" name="email" style="display: none;">
+                <input type="number" name="account" style="display: none;">
+                <input type="number" name="aadhar" style="display: none;">
+                <input type="text" name="pan" style="display: none;">
                 <div class="signupForm" id="username1">
                     <input id='username' type="text" name="username" placeholder="Username" autocomplete="off" required />
                     <label for="username" class="label-name">
