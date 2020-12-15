@@ -59,17 +59,18 @@
     }
     .forgetPassword {
         position: absolute;
-        left: 26.5vh;
-        top: 54vh;
+        left: 29.5%;
+        top: 58%;
     }
     .thinLine {
         position: absolute;
-        top: 60.5vh;
+        top: 63.5%;
     }
     .newAccount { 
         position: absolute;
-        top: 64vh;
-        left: 18vh;
+        top: 66%;
+        left: 30%;
+        font-size: 105%;
     }
     .usernameImg {
         position: absolute;
