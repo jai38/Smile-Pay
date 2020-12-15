@@ -124,9 +124,9 @@
     .signupHeading {
         
         position: absolute;
-        left: 17%;
+        left: 20%;
         top: 39%;
-        font-size: 115%;
+        font-size: 125%;
     }
     .paymentSuccessful {
       
@@ -137,7 +137,7 @@
     }
     .retry{
         position: absolute;
-        top: 70%;
+        top: 90%;
         left: 8%;
         display: inline-block;
         border: 2px solid black;
@@ -162,7 +162,7 @@
     }
     .try-pin{
         position: absolute;
-        top: 70%;
+        top: 90%;
         /* left: 48%; */
         right: 8%;
         display: inline-block;

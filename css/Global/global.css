@@ -210,95 +210,31 @@ input::placeholder{
     .back {
         position: absolute;
         top:77%;
-        display: inline-block;
-        border: 2px solid black;
-        text-decoration: none;
-        padding: 15px 30px;
-        text-transform: uppercase;
-        color: #111;
-        font-weight: 600;
         font-size: 20px;
         background-color: rgba(101, 75, 247, 0.829);
     }
     .back::before{
-        content: '';
-        position: absolute;
-        top: 6px;
-        left: -2px;
-        width: calc(100% + 4px);
-        height: calc(100% - 12px);
         background:rgba(101, 75, 247, 0.829);
-        transition: .5s ease-in-out;
-        transform: scaleY(1);
-        }
-   .back:hover:before{
-            transform: scaleY(0);
     }
     .back::after{
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: 6px;
-            height: calc(100% + 4px);
-            width: calc(100% - 12px);
             background: rgba(101, 75, 247, 0.829);
-            transition: .5s ease-in-out;
-            transform: scaleX(1);
     }
-    .back:hover:after{
-            transform: scaleX(0);
-    }
-    .back span{
-            position: relative;
-            z-index: 3;
-    }
-    .next{
+   .next{
     position: absolute;
     right:5%;
     top:77%;
-    display: inline-block;
-    border: 2px solid black;
-    text-decoration: none;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    color: #111;
-    font-weight: 600;
     font-size: 20px;
     background-color:rgba(101, 75, 247, 0.829);
     }
     .next::before{
-        content: '';
-        position: absolute;
-        top: 6px;
-        left: -2px;
-        width: calc(100% + 4px);
-        height: calc(100% - 12px);
         background:rgba(101, 75, 247, 0.829);
-        transition: .5s ease-in-out;
-        transform: scaleY(1);
     }
     .next:hover:before{
         transform: scaleY(0);
     }
     .next::after{
-        content: '';
-        position: absolute;
-        top: -2px;
-        left: 6px;
-        height: calc(100% + 4px);
-        width: calc(100% - 12px);
-        background:rgba(101, 75, 247, 0.829);
-        transition: .5s ease-in-out;
-        transform: scaleX(1);
+       background:rgba(101, 75, 247, 0.829);
     }
-    .next:hover:after{
-        transform: scaleX(0);
-    }
-    .next span{
-        position: relative;
-        z-index: 3;
-    }
-
     .floatBox{
         width: 100%;
         height: 100vh;
