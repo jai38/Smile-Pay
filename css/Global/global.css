@@ -272,7 +272,7 @@ input::placeholder{
         margin-top: 18%;
     }
     #username2{
-        margin-top: 15%;
+        margin-top: 13%;
     }
     .number1{
         margin-top: 10%;
@@ -304,7 +304,9 @@ input::placeholder{
         left: 20%;
     }
     .forgetPassword {
-        margin-left: -28%;
+        /* margin-left: -28%; */
+        position: absolute;
+        left: 28%;
         color: rgb(195, 187, 211);
         text-decoration: underline;
     }

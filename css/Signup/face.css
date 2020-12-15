@@ -10,7 +10,7 @@ body {
 }
 canvas {
     position: absolute;
-    left: 54vh;
+    left: 60vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -127,12 +127,12 @@ button{
     }
     canvas{
         position: absolute;
-        left: 0vh;
-        top:19vh;
+        left: 10vh;
+        top:12vh;
     }
     button{
         position: absolute;
-        top: 115%;
+        top: 100%;
         left: 60%;
     }
     .writing{
