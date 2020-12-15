@@ -39,7 +39,7 @@ router.post('/', (req,res) => {
                         email,
                         number
                     });
-                    localStorage.set('signupFirst',JSON.stringify(newUserFirst));
+                    // localStorage.set('signupFirst',JSON.stringify(newUserFirst));
                     res.redirect('second');
                 }
             })
