@@ -28,7 +28,7 @@
 .passwordp input:valid + .label-password::after{
     transform: translateX(0%);
 }
-.submit{
+.next{
     position: absolute;
     top: 62vh;
     right: 8%;
@@ -42,7 +42,7 @@
     font-size: 20px;
     background-color:rgb(0, 195, 255);
 }
-.submit::before{
+.next::before{
     content: '';
     position: absolute;
     top: 6px;
@@ -53,10 +53,10 @@
     transition: .5s ease-in-out;
     transform: scaleY(1);
 }
-.submit:hover:before{
+.next:hover:before{
     transform: scaleY(0);
 }
-.submit::after{
+.next::after{
     content: '';
     position: absolute;
     top: -2px;
@@ -67,10 +67,10 @@
     transition: .5s ease-in-out;
     transform: scaleX(1);
 }
-.submit:hover:after{
+.next:hover:after{
     transform: scaleX(0);
 }
-.submit span{
+.next span{
     position: relative;
     z-index: 3;  
 }
@@ -93,4 +93,31 @@ p{
     top: 22vh;
     left: 5vw;
     z-index: 3;
+}
+@media screen and (max-width:1000px){
+    .signupHeading {
+        position: absolute;
+        left: 17%;
+    }
+    .passwordp {
+        position: absolute;
+        top: 15%;
+    }
+    .next {
+        background-color: rgba(101, 75, 247, 0.829);
+    }
+    .next::before {
+        background:rgba(101, 75, 247, 0.829);
+    }
+    .next::after {
+        background:rgba(101, 75, 247, 0.829);
+    }
+    .back {
+        background-color: rgba(101, 75, 247, 0.829);
+    }
+    p{
+        position: absolute;
+        top: 33%;
+        left: 5%;
+    }
 }
