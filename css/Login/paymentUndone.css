@@ -120,3 +120,84 @@
     border: 2px solid black;
     padding: 1vh;
 }
+@media screen and (max-width:1000px){
+    .signupHeading {
+        
+        position: absolute;
+        left: 17%;
+        top: 39%;
+        font-size: 115%;
+    }
+    .paymentSuccessful {
+      
+        width: 40%;
+        position: absolute;
+        top: 10%;
+        left: 30%;
+    }
+    .retry{
+        position: absolute;
+        top: 70%;
+        left: 8%;
+        display: inline-block;
+        border: 2px solid black;
+        
+        text-transform: uppercase;
+        color: rgb(12, 12, 12);
+       
+        font-size: 70%;;
+        background-color:rgba(101, 75, 247, 0.829);
+       
+    }
+    .retry::before{
+       
+        background:rgba(101, 75, 247, 0.829);
+       
+    }
+    
+    .retry::after{
+      
+        background:rgba(101, 75, 247, 0.829);
+       
+    }
+    .try-pin{
+        position: absolute;
+        top: 70%;
+        /* left: 48%; */
+        right: 8%;
+        display: inline-block;
+        border: 2px solid black;
+        
+        text-transform: uppercase;
+        color: #111;
+     
+        font-size: 60%;
+        background-color:rgba(101, 75, 247, 0.829);
+       
+    }
+    .try-pin::before{
+       
+        background:rgba(101, 75, 247, 0.829);
+       
+    }
+   
+    .try-pin::after{
+       
+        background:rgba(101, 75, 247, 0.829);
+       
+    }
+    .retry-text{
+       
+       
+        font-size: 4vh;
+        position: absolute;
+        top: 50vh;
+        left: 0vh;
+        background-color:rgba(104, 80, 211, 0.829);;
+        border: 2px solid black;
+       
+    }
+  
+
+
+}
