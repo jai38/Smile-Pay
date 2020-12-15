@@ -105,6 +105,8 @@ p{
     }
     .next {
         background-color: rgba(101, 75, 247, 0.829);
+        position: absolute;
+        top: 70%;
     }
     .next::before {
         background:rgba(101, 75, 247, 0.829);
@@ -114,6 +116,8 @@ p{
     }
     .back {
         background-color: rgba(101, 75, 247, 0.829);
+        position: absolute;
+        top: 70%;
     }
     p{
         position: absolute;
