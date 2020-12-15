@@ -126,7 +126,7 @@
         position: absolute;
         left: 27%;
         top: 39%;
-        font-size: 155%;
+        font-size: 175%;
     }
     .paymentSuccessful {
       
@@ -190,7 +190,7 @@
     .retry-text{
        
        
-        font-size: 3vh;
+        font-size: 2vh;
         position: absolute;
         top: 50vh;
         left: 0vh;
