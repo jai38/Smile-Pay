@@ -1,158 +1,154 @@
 @import url("./../Global/global.css");
 @import url("./../Signup/page2.css");
 .signupHeading {
-    display: flex;
-    position: absolute;
-    font-family: 'Sansita Swashed', cursive;
-    left: 4vw;
-    top: 8vh;
-    font-size: 5vh;
+  display: flex;
+  position: absolute;
+  font-family: "Sansita Swashed", cursive;
+  left: 4vw;
+  top: 8vh;
+  font-size: 5vh;
 }
 .numberAmount {
-    width: 65%;
-    position: absolute;
-    top: 25vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh; 
-    overflow: hidden; 
+  width: 65%;
+  position: absolute;
+  top: 25vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
-.numberAmount input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
+.numberAmount input {
+  width: 100%;
+  height: 50%;
+  padding-top: 6vh;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 4vh;
+  overflow: auto;
 }
 .numberAmount label {
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+  position: absolute;
+  bottom: 0vh;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
 }
-.numberAmount label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
+.numberAmount label::after {
+  content: "";
+  position: absolute;
+  left: 0vw;
+  bottom: -0.2vh;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid blue;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease;
 }
 .numberAmount input:focus + .label-number .content-number,
-.numberAmount input:valid + .label-number .content-number
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.numberAmount input:valid + .label-number .content-number {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
 .numberAmount input:focus + .label-number::after,
-.numberAmount input:valid + .label-number::after{
-    transform: translateX(0%);
+.numberAmount input:valid + .label-number::after {
+  transform: translateX(0%);
 }
 
-.account{
-    width: 65%;
-    position: absolute;
-    top: 40vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh; 
-    overflow: hidden; 
+.account {
+  width: 65%;
+  position: absolute;
+  top: 40vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
-.content-account{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
+.content-account {
+  position: absolute;
+  bottom: 1vh;
+  left: 0vw;
+  transition: all 0.3s ease;
 }
 .account input:focus + .label-account .content-account,
-.account input:valid + .label-account .content-account
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.account input:valid + .label-account .content-account {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
-.account input:focus +.label-account::after,
-.account input:valid + .label-account::after{
-    transform: translateX(0%);
+.account input:focus + .label-account::after,
+.account input:valid + .label-account::after {
+  transform: translateX(0%);
 }
 .check-button {
-    position: relative;
-    border-radius: 4vh;
-    background-color: rgb(77, 221, 99);;
-    border: none;
-    color: #0f0c0c;
-    text-align: center;
-    font-size: 1vw;
-    top: 18vh;
-    left: 3vw;
-    padding: 1vh;
-    width: 10vw;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 1vh;
-    box-shadow: 1vh 1vw 2vh  #203a4e
-  }
-  #balance-text {
-      display: inline;
-  }
-  .check-button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .check-button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: -2vh;
-    right: 4vw;
-    transition: 0.5s;
-  }
-  .check-button:hover span {
-    padding-right: 2vh;
-  }
-  .check-button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  #amount {
-      display: none;
-      position: absolute;
-      top: 20vh;
-      right: 5vw;
-      font-size: 3vh;
-  }
-
-.alert-box{
-    position: relative;
-    top: -12vh;
-    left: -9vw;
-    width: 150%;
-    background-color:  rgb(253, 2, 2);
-    font-size: 22px;
-    padding: 2vh;
-    color: #ffffff;
+  position: relative;
+  border-radius: 4vh;
+  background-color: rgb(77, 221, 99);
+  border: none;
+  color: #0f0c0c;
+  text-align: center;
+  font-size: 1vw;
+  top: 18vh;
+  left: 3vw;
+  padding: 1vh;
+  width: 10vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 1vh;
+  box-shadow: 1vh 1vw 2vh #203a4e;
+}
+#balance-text {
+  display: inline;
+}
+.check-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-@media screen and (max-width: 1000px){
-    .check-button{
-        font-size: 100%;
-        width: 40%;
-        position: absolute;
-        left: 15%;
-    }
-    
+.check-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: -2vh;
+  right: 4vw;
+  transition: 0.5s;
+}
+.check-button:hover span {
+  padding-right: 2vh;
+}
+.check-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#amount {
+  display: none;
+  position: absolute;
+  top: 20vh;
+  right: 5vw;
+  font-size: 3vh;
+}
+
+.alert-box {
+  position: relative;
+  top: -12vh;
+  left: -9vw;
+  width: 150%;
+  background-color: rgb(253, 2, 2);
+  font-size: 22px;
+  padding: 2vh;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .check-button {
+    font-size: 100%;
+    width: 40%;
+    position: absolute;
+    left: 15%;
+  }
 }

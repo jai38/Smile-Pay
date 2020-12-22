@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SmilePay | Facial Identity</title>
-    <link rel="stylesheet" href="/css/Login/face.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/Login/face.css" />
+  </head>
+  <body>
     <div class="backgroundImgFirst"></div>
-    <video id = "video" width="700" height="475" autoplay muted></video>
-    <canvas id = "canva" width="300" height="150"></canvas>
+    <video id="video" width="700" height="475" autoplay muted></video>
+    <canvas id="canva" width="300" height="150"></canvas>
     <div class="backgroundImgSecond"></div>
-    <h2 class="writing">Please adjust your <br> face in the BlueBox</h2>
+    <h2 class="writing">
+      Please adjust your <br />
+      face in the BlueBox
+    </h2>
     <form id="form" action="/login/face" method="POST">
-        <%- include('../partials/messages') %> 
-        <input id="paymentStatus" type="text" name="paymentStatus" style="display: none;">
-        <input id = "accountOfDonor" type="text" name="accountOfDonor" style="display: none;">
-        <input id="amountDebit" type="text" name="amountDebit" style="display: none;">
-        <input id="accountOfRecipient" type="text" name="accountOfRecipient" style="display: none;">
+      <%- include('../partials/messages') %>
+      <input
+        id="paymentStatus"
+        type="text"
+        name="paymentStatus"
+        style="display: none"
+      />
+      <input
+        id="accountOfDonor"
+        type="text"
+        name="accountOfDonor"
+        style="display: none"
+      />
+      <input
+        id="amountDebit"
+        type="text"
+        name="amountDebit"
+        style="display: none"
+      />
+      <input
+        id="accountOfRecipient"
+        type="text"
+        name="accountOfRecipient"
+        style="display: none"
+      />
     </form>
-    <button id = "snap" onclick="capture()">CAPTURE</button>
+    <button id="snap" onclick="capture()">CAPTURE</button>
     <script defer src="./../../clientJS/Login/face-api.min.js"></script>
     <script defer src="./../../clientJS/Login/face.js"></script>
-</body>
+  </body>
 </html>

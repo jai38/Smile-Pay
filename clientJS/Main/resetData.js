@@ -1,4 +1,4 @@
 function resetData() {
-    localStorage.clear();
-    localStorage.setItem('imageCount','2');
+  localStorage.clear();
+  localStorage.setItem("imageCount", "2");
 }

@@ -1,189 +1,181 @@
 @import url("./../Global/global.css");
 .signupHeading {
-    display: flex;
-    position: absolute;
-    font-family: 'Sansita Swashed', cursive;
-    left: 8vw;
-    top: 8vh;
-    font-size: 5vh;
+  display: flex;
+  position: absolute;
+  font-family: "Sansita Swashed", cursive;
+  left: 8vw;
+  top: 8vh;
+  font-size: 5vh;
 }
 
 .signupForm {
-    width: 65%;
-    position: relative;
-    top: 15vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    overflow: hidden;
+  width: 65%;
+  position: relative;
+  top: 15vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
-.signupForm input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
+.signupForm input {
+  width: 100%;
+  height: 50%;
+  padding-top: 6vh;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 4vh;
+  overflow: auto;
 }
-.signupForm label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+.signupForm label {
+  position: absolute;
+  bottom: 0vh;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
 }
-.signupForm label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
+.signupForm label::after {
+  content: "";
+  position: absolute;
+  left: 0vw;
+  bottom: -0.2vh;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid blue;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease;
 }
-.content-name{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
+.content-name {
+  position: absolute;
+  bottom: 1vh;
+  left: 0vw;
+  transition: all 0.3s ease;
 }
 .signupForm input:focus + .label-name .content-name,
-.signupForm input:valid + .label-name .content-name
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.signupForm input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
-.signupForm input:focus +.label-name::after,
-.signupForm input:valid + .label-name::after{
-    transform: translateX(0%);
+.signupForm input:focus + .label-name::after,
+.signupForm input:valid + .label-name::after {
+  transform: translateX(0%);
 }
 .number {
-    width: 65%;
-    position: relative;
-    top: 18vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    overflow: hidden;
-    
+  width: 65%;
+  position: relative;
+  top: 18vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
-.number input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
+.number input {
+  width: 100%;
+  height: 50%;
+  padding-top: 6vh;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 4vh;
+  overflow: auto;
 }
 
-.number label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+.number label {
+  position: absolute;
+  bottom: 0vh;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
 }
-.number label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
+.number label::after {
+  content: "";
+  position: absolute;
+  left: 0vw;
+  bottom: -0.2vh;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid blue;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease;
 }
-.content-number{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
+.content-number {
+  position: absolute;
+  bottom: 1vh;
+  left: 0vw;
+  transition: all 0.3s ease;
 }
 .number input:focus + .label-number .content-number,
-.number input:valid + .label-number .content-number
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.number input:valid + .label-number .content-number {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
-.number input:focus +.label-number::after,
-.number input:valid + .label-number::after{
-    transform: translateX(0%);
+.number input:focus + .label-number::after,
+.number input:valid + .label-number::after {
+  transform: translateX(0%);
 }
 .email {
-    width: 65%;
-    position: relative;
-    top: 21vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    overflow: hidden; 
+  width: 65%;
+  position: relative;
+  top: 21vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
-.email input{
-    width: 100%;
-    height: 100%;
-    color: black;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
+.email input {
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding-top: 6vh;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 4vh;
+  overflow: auto;
 }
 
-.email label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+.email label {
+  position: absolute;
+  bottom: 0vh;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
 }
-.email label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
-    
+.email label::after {
+  content: "";
+  position: absolute;
+  left: 0vw;
+  bottom: -0.2vh;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid blue;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease;
 }
-.content-email{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
+.content-email {
+  position: absolute;
+  bottom: 1vh;
+  left: 0vw;
+  transition: all 0.3s ease;
 }
 .email input:focus + .label-email .content-email,
-.email input:valid + .label-email .content-email
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.email input:valid + .label-email .content-email {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
-.email input:focus +.label-email::after,
-.email input:valid + .label-email::after{
-    transform: translateX(0%);
+.email input:focus + .label-email::after,
+.email input:valid + .label-email::after {
+  transform: translateX(0%);
 }
-.email input::placeholder{
-     display: none;
- } 
+.email input::placeholder {
+  display: none;
+}

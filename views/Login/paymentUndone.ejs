@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment | Undone</title>
-    <link rel="stylesheet" href="/css/Login/paymentUndone.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="/css/Login/paymentUndone.css"
+      type="text/css"
+    />
     <script src="./../../clientJS/Login/paymentUndone.js"></script>
-</head>
+  </head>
 
-<body onload="checkRetryLeft()">
+  <body onload="checkRetryLeft()">
     <div class="background">
-        <div class="backgroundImgFirst"></div>
-        <div class="floatBox">
-            <h2 class="signupHeading">Payment Unsuccessful!</h2>
-            <p id ="retry-count" class="retry-text"></p>
-        </div>
-        <img src="/css/images/Login/fail.gif" class="paymentSuccessful" alt="gif">
-        <div class="backgroundImgSecond"></div>
-        <form id="form" action="/login/paymentUndone" method="POST">
-            <input id="accountStatus" type="text" name="accountStatus" id="" style="display: none;">
-            <input id="account" type="text" name="account" style="display: none;">
-        </form>
-        <button onclick="retryLeft()" border-color="black" class="retry"><span>Retry</span></button>
-        <a href="/login/payPin" class="try-pin">
-            <span>Try with Pin</span>
-        </a>        
+      <div class="backgroundImgFirst"></div>
+      <div class="floatBox">
+        <h2 class="signupHeading">Payment Unsuccessful!</h2>
+        <p id="retry-count" class="retry-text"></p>
+      </div>
+      <img
+        src="/css/images/Login/fail.gif"
+        class="paymentSuccessful"
+        alt="gif"
+      />
+      <div class="backgroundImgSecond"></div>
+      <form id="form" action="/login/paymentUndone" method="POST">
+        <input
+          id="accountStatus"
+          type="text"
+          name="accountStatus"
+          id=""
+          style="display: none"
+        />
+        <input id="account" type="text" name="account" style="display: none" />
+      </form>
+      <button onclick="retryLeft()" border-color="black" class="retry">
+        <span>Retry</span>
+      </button>
+      <a href="/login/payPin" class="try-pin">
+        <span>Try with Pin</span>
+      </a>
     </div>
-</body>
+  </body>
 </html>

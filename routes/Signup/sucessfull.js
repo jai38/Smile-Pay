@@ -1,9 +1,9 @@
-const express = require('express');
+const express = require("express");
 
 const router = express.Router();
 
-router.get('/',(req,res) => {
-    res.redirect('sucessfull');
-})
+router.get("/", (req, res) => {
+  res.redirect("sucessfull");
+});
 
 module.exports = router;

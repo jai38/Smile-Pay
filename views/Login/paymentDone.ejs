@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment | Done</title>
-    <link rel="stylesheet" href="/css/Login/paymentDone.css">
-</head>
-<body onload="updateAmount()">
-    <div class = "background">
-        <div class = "backgroundImgFirst"></div>
-        <div class="floatBox">
-            <h2 class = "signupHeading">Payment Successful!</h2>
-            <button onclick="displayBalance()" class = 'check-button'>
-                <p id = 'amount-text'>Current balance</p>
-                <span></span>
-            </button>
-            <p id="amount"></p>
-            <a href="/"  border-color="black" class="home"><span>Home</span></a>
-        <img src="/css/images/Login/Paymentsuccess.gif" class = "paymentSuccessful" alt="gif">
-        </div>
-        <div class="backgroundImgSecond"></div>
+    <link rel="stylesheet" href="/css/Login/paymentDone.css" />
+  </head>
+  <body onload="updateAmount()">
+    <div class="background">
+      <div class="backgroundImgFirst"></div>
+      <div class="floatBox">
+        <h2 class="signupHeading">Payment Successful!</h2>
+        <button onclick="displayBalance()" class="check-button">
+          <p id="amount-text">Current balance</p>
+          <span></span>
+        </button>
+        <p id="amount"></p>
+        <a href="/" border-color="black" class="home"><span>Home</span></a>
+        <img
+          src="/css/images/Login/Paymentsuccess.gif"
+          class="paymentSuccessful"
+          alt="gif"
+        />
+      </div>
+      <div class="backgroundImgSecond"></div>
     </div>
     <script src="./../../clientJS/Login/paymentDone.js"></script>
-</body>
+  </body>
 </html>

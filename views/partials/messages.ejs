@@ -1,8 +1,8 @@
-    <% if(typeof errors != 'undefined') { %>
-    <% errors.forEach(function (error) { %>
-    <div class="alert show">
-        <%= error.msg %>
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times</span>
-    </div>
-    <% }); %>
-    <% } %>
+<% if(typeof errors != 'undefined') { %> <% errors.forEach(function (error) { %>
+<div class="alert show">
+  <%= error.msg %>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';"
+    >&times</span
+  >
+</div>
+<% }); %> <% } %>

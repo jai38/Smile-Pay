@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup | User Details</title>
-    <link rel="stylesheet" href="/css/Signup/page3.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="/css/Signup/page3.css" type="text/css" />
+  </head>
 
-<body onload="checkDetails()">
+  <body onload="checkDetails()">
     <div class="background">
-        <div class="backgroundImgFirst"></div>
-        <div class="floatBox">
-            <h2 class="signupHeading">User Details: </h2>
-            <form action="/signup/third" method="POST">
-                <%- include('../partials/messages') %> 
-                <input type="text" name="name" style="display: none;">
-                <input type="number" name="number" style="display: none;">
-                <input type="email" name="email" style="display: none;">
-                <input type="number" name="account" style="display: none;">
-                <input type="number" name="aadhar" style="display: none;">
-                <input type="text" name="pan" style="display: none;">
-                <div class="signupForm" id="username1">
-                    <input id='username' type="text" name="username" placeholder="Username" autocomplete="off" required />
-                    <label for="username" class="label-name">
-                        <span class="content-name">Username</span>
-                    </label>
-                </div>
-                <div class="password">
-                    <input id='password' type="password" name="password" placeholder="Password" autocomplete="off" required />
-                    <label for="password" class="label-password">
-                        <span class="content-password">Password</span>
-                    </label>
-                </div>
-                <div class="passwordc">
-                    <input id='password2' type="password" name="password2" placeholder="Confirm Password" autocomplete="off" required />
-                    <label for="password" class="label-password">
-                        <span class="content-password">Confirm Password</span>
-                    </label>
-                </div>
-                <div class="passwordp">
-                    <input id='pin' type="password" name="pin" placeholder="Pin" autocomplete="off" required />
-                    <label for="pin" class="label-password">
-                        <span class="content-password">PIN</span>
-                    </label>
-                </div>
-                <a href="/signup/second" border-color="black" class="back"><span>Back</span></a>
-                <button type="submit" id='submit3' border-color="black" class="next" onclick="getDetails()">
-                    <span><img width="45vw" height="30vh" src="/css/images/Global/camera.png" alt="img"></span>
-                </button>
-            </form>
-        </div>
-        <div class="backgroundImgSecond"></div>
+      <div class="backgroundImgFirst"></div>
+      <div class="floatBox">
+        <h2 class="signupHeading">User Details:</h2>
+        <form action="/signup/third" method="POST">
+          <%- include('../partials/messages') %>
+          <input type="text" name="name" style="display: none" />
+          <input type="number" name="number" style="display: none" />
+          <input type="email" name="email" style="display: none" />
+          <input type="number" name="account" style="display: none" />
+          <input type="number" name="aadhar" style="display: none" />
+          <input type="text" name="pan" style="display: none" />
+          <div class="signupForm" id="username1">
+            <input
+              id="username"
+              type="text"
+              name="username"
+              placeholder="Username"
+              autocomplete="off"
+              required
+            />
+            <label for="username" class="label-name">
+              <span class="content-name">Username</span>
+            </label>
+          </div>
+          <div class="password">
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="off"
+              required
+            />
+            <label for="password" class="label-password">
+              <span class="content-password">Password</span>
+            </label>
+          </div>
+          <div class="passwordc">
+            <input
+              id="password2"
+              type="password"
+              name="password2"
+              placeholder="Confirm Password"
+              autocomplete="off"
+              required
+            />
+            <label for="password" class="label-password">
+              <span class="content-password">Confirm Password</span>
+            </label>
+          </div>
+          <div class="passwordp">
+            <input
+              id="pin"
+              type="password"
+              name="pin"
+              placeholder="Pin"
+              autocomplete="off"
+              required
+            />
+            <label for="pin" class="label-password">
+              <span class="content-password">PIN</span>
+            </label>
+          </div>
+          <a href="/signup/second" border-color="black" class="back"
+            ><span>Back</span></a
+          >
+          <button
+            type="submit"
+            id="submit3"
+            border-color="black"
+            class="next"
+            onclick="getDetails()"
+          >
+            <span
+              ><img
+                width="45vw"
+                height="30vh"
+                src="/css/images/Global/camera.png"
+                alt="img"
+            /></span>
+          </button>
+        </form>
+      </div>
+      <div class="backgroundImgSecond"></div>
     </div>
     <script src="./../../clientJS/Signup/page3.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,57 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup | Bank Details</title>
-    <link rel="stylesheet" href="/css/Signup/page2.css" type="text/css">
-</head>
-<body onload="checkDetails()">
+    <link rel="stylesheet" href="/css/Signup/page2.css" type="text/css" />
+  </head>
+  <body onload="checkDetails()">
     <div class="background">
-        <div class="backgroundImgFirst"></div>
-        <div class="floatBox">
-            <h2 class="signupHeading">Bank Details: </h2>
-                    <div class="dropdown">
-                    <button class="dropbtn">Goverment ID</button>
-                    <div class="dropdown-content">
-                        <p><button onclick="displayAadhar();return false;">Aadhar No.</button></p>
-                        <p><button onclick="displayPan();return false;">Pan No. &nbsp; &nbsp; &nbsp;</button></p>
-                    </div>
-                </div>
-            <form action="/signup/second" method="POST">
-                <%- include('../partials/messages') %> 
-                <input type="text" name="name" style="display: none;">
-                <input type="number" name="number" style="display: none;">
-                <input type="email" name="email" style="display: none;">
-                <div class="number1">
-                    <input id='account' type="number" name="account" placeholder="Account No." autocomplete="off" required />
-                    <label for="number" class="label-number">
-                        <span class="content-number">Account No</span>
-                    </label>
-                </div>
-                <div id='displayAadhar' class="number2">
-                    <input id='aadhar' type="number" name="aadhar" placeholder="Aadhar No." autocomplete="off" required />
-                    <label for="number" class="label-number">
-                        <span class="content-number">Aadhar No</span>
-                    </label>
-                </div>
-                <div id='displayPan' class="number3">
-                    <input id='pan' type="text" name="pan"  autocomplete="off" style="text-transform:uppercase" placeholder="Pan No."
-                        required/>
-                    <label for="number" class="label-number">
-                        <span class="content-number">PAN No</span>
-                    </label>
-                </div>
-                <input id="id" type="text" name="id" style="display: none;">
-                <a href="/signup/first" id="back2" border-color="black" class="back"><span>Back</span></a>
-                <button type="submit" id='submit2' border-color="black" class="next" onclick="getDetails()"><span>Next</span></button>
-                
-            </form>
-        </div> 
-        <div class="backgroundImgSecond"></div>
+      <div class="backgroundImgFirst"></div>
+      <div class="floatBox">
+        <h2 class="signupHeading">Bank Details:</h2>
+        <div class="dropdown">
+          <button class="dropbtn">Goverment ID</button>
+          <div class="dropdown-content">
+            <p>
+              <button onclick="displayAadhar();return false;">
+                Aadhar No.
+              </button>
+            </p>
+            <p>
+              <button onclick="displayPan();return false;">
+                Pan No. &nbsp; &nbsp; &nbsp;
+              </button>
+            </p>
+          </div>
+        </div>
+        <form action="/signup/second" method="POST">
+          <%- include('../partials/messages') %>
+          <input type="text" name="name" style="display: none" />
+          <input type="number" name="number" style="display: none" />
+          <input type="email" name="email" style="display: none" />
+          <div class="number1">
+            <input
+              id="account"
+              type="number"
+              name="account"
+              placeholder="Account No."
+              autocomplete="off"
+              required
+            />
+            <label for="number" class="label-number">
+              <span class="content-number">Account No</span>
+            </label>
+          </div>
+          <div id="displayAadhar" class="number2">
+            <input
+              id="aadhar"
+              type="number"
+              name="aadhar"
+              placeholder="Aadhar No."
+              autocomplete="off"
+              required
+            />
+            <label for="number" class="label-number">
+              <span class="content-number">Aadhar No</span>
+            </label>
+          </div>
+          <div id="displayPan" class="number3">
+            <input
+              id="pan"
+              type="text"
+              name="pan"
+              autocomplete="off"
+              style="text-transform: uppercase"
+              placeholder="Pan No."
+              required
+            />
+            <label for="number" class="label-number">
+              <span class="content-number">PAN No</span>
+            </label>
+          </div>
+          <input id="id" type="text" name="id" style="display: none" />
+          <a href="/signup/first" id="back2" border-color="black" class="back"
+            ><span>Back</span></a
+          >
+          <button
+            type="submit"
+            id="submit2"
+            border-color="black"
+            class="next"
+            onclick="getDetails()"
+          >
+            <span>Next</span>
+          </button>
+        </form>
+      </div>
+      <div class="backgroundImgSecond"></div>
     </div>
     <script src="./../../clientJS/Signup/page2.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,106 +1,105 @@
 @import url("./../Signup/page3.css");
 @import url("./../Global/global.css");
 .signupHeading {
-    display: flex;
-    position: absolute;
-    font-family: 'Sansita Swashed', cursive;
-    left: 14vw;
-    top: 6vh;
-    font-size: 5vh;
+  display: flex;
+  position: absolute;
+  font-family: "Sansita Swashed", cursive;
+  left: 14vw;
+  top: 6vh;
+  font-size: 5vh;
 }
-.signupForm { 
-    width: 65%;
-    position: relative;
-    top: 20vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    overflow: hidden;
+.signupForm {
+  width: 65%;
+  position: relative;
+  top: 20vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
 .password {
-    width: 65%;
-    position: relative;
-    top: 22vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    overflow: hidden;  
+  width: 65%;
+  position: relative;
+  top: 22vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
 .forgetPassword {
-    position: absolute;
-    top:53vh;
-    left: 32%;
-    cursor: pointer;
-    font-size: 3vh;
-    text-decoration: none;
+  position: absolute;
+  top: 53vh;
+  left: 32%;
+  cursor: pointer;
+  font-size: 3vh;
+  text-decoration: none;
 }
-.newAccount{
-    position: absolute;
-    top:62.5vh;
-    left:27%;
-    cursor: pointer;
-    font-size: 3vh;
+.newAccount {
+  position: absolute;
+  top: 62.5vh;
+  left: 27%;
+  cursor: pointer;
+  font-size: 3vh;
 }
-.thinLine{
-    opacity: 1;
-    position: absolute;
-    top: 59.5vh;
-    left: 6%;
-    height: 0%;
-    width: 89%;
-    border-color: rgba(0, 0, 0, 0.493);
-    border-bottom: 1px;
+.thinLine {
+  opacity: 1;
+  position: absolute;
+  top: 59.5vh;
+  left: 6%;
+  height: 0%;
+  width: 89%;
+  border-color: rgba(0, 0, 0, 0.493);
+  border-bottom: 1px;
 }
-@media screen and (max-width:1000px){
-    .signupHeading {
-        position: absolute;
-        top: 14%;
-        left: 37%;
-    }
-    .forgetPassword {
-        position: absolute;
-        left: 26%;
-        top: 58%;
-    }
-    .thinLine {
-        position: absolute;
-        top: 63.5%;
-    }
-    .newAccount { 
-        position: absolute;
-        top: 66%;
-        left: 38%;
-        font-size: 115%;
-    }
-    .usernameImg {
-        position: absolute;
-        background-image: url('./../images/Login/username.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        top: 10.5%;
-        left: 1.5%;
-        width: 10%;
-        height: 80%;
-    }
-    .passwordImg {
-        position: absolute;
-        background-image: url('./../images/Login/password.jpg');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        top: 10.5%;
-        left: 1.5%;
-        width: 12%;
-        height: 80%;
-    }
-    .loginIcon{
-        position: absolute;
-        background-image: url('./../images/Login/login.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        top: -100%;
-        left: 15%;
-        width: 70%;
-        height: 120%;
-    }
-
+@media screen and (max-width: 1000px) {
+  .signupHeading {
+    position: absolute;
+    top: 14%;
+    left: 37%;
+  }
+  .forgetPassword {
+    position: absolute;
+    left: 26%;
+    top: 58%;
+  }
+  .thinLine {
+    position: absolute;
+    top: 63.5%;
+  }
+  .newAccount {
+    position: absolute;
+    top: 66%;
+    left: 38%;
+    font-size: 115%;
+  }
+  .usernameImg {
+    position: absolute;
+    background-image: url("./../images/Login/username.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 10.5%;
+    left: 1.5%;
+    width: 10%;
+    height: 80%;
+  }
+  .passwordImg {
+    position: absolute;
+    background-image: url("./../images/Login/password.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 10.5%;
+    left: 1.5%;
+    width: 12%;
+    height: 80%;
+  }
+  .loginIcon {
+    position: absolute;
+    background-image: url("./../images/Login/login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: -100%;
+    left: 15%;
+    width: 70%;
+    height: 120%;
+  }
 }

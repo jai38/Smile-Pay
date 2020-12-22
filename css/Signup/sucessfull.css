@@ -1,89 +1,89 @@
 @import url("./../Global/global.css");
 .thanku {
-    position: absolute;
-    width: 15vw;
-    top: 26vh;
-    left: 9vw;
+  position: absolute;
+  width: 15vw;
+  top: 26vh;
+  left: 9vw;
 }
 .signupHeading {
-    display: flex;
-    position: absolute;
-    font-family: 'Sansita Swashed', cursive;
-    left: 4vw;
-    top: 15vh;
-    font-size: 5vh;
+  display: flex;
+  position: absolute;
+  font-family: "Sansita Swashed", cursive;
+  left: 4vw;
+  top: 15vh;
+  font-size: 5vh;
 }
 
-.home{
-    position: absolute;
-    top: 70vh;
-    left: 42vw;
-    display: inline-block;
-    border: 2px solid black;
-    text-decoration: none;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    color: #111;
-    font-weight: 600;
-    font-size: 20px;
-    background-color:rgb(17, 160, 204);
-    z-index: 1;
+.home {
+  position: absolute;
+  top: 70vh;
+  left: 42vw;
+  display: inline-block;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: #111;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgb(17, 160, 204);
+  z-index: 1;
 }
-.home::before{
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% - 12px);
-    background:rgb(17, 160, 204);
-    transition: .5s ease-in-out;
-    transform: scaleY(1);
+.home::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: rgb(17, 160, 204);
+  transition: 0.5s ease-in-out;
+  transform: scaleY(1);
 }
-.home:hover:before{
-    transform: scaleY(0);
+.home:hover:before {
+  transform: scaleY(0);
 }
-.home::after{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: 6px;
-    height: calc(100% + 4px);
-    width: calc(100% - 12px);
-    background:rgb(17, 160, 204);
-    transition: .5s ease-in-out;
-    transform: scaleX(1);
+.home::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 6px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: rgb(17, 160, 204);
+  transition: 0.5s ease-in-out;
+  transform: scaleX(1);
 }
-.home:hover:after{
-    transform: scaleX(0);
+.home:hover:after {
+  transform: scaleX(0);
 }
-.home span{
-    position: relative;
-    z-index: 3;
+.home span {
+  position: relative;
+  z-index: 3;
 }
 @media screen and (max-width: 1000px) {
-    .signupHeading{
-        position: absolute;
-        left: 12%;
-        top: 10%;
-        font-size: 220%;
-    }
-    .thanku {
-        position: absolute;
-        width: 45%;
-        left: 25%;
-        top: 30%;
-    }
-    .home {
-        position: absolute;
-        left :34%;
-        top: 78%;
-        background-color:rgba(101, 75, 247, 0.829); 
-    }
-    .home::before{
-        background:rgba(101, 75, 247, 0.829);
-    }
-    .home::after {
-        background: rgba(101, 75, 247, 0.829);
-    }
+  .signupHeading {
+    position: absolute;
+    left: 12%;
+    top: 10%;
+    font-size: 220%;
+  }
+  .thanku {
+    position: absolute;
+    width: 45%;
+    left: 25%;
+    top: 30%;
+  }
+  .home {
+    position: absolute;
+    left: 34%;
+    top: 78%;
+    background-color: rgba(101, 75, 247, 0.829);
+  }
+  .home::before {
+    background: rgba(101, 75, 247, 0.829);
+  }
+  .home::after {
+    background: rgba(101, 75, 247, 0.829);
+  }
 }

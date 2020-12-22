@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SmilePay | Login</title>
-    <link rel="stylesheet" href="/css/Login/page1.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="/css/Login/page1.css" type="text/css" />
+  </head>
 
-<body onload="resetUser()">
+  <body onload="resetUser()">
     <div class="background">
-        <div class="backgroundImgFirst"></div>
-        <div class="floatBox">
-            <!-- <div class="loginIcon">
+      <div class="backgroundImgFirst"></div>
+      <div class="floatBox">
+        <!-- <div class="loginIcon">
             <h2 class="signupHeading">Login </h2>
             </div> -->
-            <div class="signupHeading">
-                <span class="loginIcon"></span>
-                <h2>Login</h2>
-            </div>
-            <form action="/login/first" method="POST">
-                <%- include('../partials/messages') %> 
-                <div class="signupForm" id="username2">
-                    <span  class = "usernameImg"></span>
-                    <input id='username' type="text" name="username" placeholder="Username" autocomplete="off" required />
-                    <label for="username" class="label-name">
-                        <span class="content-name">Username</span>
-                    </label>
-                </div>
-                
-                <div class="password" id="passLogin">
-                    <span  class = "passwordImg"></span>
-                    <input id='password' type="password" name="password" placeholder="Password" autocomplete="off" required />
-                    <label for="password" class="label-password">
-                        <span class="content-password">Password</span>
-                    </label>
-                </div>
-                <a href="/login/forgetPassword" class="forgetPassword">Forget password?</a>
-                <hr class="thinLine">
-                <span class="newAccount">Don't have account?<a href="/Signup/first" class="create">Create one</a></span>
-                <a href="/" border-color="black" class="back"><span>Back</span></a>
-                <button type="submit" id="login" border-color="black" class="next"><span>Next</span></button>
-            </form>
+        <div class="signupHeading">
+          <span class="loginIcon"></span>
+          <h2>Login</h2>
         </div>
-        <div class="backgroundImgSecond"></div>
+        <form action="/login/first" method="POST">
+          <%- include('../partials/messages') %>
+          <div class="signupForm" id="username2">
+            <span class="usernameImg"></span>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              placeholder="Username"
+              autocomplete="off"
+              required
+            />
+            <label for="username" class="label-name">
+              <span class="content-name">Username</span>
+            </label>
+          </div>
+
+          <div class="password" id="passLogin">
+            <span class="passwordImg"></span>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="off"
+              required
+            />
+            <label for="password" class="label-password">
+              <span class="content-password">Password</span>
+            </label>
+          </div>
+          <a href="/login/forgetPassword" class="forgetPassword"
+            >Forget password?</a
+          >
+          <hr class="thinLine" />
+          <span class="newAccount"
+            >Don't have account?<a href="/Signup/first" class="create"
+              >Create one</a
+            ></span
+          >
+          <a href="/" border-color="black" class="back"><span>Back</span></a>
+          <button type="submit" id="login" border-color="black" class="next">
+            <span>Next</span>
+          </button>
+        </form>
+      </div>
+      <div class="backgroundImgSecond"></div>
     </div>
     <script src="./../../clientJS/Login/page1.js"></script>
-</body>
+  </body>
 </html>

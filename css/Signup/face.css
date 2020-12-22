@@ -1,155 +1,154 @@
 body {
-    margin: 0%;
-    padding: 0%;
-    width: 80vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: black;
+  margin: 0%;
+  padding: 0%;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
 }
 canvas {
-    position: absolute;
-    left: 60vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+  position: absolute;
+  left: 60vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 #imgNo {
-    position: absolute;
-    top: 80vh;
+  position: absolute;
+  top: 80vh;
 }
 #video {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); 
-    /* position: absolute;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  /* position: absolute;
     left: 23vw; */
-    padding-right: 16vw;
+  padding-right: 16vw;
 }
 #totalImg {
-    position: absolute;
-    top: 90vh;
+  position: absolute;
+  top: 90vh;
 }
-button{
-    position: absolute;
-    top: 88vh;
-    left: 43vw;
-    padding: 4px 20px;
-    color:white;
-    background: rgb(8, 68, 235) ;
-    z-index: 1;
-    font-size: 3vh;
-    cursor: pointer;
+button {
+  position: absolute;
+  top: 88vh;
+  left: 43vw;
+  padding: 4px 20px;
+  color: white;
+  background: rgb(8, 68, 235);
+  z-index: 1;
+  font-size: 3vh;
+  cursor: pointer;
 }
-#box{
-    width: 20vw;
-    overflow: hidden;
-    background: #f1f1f1;
-    box-shadow: 0 0 20px black;
-    border-radius: 2vh;
-    position: absolute;
-    box-sizing: border-box;
-    height: 15%;
-    top: 50%;
-    left: 42%;
-    transform: translate(-20%,-50%);
-    z-index: 9999;
-    padding: 4vh;
-    width: 20%;
-    text-align: center;
-    display: none;
+#box {
+  width: 20vw;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 0 0 20px black;
+  border-radius: 2vh;
+  position: absolute;
+  box-sizing: border-box;
+  height: 15%;
+  top: 50%;
+  left: 42%;
+  transform: translate(-20%, -50%);
+  z-index: 9999;
+  padding: 4vh;
+  width: 20%;
+  text-align: center;
+  display: none;
 }
-#box span{
-    position: absolute;
-    top: 15%;
-    left: 17%;
-    font-size: 3vh;
-    color: black;
+#box span {
+  position: absolute;
+  top: 15%;
+  left: 17%;
+  font-size: 3vh;
+  color: black;
 }
-.close{
-    z-index: 15;
-    font-size: 20px;
-    color: rgb(14, 13, 13);
-    padding: 1vh 1vh;
-    cursor: pointer;
-    background-color: #3498db;
-    display: inline-block;
-    border-radius: 0.3vh;
-    border: 2px solid red;
-    position: absolute;
-    left: 30%;
-    top: 50%;
-    /* width: 50%; */
-
+.close {
+  z-index: 15;
+  font-size: 20px;
+  color: rgb(14, 13, 13);
+  padding: 1vh 1vh;
+  cursor: pointer;
+  background-color: #3498db;
+  display: inline-block;
+  border-radius: 0.3vh;
+  border: 2px solid red;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  /* width: 50%; */
 }
 .backgroundImgFirst {
-    opacity: 0.5;
-    width: 25%;
-    height: 100vh;
-    background-image: url(/css/images/Global/firstBack.png);
-    background-size: 100% 100%;
-    position: absolute;
-    left: -2vw;
+  opacity: 0.5;
+  width: 25%;
+  height: 100vh;
+  background-image: url(/css/images/Global/firstBack.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: -2vw;
 }
 .backgroundImgSecond {
-    position: absolute;
-    opacity: 0.5;
-    right: -3vw;
-    width: 30%;
-    height: 100vh;
-    background-image: url(/css/images/Global/secondBack.jpeg);
-    background-size: 100% 100%;
+  position: absolute;
+  opacity: 0.5;
+  right: -3vw;
+  width: 30%;
+  height: 100vh;
+  background-image: url(/css/images/Global/secondBack.jpeg);
+  background-size: 100% 100%;
 }
-.writing{
-    color: white;
-    position: absolute;
-    top: 0.5vh;
-    left: 39vw;
-    border:2px solid rgb(255, 0, 0);
-    padding: 4px 20px;
+.writing {
+  color: white;
+  position: absolute;
+  top: 0.5vh;
+  left: 39vw;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 4px 20px;
 }
 #snap:hover,
 #snap:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
 }
-@media screen and (max-width:750px){
-    .backgroundImgFirst, .backgroundImgSecond{
-        display: none;
-    }
-    .background{
-        color: black;
-    }
-    video{
-        position: absolute;
-        left: -25%;
-        top: 18%;
-        padding-right: 50%;
-    }
-    canvas{
-        position: absolute;
-        left: 10vh;
-        top:10vh;
-    }
-    button{
-        position: absolute;
-        top: 100%;
-        left: 60%;
-    }
-    .writing{
-        position: absolute;
-        left: 30%;
-        right: -20%;
-    }
-    .close{
-        position: absolute;
-        top: 55%;
-        width: 50%;
-        left: 20vw;
-    }
-    #box{
-        position: absolute;
-        left: 60vw;
-        width: 80vw;
-
-    }
+@media screen and (max-width: 750px) {
+  .backgroundImgFirst,
+  .backgroundImgSecond {
+    display: none;
+  }
+  .background {
+    color: black;
+  }
+  video {
+    position: absolute;
+    left: -25%;
+    top: 18%;
+    padding-right: 50%;
+  }
+  canvas {
+    position: absolute;
+    left: 10vh;
+    top: 10vh;
+  }
+  button {
+    position: absolute;
+    top: 100%;
+    left: 60%;
+  }
+  .writing {
+    position: absolute;
+    left: 30%;
+    right: -20%;
+  }
+  .close {
+    position: absolute;
+    top: 55%;
+    width: 50%;
+    left: 20vw;
+  }
+  #box {
+    position: absolute;
+    left: 60vw;
+    width: 80vw;
+  }
 }

@@ -1,127 +1,126 @@
 @import url("./../Global/global.css");
 @import url("./../Signup/page3.css");
 .signupHeading {
-    display: flex;
-    position: relative;
-    font-family: 'Sansita Swashed', cursive;
-    left: 9vw;
-    top: 4vh;
-    font-size: 5vh;
+  display: flex;
+  position: relative;
+  font-family: "Sansita Swashed", cursive;
+  left: 9vw;
+  top: 4vh;
+  font-size: 5vh;
 }
 .passwordp {
-    width: 65%;
-    position: absolute;
-    top: 13vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh; 
-    overflow: hidden;
+  width: 65%;
+  position: absolute;
+  top: 13vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
 .passwordp input:focus + .label-password .content-password,
-.passwordp input:valid + .label-password .content-password
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.passwordp input:valid + .label-password .content-password {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
 .passwordp input:focus + .label-password::after,
-.passwordp input:valid + .label-password::after{
-    transform: translateX(0%);
+.passwordp input:valid + .label-password::after {
+  transform: translateX(0%);
 }
-.next{
+.next {
+  position: absolute;
+  top: 62vh;
+  right: 8%;
+  display: inline-block;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 15px 29px;
+  text-transform: uppercase;
+  color: #111;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgb(0, 195, 255);
+}
+.next::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: rgb(0, 195, 255);
+  transition: 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.next:hover:before {
+  transform: scaleY(0);
+}
+.next::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 6px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: rgb(0, 195, 255);
+  transition: 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.next:hover:after {
+  transform: scaleX(0);
+}
+.next span {
+  position: relative;
+  z-index: 3;
+}
+.back {
+  position: absolute;
+  top: 62vh;
+  left: 4vw;
+  display: inline-block;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: #111;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgb(6, 142, 233);
+}
+p {
+  position: relative;
+  top: 22vh;
+  left: 5vw;
+  z-index: 3;
+}
+@media screen and (max-width: 1000px) {
+  .signupHeading {
     position: absolute;
-    top: 62vh;
-    right: 8%;
-    display: inline-block;
-    border: 2px solid black;
-    text-decoration: none;
-    padding: 15px 29px;
-    text-transform: uppercase;
-    color: #111;
-    font-weight: 600;
-    font-size: 20px;
-    background-color:rgb(0, 195, 255);
-}
-.next::before{
-    content: '';
+    left: 17%;
+  }
+  .passwordp {
     position: absolute;
-    top: 6px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% - 12px);
-    background:rgb(0, 195, 255);
-    transition: .5s ease-in-out;
-    transform: scaleY(1);
-}
-.next:hover:before{
-    transform: scaleY(0);
-}
-.next::after{
-    content: '';
+    top: 15%;
+  }
+  .next {
+    background-color: rgba(101, 75, 247, 0.829);
     position: absolute;
-    top: -2px;
-    left: 6px;
-    height: calc(100% + 4px);
-    width: calc(100% - 12px);
-    background:rgb(0, 195, 255) ;
-    transition: .5s ease-in-out;
-    transform: scaleX(1);
-}
-.next:hover:after{
-    transform: scaleX(0);
-}
-.next span{
-    position: relative;
-    z-index: 3;  
-}
-.back{
+    top: 70%;
+  }
+  .next::before {
+    background: rgba(101, 75, 247, 0.829);
+  }
+  .next::after {
+    background: rgba(101, 75, 247, 0.829);
+  }
+  .back {
+    background-color: rgba(101, 75, 247, 0.829);
     position: absolute;
-    top: 62vh;
-    left: 4vw;
-    display: inline-block;
-    border: 2px solid black;
-    text-decoration: none;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    color: #111;
-    font-weight: 600;
-    font-size: 20px;
-    background-color: rgb(6, 142, 233);
-}
-p{
-    position: relative;
-    top: 22vh;
-    left: 5vw;
-    z-index: 3;
-}
-@media screen and (max-width:1000px){
-    .signupHeading {
-        position: absolute;
-        left: 17%;
-    }
-    .passwordp {
-        position: absolute;
-        top: 15%;
-    }
-    .next {
-        background-color: rgba(101, 75, 247, 0.829);
-        position: absolute;
-        top: 70%;
-    }
-    .next::before {
-        background:rgba(101, 75, 247, 0.829);
-    }
-    .next::after {
-        background:rgba(101, 75, 247, 0.829);
-    }
-    .back {
-        background-color: rgba(101, 75, 247, 0.829);
-        position: absolute;
-        top: 70%;
-    }
-    p{
-        position: absolute;
-        top: 33%;
-        left: 5%;
-    }
+    top: 70%;
+  }
+  p {
+    position: absolute;
+    top: 33%;
+    left: 5%;
+  }
 }

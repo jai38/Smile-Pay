@@ -1,128 +1,131 @@
 @import url("./../Global/global.css");
 .signupHeading {
-    display: flex;
-    position: absolute;
-    font-family: 'Sansita Swashed', cursive;
-    left: 10vw;
-    top: 4vh;
-    font-size: 5vh;
+  display: flex;
+  position: absolute;
+  font-family: "Sansita Swashed", cursive;
+  left: 10vw;
+  top: 4vh;
+  font-size: 5vh;
 }
 .signupForm {
-    width: 65%;
-    position: relative;
-    top: 10vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    overflow: hidden;
+  width: 65%;
+  position: relative;
+  top: 10vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
-.signupForm input,.password input,.passwordc input,.passwordp input{
-    width: 100%;
-    height: 50%;
-    padding-top: 6vh;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 4vh;
-    overflow: auto;
+.signupForm input,
+.password input,
+.passwordc input,
+.passwordp input {
+  width: 100%;
+  height: 50%;
+  padding-top: 6vh;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 4vh;
+  overflow: auto;
 }
-.signupForm label,.password label,.passwordc label,.passwordp label{
-    position: absolute;
-    bottom: 0vh;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
+.signupForm label,
+.password label,
+.passwordc label,
+.passwordp label {
+  position: absolute;
+  bottom: 0vh;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
 }
-.signupForm label::after,.password label::after,.passwordc label::after,.passwordp label::after
-{
-    content: "";
-    position: absolute;
-    left: 0vw;
-    bottom: -0.2vh;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid blue;
-    transform: translateX(-100%);
-    transition: transform 0.8s ease;
+.signupForm label::after,
+.password label::after,
+.passwordc label::after,
+.passwordp label::after {
+  content: "";
+  position: absolute;
+  left: 0vw;
+  bottom: -0.2vh;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid blue;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease;
 }
-.content-name,.content-password{
-    position: absolute;
-    bottom: 1vh;
-    left: 0vw;
-    transition: all 0.3s ease;
+.content-name,
+.content-password {
+  position: absolute;
+  bottom: 1vh;
+  left: 0vw;
+  transition: all 0.3s ease;
 }
 .signupForm input:focus + .label-name .content-name,
-.signupForm input:valid + .label-name .content-name
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.signupForm input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
-.signupForm input:focus +.label-name::after,
-.signupForm input:valid + .label-name::after{
-    transform: translateX(0%);
+.signupForm input:focus + .label-name::after,
+.signupForm input:valid + .label-name::after {
+  transform: translateX(0%);
 }
 .password {
-    width: 65%;
-    position: relative;
-    top: 11vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    overflow: hidden;
-    
+  width: 65%;
+  position: relative;
+  top: 11vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
 .password input:focus + .label-password .content-password,
-.password input:valid + .label-password .content-password
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.password input:valid + .label-password .content-password {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
-.password input:focus +.label-password::after,
-.password input:valid + .label-password::after{
-    transform: translateX(0%);
+.password input:focus + .label-password::after,
+.password input:valid + .label-password::after {
+  transform: translateX(0%);
 }
 .passwordc {
-    width: 65%;
-    position: relative;
-    top: 12vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    overflow: hidden;
+  width: 65%;
+  position: relative;
+  top: 12vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
 .passwordc input:focus + .label-password .content-password,
-.passwordc input:valid + .label-password .content-password
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.passwordc input:valid + .label-password .content-password {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
-.passwordc input:focus +.label-password::after,
-.passwordc input:valid + .label-password::after{
-    transform: translateX(0%);
+.passwordc input:focus + .label-password::after,
+.passwordc input:valid + .label-password::after {
+  transform: translateX(0%);
 }
 .passwordp {
-    width: 65%;
-    position: relative;
-    top: 13vh;
-    height: -1vh;
-    left: 5vw;
-    font-size: 3vh;
-    overflow: hidden;
-    
+  width: 65%;
+  position: relative;
+  top: 13vh;
+  height: -1vh;
+  left: 5vw;
+  font-size: 3vh;
+  overflow: hidden;
 }
 .passwordp input:focus + .label-password .content-password,
-.passwordp input:valid + .label-password .content-password
-{
-    transform: translateY(-100%);
-    font-size: 4vh;
-    color: black;
+.passwordp input:valid + .label-password .content-password {
+  transform: translateY(-100%);
+  font-size: 4vh;
+  color: black;
 }
-.passwordp input:focus +.label-password::after,
-.passwordp input:valid + .label-password::after{
-    transform: translateX(0%);
+.passwordp input:focus + .label-password::after,
+.passwordp input:valid + .label-password::after {
+  transform: translateX(0%);
 }

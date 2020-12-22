@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="/css/Login/dashboard.css" type="text/css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id = 'title'></title>
-    <link rel="stylesheet" href="/css/Login/dashboard.css" type="text/css">
-</head>
-
-<body>
+  <body>
     <div class="background">
-        <div class="backgroundImgFirst"></div>
-        <div class="floatBox">
-            <h2 class="signupHeading">Welcome to SmilePay</h2>
-            <p id = "data" style="display: none;">
-                <% if(typeof user !== "undefined"){ %> 
-                    <%= JSON.stringify(user) %>
-                <% } %>
-            </p>
-            <form action="/login/dashboard" method="POST">
-                <%- include('../partials/messages') %> 
-            <input id="currentBalance" type="text" name="currentBalance" style="display:none;">
-            <div class="numberAmount" id="amtLogin">
-                    <input id='amount-text' type="number" name="amount" placeholder="Enter Amount" autocomplete="off" required />
-                    <label for="number" class="label-number">
-                        <span class="content-number">Enter amount</span>
-                    </label>
-            </div>
-            <div class="account" id="accLogin">
-                    <input id='account' type="number" name="account" placeholder="Account of Recipient" autocomplete="off" required />
-                    <label for="account" class="label-account">
-                        <span class="content-account">Account no of Recipient</span>
-                    </label>
-            </div>
-            <p id='amount'></p>
-            <a href="/login/first" border-color="black" class="back"><span>Logout</span></a>
-            <button id='pay' type="submit" border-color="black" class="next" onclick="getData()"><span><img width="45vw" height="30vh"
-                        src = "/css/images/Global/camera.png" alt="img"></span>
-            </button>
-            </form>
-            <button onclick="displayBalance()" id="balance" class="check-button">
-                <p id='balance-text'>
-                    Check Balance
-                </p>
-                <span id='span-balance'></span>
-            </button>
-        </div>
-        <div class="backgroundImgSecond"></div>
+      <div class="backgroundImgFirst"></div>
+      <div class="floatBox">
+        <h2 class="signupHeading">Welcome to SmilePay</h2>
+        <p id="data" style="display: none">
+          <% if(typeof user !== "undefined"){ %> <%= JSON.stringify(user) %> <%
+          } %>
+        </p>
+        <form action="/login/dashboard" method="POST">
+          <%- include('../partials/messages') %>
+          <input
+            id="currentBalance"
+            type="text"
+            name="currentBalance"
+            style="display: none"
+          />
+          <div class="numberAmount" id="amtLogin">
+            <input
+              id="amount-text"
+              type="number"
+              name="amount"
+              placeholder="Enter Amount"
+              autocomplete="off"
+              required
+            />
+            <label for="number" class="label-number">
+              <span class="content-number">Enter amount</span>
+            </label>
+          </div>
+          <div class="account" id="accLogin">
+            <input
+              id="account"
+              type="number"
+              name="account"
+              placeholder="Account of Recipient"
+              autocomplete="off"
+              required
+            />
+            <label for="account" class="label-account">
+              <span class="content-account">Account no of Recipient</span>
+            </label>
+          </div>
+          <p id="amount"></p>
+          <a href="/login/first" border-color="black" class="back"
+            ><span>Logout</span></a
+          >
+          <button
+            id="pay"
+            type="submit"
+            border-color="black"
+            class="next"
+            onclick="getData()"
+          >
+            <span
+              ><img
+                width="45vw"
+                height="30vh"
+                src="/css/images/Global/camera.png"
+                alt="img"
+            /></span>
+          </button>
+        </form>
+        <button onclick="displayBalance()" id="balance" class="check-button">
+          <p id="balance-text">Check Balance</p>
+          <span id="span-balance"></span>
+        </button>
+      </div>
+      <div class="backgroundImgSecond"></div>
     </div>
     <script src="./../../clientJS/Login/dashboard.js"></script>
-</body>
+  </body>
 </html>

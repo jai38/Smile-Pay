@@ -1,204 +1,186 @@
 @import url("./../Global/global.css");
 .signupHeading {
-    display: flex;
-    position: absolute;
-    font-family: 'Sansita Swashed', cursive;
-    left: 5vw;
-    top: 30vh;
-    font-size: 5vh;
+  display: flex;
+  position: absolute;
+  font-family: "Sansita Swashed", cursive;
+  left: 5vw;
+  top: 30vh;
+  font-size: 5vh;
 }
 .paymentSuccessful {
-    z-index: 1;
-    width: 12vw;
-    position: absolute;
-    top: 10vh;
-    left: 41.5vw;
+  z-index: 1;
+  width: 12vw;
+  position: absolute;
+  top: 10vh;
+  left: 41.5vw;
 }
-.retry{
+.retry {
+  position: absolute;
+  top: 70vh;
+  left: 32vw;
+  display: inline-block;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: rgb(12, 12, 12);
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgb(6, 142, 233);
+  z-index: 1;
+}
+.retry::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: rgb(6, 142, 233);
+  transition: 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.retry:hover:before {
+  transform: scaleY(0);
+}
+.retry::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 6px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: rgb(6, 142, 233);
+  transition: 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.retry:hover:after {
+  transform: scaleX(0);
+}
+.retry span {
+  position: relative;
+  z-index: 3;
+}
+.try-pin {
+  position: absolute;
+  top: 70vh;
+  left: 48vw;
+  display: inline-block;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: #111;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgb(53, 177, 248);
+  z-index: 1;
+  text-decoration: none;
+}
+.try-pin::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: rgb(53, 177, 248);
+  transition: 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.try-pin:hover:before {
+  transform: scaleY(0);
+}
+.try-pin::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 6px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: rgb(53, 177, 248);
+  transition: 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.try-pin:hover:after {
+  transform: scaleX(0);
+}
+.try-pin span {
+  position: relative;
+  z-index: 3;
+}
+.retry-text {
+  color: white;
+  z-index: 2;
+  font-size: 3vh;
+  position: absolute;
+  top: 45vh;
+  left: 0vh;
+  background-color: rgba(8, 44, 248, 0.89);
+  border: 2px solid black;
+  padding: 1vh;
+}
+@media screen and (max-width: 1000px) {
+  .signupHeading {
     position: absolute;
-    top: 70vh;
-    left: 32vw;
+    left: 24%;
+    top: 39%;
+    font-size: 175%;
+  }
+  .paymentSuccessful {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
+  .retry {
+    position: absolute;
+    top: 80%;
+    left: 8%;
     display: inline-block;
     border: 2px solid black;
-    text-decoration: none;
-    padding: 15px 30px;
+
     text-transform: uppercase;
     color: rgb(12, 12, 12);
-    font-weight: 600;
-    font-size: 20px;
-    background-color:rgb(6, 142, 233);
-    z-index: 1;
-}
-.retry::before{
-    content: '';
+
+    font-size: 90%;
+    background-color: rgba(101, 75, 247, 0.829);
+  }
+  .retry::before {
+    background: rgba(101, 75, 247, 0.829);
+  }
+
+  .retry::after {
+    background: rgba(101, 75, 247, 0.829);
+  }
+  .try-pin {
     position: absolute;
-    top: 6px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% - 12px);
-    background:rgb(6, 142, 233);
-    transition: .5s ease-in-out;
-    transform: scaleY(1);
-}
-.retry:hover:before{
-    transform: scaleY(0);
-}
-.retry::after{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: 6px;
-    height: calc(100% + 4px);
-    width: calc(100% - 12px);
-    background:rgb(6, 142, 233);
-    transition: .5s ease-in-out;
-    transform: scaleX(1);
-}
-.retry:hover:after{
-    transform: scaleX(0);
-}
-.retry span{
-    position: relative;
-    z-index: 3;
-}
-.try-pin{
-    position: absolute;
-    top: 70vh;
-    left: 48vw;
+    top: 80%;
+    /* left: 48%; */
+    right: 8%;
     display: inline-block;
     border: 2px solid black;
-    text-decoration: none;
-    padding: 15px 30px;
+
     text-transform: uppercase;
     color: #111;
-    font-weight: 600;
-    font-size: 20px;
-    background-color:rgb(53, 177, 248);
-    z-index: 1;
-    text-decoration: none;
-}
-.try-pin::before{
-    content: '';
+    text-align: center;
+
+    font-size: 80%;
+    background-color: rgba(101, 75, 247, 0.829);
+  }
+  .try-pin::before {
+    background: rgba(101, 75, 247, 0.829);
+  }
+
+  .try-pin::after {
+    background: rgba(101, 75, 247, 0.829);
+  }
+  .retry-text {
+    font-size: 2vh;
     position: absolute;
-    top: 6px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% - 12px);
-    background:rgb(53, 177, 248);
-    transition: .5s ease-in-out;
-    transform: scaleY(1);
-}
-.try-pin:hover:before{
-    transform: scaleY(0);
-}
-.try-pin::after{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: 6px;
-    height: calc(100% + 4px);
-    width: calc(100% - 12px);
-    background:rgb(53, 177, 248);
-    transition: .5s ease-in-out;
-    transform: scaleX(1);
-}
-.try-pin:hover:after{
-    transform: scaleX(0);
-}
-.try-pin span{
-    position: relative;
-    z-index: 3;
-}
-.retry-text{
-    color: white;
-    z-index: 2;
-    font-size: 3vh;
-    position: absolute;
-    top: 45vh;
+    top: 50vh;
     left: 0vh;
-    background-color: rgba(8, 44, 248, 0.89);
+    background-color: rgba(104, 80, 211, 0.829);
     border: 2px solid black;
-    padding: 1vh;
-}
-@media screen and (max-width:1000px){
-    .signupHeading {
-        
-        position: absolute;
-        left: 24%;
-        top: 39%;
-        font-size: 175%;
-    }
-    .paymentSuccessful {
-      
-        width: 40%;
-        position: absolute;
-        top: 10%;
-        left: 30%;
-    }
-    .retry{
-        position: absolute;
-        top: 80%;
-        left: 8%;
-        display: inline-block;
-        border: 2px solid black;
-        
-        text-transform: uppercase;
-        color: rgb(12, 12, 12);
-       
-        font-size: 90%;;
-        background-color:rgba(101, 75, 247, 0.829);
-       
-    }
-    .retry::before{
-       
-        background:rgba(101, 75, 247, 0.829);
-       
-    }
-    
-    .retry::after{
-      
-        background:rgba(101, 75, 247, 0.829);
-       
-    }
-    .try-pin{
-        position: absolute;
-        top: 80%;
-        /* left: 48%; */
-        right: 8%;
-        display: inline-block;
-        border: 2px solid black;
-        
-        text-transform: uppercase;
-        color: #111;
-        text-align: center;
-     
-        font-size: 80%;
-        background-color:rgba(101, 75, 247, 0.829);
-       
-    }
-    .try-pin::before{
-       
-        background:rgba(101, 75, 247, 0.829);
-       
-    }
-   
-    .try-pin::after{
-       
-        background:rgba(101, 75, 247, 0.829);
-       
-    }
-    .retry-text{
-       
-       
-        font-size: 2vh;
-        position: absolute;
-        top: 50vh;
-        left: 0vh;
-        background-color:rgba(104, 80, 211, 0.829);;
-        border: 2px solid black;
-       
-    }
-  
-
-
+  }
 }
