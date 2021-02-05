@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-const db = require("./config/keys").MongoURI;
+const db = require("./keys").MongoURI;
 
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
