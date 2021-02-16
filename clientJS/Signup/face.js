@@ -10,7 +10,7 @@ Promise.all([
   faceapi.nets.ssdMobilenetv1.loadFromUri("../modelsFace"),
 ]).then(startVideo);
 function startVideo() {
-  navigator.getUserMedia(
+  navigator.mediaDevices.getUserMedia(
     { video: {} },
     (stream) => (video.srcObject = stream),
     (err) => console.error(err)
