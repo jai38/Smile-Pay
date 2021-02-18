@@ -43,7 +43,6 @@ Steps to implement:
 - Signup: All user details are being stored in database.
 - Live Face Capture: Co-ordinates of face are Encoded.
 - Login: Particular details are being compared from the pipeline.
-
-* Live Face Detecting: Stored encodings are matched with live face co-ordinates.
-* Payment Successful: Transaction is done.
-* Payment Unsuccessful: Retry option for 3 times, after that account is blocked.
+- Live Face Detecting: Stored encodings are matched with live face co-ordinates.
+- Payment Successful: Transaction is done.
+- Payment Unsuccessful: Retry option for 3 times, after that account is blocked.
