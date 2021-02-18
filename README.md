@@ -18,7 +18,15 @@ The objective is to propose a system which is fastest and simplest method with a
 </p>
 
 ## Built With
-<ul>
-<a href = "https://www.w3schools.com/html/">html</a>
-</ul>
+* [html](https://www.w3schools.com/html/)
+* [Css](https://www.w3schools.com/css/default.asp)
+* [Node](https://nodejs.org/en/)
+* [Express](https://www.npmjs.com/package/express)
+* [ejs](https://www.npmjs.com/package/ejs)
+* [MongoDB](https://www.mongodb.com/)
 
+## Additional Information
+
+<p>
+This is a college project and is limited to the users that exist in our database i.e you can make a dummy payment to the user which exist in our system. The details that we are asking to fill are also not real.  
+</p>
