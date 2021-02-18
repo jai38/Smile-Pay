@@ -5,7 +5,7 @@
  <h3 align="center">
     SMILEPAY 
  </h3>
- <p align="center"> 
+ <p> 
     This is a Payment webapp using Facial Recognition System. Our system consists of two modules i.e REGISTRATION and LOGIN.
  </p>
 </p>
@@ -27,22 +27,22 @@ The objective is to propose a system which is fastest and simplest method with a
 - [ejs](https://www.npmjs.com/package/ejs)
 - [MongoDB](https://www.mongodb.com/)
 
-## Additional Information
-
-<p>
-This is a college project and is limited to the users that exist in our database i.e you can make a dummy payment to the user which exist in our system. The details that we are asking to fill are also not real.   
-</p>
-
 ## Process Design
 
 <p>
 Steps to implement: 
 </p>
 
-- Main Page: SmilePay will give two options i.e SIGNUP AND LOGIN.
-- Signup: All user details are being stored in database.
-- Live Face Capture: Co-ordinates of face are Encoded.
-- Login: Particular details are being compared from the pipeline.
-- Live Face Detecting: Stored encodings are matched with live face co-ordinates.
-- Payment Successful: Transaction is done.
-- Payment Unsuccessful: Retry option for 3 times, after that account is blocked.
+- 1)Main Page: SmilePay will give two options i.e SIGNUP AND LOGIN.
+- 2)Signup: All user details are being stored in database.
+- 3)Live Face Capture: Co-ordinates of face are Encoded.
+- 4)Login: Particular details are being compared from the pipeline.
+- 5)Live Face Detecting: Stored encodings are matched with live face co-ordinates.
+- 6)Payment Successful: Transaction is done.
+- 7)Payment Unsuccessful: Retry option for 3 times, after that account is blocked.
+
+## Additional Information
+
+<p>
+This is a college project and is limited to the users that exist in our database i.e you can make a dummy payment to the user which exist in our system. The details that we are asking to fill are also not real.   
+</p>
