@@ -36,12 +36,14 @@ This is a college project and is limited to the users that exist in our database
 ## Process Design
 
 <p>
-Steps to implement:  
--	[Main Page: SmilePay will give two options i.e SIGNUP AND LOGIN.] 
--	[Signup: All user details are being stored in database.]  
--	[Live Face Capture: Co-ordinates of face are Encoded.]  
--	[Login: Particular details are being compared from the pipeline.]   
--	[Live Face Detecting: Stored encodings are matched with live face co-ordinates.]  
--	[Payment Successful: Transaction is done.]  
--	[Payment Unsuccessful: Retry option for 3 times, after that account is blocked.]
+Steps to implement: 
 </p>
+
+- [Main Page: SmilePay will give two options i.e SIGNUP AND LOGIN.]
+- [Signup: All user details are being stored in database.]
+- [Live Face Capture: Co-ordinates of face are Encoded.]
+- [Login: Particular details are being compared from the pipeline.]
+
+* [Live Face Detecting: Stored encodings are matched with live face co-ordinates.]
+* [Payment Successful: Transaction is done.]
+* [Payment Unsuccessful: Retry option for 3 times, after that account is blocked.]
